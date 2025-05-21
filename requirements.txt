@@ -7,3 +7,4 @@ torch
 pandas
 datasets
 huggingface_hub[hf_xet]
+transformers[torch]
