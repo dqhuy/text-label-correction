@@ -8,7 +8,6 @@ import logging
 import torch
 import os
 import shutil
-import tempfile
 import time
 from collections import Counter
 from db_ops import get_all_labels, generate_vietnamese_errors
@@ -19,6 +18,7 @@ logger = logging.getLogger(__name__)
 
 MODEL_PATH = "trained_model"
 DEFAULT_N_PER_CLASS = 100
+
 def generate_dataset(n_per_class=DEFAULT_N_PER_CLASS):
     """Generate simulated dataset for training."""
     valid_values = get_all_labels()
@@ -34,17 +34,15 @@ def generate_dataset(n_per_class=DEFAULT_N_PER_CLASS):
     logger.info(f"Dataset distribution: {dict(distribution)}")
     return dataset
 
-def generate_custom_dataset(custom_label, n_per_class=100, only_new_label=False):
+def generate_custom_dataset(custom_label, n_per_class=DEFAULT_N_PER_CLASS, only_new_label=False):
     """Generate dataset for a custom label, optionally only for the new label."""
     dataset = []
     
     if only_new_label:
-        # Generate data only for the custom label
         for _ in range(n_per_class):
             ocr_output = generate_vietnamese_errors(custom_label) if random.random() > 0.1 else custom_label
             dataset.append({"ocr_output": ocr_output, "corrected": custom_label})
     else:
-        # Generate data for custom label and existing labels
         valid_values = get_all_labels()
         static_labels = [v["label"] for v in valid_values]
         if custom_label not in static_labels:
@@ -71,72 +69,91 @@ class TrainingCallback:
         if self.st_placeholder:
             self.st_placeholder.write(log_message)
 
-def fine_tune_model(model, train_data, epochs=3, retrain=False, st_placeholder=None):
+def fine_tune_model(model, train_data, epochs=1, retrain=False, st_placeholder=None):
     """Fine-tune MiniLM model with hard negative mining."""
     logger.info(f"Starting {'retraining' if retrain else 'fine-tuning'} of MiniLM model...")
     train_examples = []
     for item in train_data:
         repeats = 5 if retrain else 1
         for _ in range(repeats):
-            # Positive example
             train_examples.append(InputExample(texts=[item["ocr_output"], item["corrected"]], label=1.0))
-            # Hard negative: pair with a different correct label
             negative = random.choice([d for d in train_data if d["corrected"] != item["corrected"]]) if len(set(d["corrected"] for d in train_data)) > 1 else item
             train_examples.append(InputExample(texts=[item["ocr_output"], negative["corrected"]], label=0.0))
     
-    train_dataloader = DataLoader(train_examples, shuffle=True, batch_size=1 if len(train_examples) <= 5 else 16)
+    train_dataloader = DataLoader(train_examples, shuffle=True, batch_size=1 if len(train_examples) <= 5 else 8)
     train_loss = losses.CosineSimilarityLoss(model)
     
     try:
         model.fit(
             train_objectives=[(train_dataloader, train_loss)],
             epochs=epochs,
-            warmup_steps=10 if len(train_examples) <= 5 else 100,
-            optimizer_params={'lr': 1e-5},  # Lower LR for better convergence
+            warmup_steps=10 if len(train_examples) <= 5 else 50,
+            optimizer_params={'lr': 1e-5},
             show_progress_bar=True,
             callback=TrainingCallback(st_placeholder)
         )
         logger.info("Fine-tuning completed")
         
-        temp_dir = tempfile.mkdtemp()
+        # Clear existing MODEL_PATH to avoid conflicts
+        if os.path.exists(MODEL_PATH):
+            try:
+                shutil.rmtree(MODEL_PATH, ignore_errors=True)
+                logger.info(f"Cleared existing directory: {MODEL_PATH}")
+            except Exception as e:
+                logger.error(f"Failed to clear {MODEL_PATH}: {str(e)}")
+        
+        # Ensure MODEL_PATH directory exists
+        os.makedirs(MODEL_PATH, exist_ok=True)
+        logger.info(f"Created directory: {MODEL_PATH}")
+        
+        # Check write permissions
+        if not os.access(MODEL_PATH, os.W_OK):
+            logger.error(f"No write permissions for {MODEL_PATH}")
+            return model  # Fallback to in-memory model
+        
         for attempt in range(3):
             try:
-                model.save(temp_dir, safe_serialization=True)
-                if os.path.exists(MODEL_PATH):
-                    shutil.rmtree(MODEL_PATH, ignore_errors=True)
-                shutil.move(temp_dir, MODEL_PATH)
+                model.save(MODEL_PATH, safe_serialization=False)
                 logger.info(f"Saved model to {MODEL_PATH}")
                 model = SentenceTransformer(MODEL_PATH)
                 logger.info(f"Reloaded model from {MODEL_PATH}")
                 return model
             except Exception as e:
-                logger.warning(f"Attempt {attempt + 1} failed to save model: {str(e)}. Retrying...")
-                time.sleep(1)
-        logger.error("Failed to save model after 3 attempts.")
-        raise RuntimeError("Model saving failed")
+                logger.error(f"Attempt {attempt + 1} failed to save model: {str(e)}")
+                time.sleep(2)  # Increased delay for antivirus
+        logger.warning("Failed to save model after 3 attempts. Returning in-memory model.")
+        return model
     except Exception as e:
         logger.error(f"Error during fine-tuning: {str(e)}")
         raise
 
 def load_or_train_model(model_name='sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2', st_placeholder=None):
     """Load or fine-tune MiniLM model, generating dataset only when needed."""
-    if os.path.exists(MODEL_PATH):
-        logger.info(f"Loading pre-trained model from {MODEL_PATH}")
+    try:
+        if os.path.exists(MODEL_PATH):
+            logger.info(f"Loading pre-trained model from {MODEL_PATH}")
+            try:
+                model = SentenceTransformer(MODEL_PATH)
+                logger.info("Successfully loaded model from disk")
+                return model
+            except Exception as e:
+                logger.warning(f"Failed to load model from {MODEL_PATH}: {str(e)}. Fine-tuning new model.")
+        
+        logger.info(f"No pre-trained model found at {MODEL_PATH}, loading model from Hugging Face")
         try:
-            model = SentenceTransformer(MODEL_PATH)
-        except Exception as e:
-            logger.warning(f"Failed to load model from {MODEL_PATH}: {str(e)}. Fine-tuning new model.")
-            dataset = generate_dataset(n_per_class=DEFAULT_N_PER_CLASS)
-            train_data, _ = train_test_split(dataset, test_size=0.2, random_state=42)
             model = SentenceTransformer(model_name)
-            model = fine_tune_model(model, train_data, epochs=3, st_placeholder=st_placeholder)
-    else:
-        logger.info(f"No pre-trained model found at {MODEL_PATH}, fine-tuning new model")
+            logger.info(f"Loaded model {model_name} from Hugging Face")
+        except Exception as e:
+            logger.error(f"Failed to load model {model_name}: {str(e)}")
+            raise
+        
         dataset = generate_dataset(n_per_class=DEFAULT_N_PER_CLASS)
         train_data, _ = train_test_split(dataset, test_size=0.2, random_state=42)
-        model = SentenceTransformer(model_name)
-        model = fine_tune_model(model, train_data, epochs=3, st_placeholder=st_placeholder)
-    return model
+        model = fine_tune_model(model, train_data, epochs=1, st_placeholder=st_placeholder)
+        return model
+    except Exception as e:
+        logger.error(f"Error in load_or_train_model: {str(e)}")
+        raise
 
 def update_faiss_index(model, index, valid_values):
     """Update FAISS index with label embeddings."""
@@ -151,14 +168,15 @@ def update_faiss_index(model, index, valid_values):
 def test_model(model, index, labels):
     """Test model accuracy on known inputs."""
     test_cases = [
-        
-        {"input": "căn cuoc công dan", "expected": "Căn cước công dân"},
+        {"input": "can cuoc cong dan", "expected": "Căn cước công dân"},
+        {"input": "chung minh nhan dan", "expected": "Chứng minh nhân dân"},
+        {"input": "hop dong lao dong", "expected": "Hợp đồng lao động"},
     ]
     results = []
     for case in test_cases:
         input_text = case["input"]
         expected = case["expected"]
-        processed_input = input_text  # Preprocessing handled by model
+        processed_input = input_text
         ocr_embedding = model.encode([processed_input])[0]
         ocr_embedding = np.array([ocr_embedding], dtype=np.float32)
         faiss.normalize_L2(ocr_embedding)

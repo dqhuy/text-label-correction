@@ -17,6 +17,7 @@ logger = logging.getLogger(__name__)
 
 MODEL_PATH = "trained_model"
 DEFAULT_N_PER_CLASS = 100
+
 def detect_abbreviation(term, label):
     """Detect if term is an abbreviation of label."""
     term = term.upper().replace(" ", "")
@@ -29,10 +30,16 @@ def initialize_session_state():
     if 'model' not in st.session_state:
         with st.status("Initializing OCR Correction System...", expanded=True) as status:
             st.write("Loading or training model...")
-            st.session_state.model = load_or_train_model(st_placeholder=st.empty())
+            try:
+                st.session_state.model = load_or_train_model(st_placeholder=st.empty())
+            except Exception as e:
+                st.error(f"Failed to initialize model: {str(e)}. Please check logs and ensure write permissions for {MODEL_PATH}.")
+                logger.error(f"Model initialization failed: {str(e)}")
+                status.update(label="Initialization failed!", state="error")
+                return
             dimension = 384
             st.write("Setting up FAISS index...")
-            st.session_state.index = faiss.IndexFlatL2(dimension)  # Use basic IndexFlatL2
+            st.session_state.index = faiss.IndexFlatL2(dimension)
             valid_values = get_all_labels()
             st.session_state.valid_values = valid_values
             st.write("Updating FAISS index...")
@@ -42,22 +49,21 @@ def initialize_session_state():
 def main():
     st.title("OCR Correction System v1.1")
     
-    # Initialize session state with progress
     initialize_session_state()
+    if 'model' not in st.session_state:
+        return
 
-    # Assign variables after session state initialization
     model = st.session_state.model
     index = st.session_state.index
     valid_values = st.session_state.valid_values
     labels = st.session_state.labels
 
-    # Sidebar for navigation
     st.sidebar.title("Navigation")
     page = st.sidebar.radio("Go to", ["Demo", "Admin"])
 
     if page == "Demo":
         st.header("Demo: Predict Corrected Value")
-        input_text = st.text_input("Enter OCR text (e.g., 'Căn cuoc')")
+        input_text = st.text_input("Enter incorected OCR text (e.g., 'Căn cuoc cong dam')")
         if st.button("Predict"):
             if input_text:
                 start_time = time.time()
@@ -67,16 +73,13 @@ def main():
                 faiss.normalize_L2(ocr_embedding)
                 distances, indices = index.search(ocr_embedding, k=1)
                 predicted_value = labels[indices[0][0]]
-                confidence = min(max((1 - distances[0][0] / 2) * 100, 0.0), 100.0)  # Adjust for L2 distance
+                confidence = min(max((1 - distances[0][0] / 2) * 100, 0.0), 100.0)
                 elapsed_time = time.time() - start_time
-                # Log prediction to console
                 logger.info(f"Prediction: Input='{input_text}' -> Predicted='{predicted_value}' "
                            f"(Confidence: {confidence:.2f}%, Time: {elapsed_time:.4f}s)")
-                # Display on GUI
                 st.success(f"**Predicted**: {predicted_value} (Confidence: {confidence:.2f}%)")
                 st.write(f"**Prediction Time**: {elapsed_time:.4f} seconds")
                 
-                # Auto-detect abbreviation
                 detected = [(v["label"], v["category"]) for v in valid_values if detect_abbreviation(input_text, v["label"])]
                 if detected:
                     st.subheader("Detected Abbreviations")
@@ -226,23 +229,21 @@ def main():
                 if os.path.exists(MODEL_PATH):
                     shutil.rmtree(MODEL_PATH, ignore_errors=True)
                     logger.info(f"Deleted trained model at {MODEL_PATH}")
-                # Clear session state
                 for key in ['model', 'index', 'valid_values', 'labels']:
                     if key in st.session_state:
                         del st.session_state[key]
                 st.success("Training data cleared. Please retrain the model.")
-                # Reinitialize session state
                 initialize_session_state()
-                # Update local variables
-                st.session_state.model = st.session_state.model
-                st.session_state.index = st.session_state.index
-                st.session_state.valid_values = st.session_state.valid_values
-                st.session_state.labels = st.session_state.labels
+                if 'model' in st.session_state:
+                    st.session_state.model = st.session_state.model
+                    st.session_state.index = st.session_state.index
+                    st.session_state.valid_values = st.session_state.valid_values
+                    st.session_state.labels = st.session_state.labels
 
         elif admin_task == "Retrain with Custom Label":
             st.subheader("Retrain with Custom Label")
             custom_label = st.text_input("Enter Label (e.g., Hợp đồng lao động)")
-            n_per_class = st.number_input("Number of Samples per Label", min_value=10, max_value=300, value=DEFAULT_N_PER_CLASS)
+            n_per_class = st.number_input("Number of Samples per Label", min_value=10, max_value=100, value=DEFAULT_N_PER_CLASS)
             categories = get_categories()
             if categories:
                 category_id = st.selectbox("Select Category for Label", 
@@ -251,41 +252,44 @@ def main():
                 if st.button("Retrain Model"):
                     if custom_label:
                         with st.status("Retraining Model...", expanded=True) as status:
-                            st.write("Generating dataset for new label...")
-                            dataset = generate_custom_dataset(custom_label, n_per_class=n_per_class, only_new_label=True)
-                            train_data, _ = train_test_split(dataset, test_size=0.2, random_state=42)
-                            st.write("Fine-tuning model with new label...")
-                            st.session_state.model = fine_tune_model(
-                                st.session_state.model, 
-                                train_data, 
-                                epochs=1,  # Fewer epochs for incremental training
-                                retrain=False,  # Incremental fine-tuning
-                                st_placeholder=st.empty()
-                            )
-                            st.write("Updating FAISS index...")
-                            # Add custom label to database if not exists
-                            add_label(custom_label, category_id, is_dynamic=0)
-                            valid_values = get_all_labels()
-                            st.session_state.valid_values = valid_values
-                            st.session_state.labels = update_faiss_index(
-                                st.session_state.model, 
-                                st.session_state.index, 
-                                valid_values
-                            )
-                            status.update(label="Retraining complete!", state="complete")
-                        st.success(f"Model fine-tuned with {n_per_class} samples for '{custom_label}'")
-                        # Update local variables
-                        model = st.session_state.model
-                        index = st.session_state.index
-                        valid_values = st.session_state.valid_values
-                        labels = st.session_state.labels
+                            try:
+                                st.write("Generating dataset for new label...")
+                                dataset = generate_custom_dataset(custom_label, n_per_class=n_per_class, only_new_label=True)
+                                train_data, _ = train_test_split(dataset, test_size=0.2, random_state=42)
+                                st.write("Fine-tuning model with new label...")
+                                st.session_state.model = fine_tune_model(
+                                    st.session_state.model, 
+                                    train_data, 
+                                    epochs=1,
+                                    retrain=False,
+                                    st_placeholder=st.empty()
+                                )
+                                st.write("Updating FAISS index...")
+                                add_label(custom_label, category_id, is_dynamic=0)
+                                valid_values = get_all_labels()
+                                st.session_state.valid_values = valid_values
+                                st.session_state.labels = update_faiss_index(
+                                    st.session_state.model, 
+                                    st.session_state.index, 
+                                    valid_values
+                                )
+                                status.update(label="Retraining complete!", state="complete")
+                                st.success(f"Model fine-tuned with {n_per_class} samples for '{custom_label}'")
+                            except Exception as e:
+                                st.error(f"Failed to retrain model: {str(e)}. Please check logs and ensure write permissions for {MODEL_PATH}.")
+                                logger.error(f"Retraining failed: {str(e)}")
+                                status.update(label="Retraining failed!", state="error")
+                                return
+                            model = st.session_state.model
+                            index = st.session_state.index
+                            valid_values = st.session_state.valid_values
+                            labels = st.session_state.labels
                     else:
                         st.error("Please enter a label.")
             else:
                 st.error("No categories available. Add a category first.")
 
 if __name__ == "__main__":
-    # Populate initial data
     init_db()
     conn = sqlite3.connect(DB_PATH)
     c = conn.cursor()
@@ -294,7 +298,7 @@ if __name__ == "__main__":
         c.execute("INSERT OR IGNORE INTO categories (name) VALUES (?)", (cat,))
     initial_labels = [
         ("Căn cước công dân", "Tài liệu", 0),
-        ("Chứng minh nhân dân", "Tài liệu", 0)
+        ("Chứng minh nhân dân", "Tài liệu", 0),
     ]
     for value, cat, is_dynamic in initial_labels:
         c.execute("SELECT id FROM categories WHERE name = ?", (cat,))
@@ -303,7 +307,7 @@ if __name__ == "__main__":
                   (value, cat_id, is_dynamic))
     initial_abbrs = [
         ("CCCD", "Căn cước công dân", "Tài liệu"),
-        ("CMND", "Chứng minh nhân dân", "Tài liệu")
+        ("CMND", "Chứng minh nhân dân", "Tài liệu"),
     ]
     for abbr, full_form, cat in initial_abbrs:
         c.execute("SELECT id FROM categories WHERE name = ?", (cat,))
