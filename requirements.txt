@@ -6,3 +6,4 @@ scikit-learn
 torch
 pandas
 datasets
+huggingface_hub[hf_xet]
