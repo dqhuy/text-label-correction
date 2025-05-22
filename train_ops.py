@@ -12,7 +12,7 @@ import time
 from datetime import datetime
 from collections import Counter
 from typing import List
-from db_ops import get_all_labels
+from db_ops import get_all_labels, save_training_session
 from vietnamese_error_simulation import generate_vietnamese_errors
 import json
 
@@ -198,7 +198,7 @@ def fine_tune_model(model, train_data, test_data, epochs=1, retrain=False, st_pl
         
         for attempt in range(3):
             try:
-                logger.info(f"Save model to {model_path}")
+                logger.debug(f"Attempt {attempt + 1} to save model to {model_path}")
                 model.save(model_path, safe_serialization=False)
                 logger.info(f"Saved model to {model_path}")
                 model = SentenceTransformer(model_path)
@@ -286,10 +286,10 @@ def load_or_train_model(model_name='sentence-transformers/paraphrase-multilingua
         if end_time:
             labels = dict(Counter(item["corrected"] for item in train_data))
             try:
-                from db_ops import save_training_session
                 save_training_session(start_time, end_time, labels, validation_results, get_latest_model_path())
+                logger.info(f"Saved initial training session: start={start_time}")
             except Exception as e:
-                logger.error(f"Failed to save training session, continuing with in-memory model: {str(e)}")
+                logger.error(f"Failed to save initial training session: {str(e)}")
         return model
     except Exception as e:
         logger.error(f"Error in load_or_train_model: {str(e)}")

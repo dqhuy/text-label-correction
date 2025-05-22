@@ -1,3 +1,4 @@
+import shutil
 import sqlite3
 import logging
 import os
@@ -179,31 +180,22 @@ def delete_abbreviation(abbr_id):
 def preprocess_input(text):
     """Preprocess input using abbreviation mappings and normalization."""
     text = text.lower()
-    normalization_map = {
-        'viet nam': 'Việt Nam',
-        'vietnam': 'Việt Nam',
-        'ha noi': 'Hà Nội',
-        'hanoi': 'Hà Nội',
-        'can cuoc cong dan': 'Căn cước công dân',
-        'chung minh nhan dan': 'Chứng minh nhân dân',
-        'hop dong dan su': 'Hợp đồng dân sự',
-        'hop dong lao dong': 'Hợp đồng lao động',
-    }
-    normalized_text = normalization_map.get(text, text)
     conn = sqlite3.connect(DB_PATH)
     c = conn.cursor()
     c.execute("SELECT abbr, full_form FROM abbreviations")
     abbr_map = {row[0].lower(): row[1] for row in c.fetchall()}
     conn.close()
-    return abbr_map.get(normalized_text, normalized_text)
+    return abbr_map.get(text, text)
 
 def save_training_session(start_time, end_time, labels, validation_results, model_path):
     """Save a training session to the database."""
     conn = sqlite3.connect(DB_PATH)
     c = conn.cursor()
     try:
+        labels_json = json.dumps(labels, ensure_ascii=False)
+        validation_results_json = json.dumps(validation_results, ensure_ascii=False)
         c.execute("INSERT INTO training_sessions (start_time, end_time, labels, validation_results, model_path) VALUES (?, ?, ?, ?, ?)",
-                  (start_time, end_time, json.dumps(labels), json.dumps(validation_results, cls=NumpyEncoder), model_path))
+                  (start_time, end_time, labels_json, validation_results_json, model_path))
         conn.commit()
         logger.info(f"Saved training session: {model_path}")
     except Exception as e:
