@@ -1,9 +1,10 @@
 import sqlite3
 import logging
 import os
-import random
-import re
+import json
+import numpy as np
 from typing import List
+from vietnamese_error_simulation import generate_vietnamese_errors
 
 # Set up logging
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
@@ -11,103 +12,16 @@ logger = logging.getLogger(__name__)
 
 DB_PATH = "db/labels.db"
 
-def generate_vietnamese_errors(text: str, num_variants: int = 1) -> str:
-    """
-    Tạo một biến thể có lỗi của chuỗi tiếng Việt đầu vào, mô phỏng lỗi gõ phím và OCR
-    
-    Args:
-        text: Chuỗi tiếng Việt đầu vào
-        num_variants: Số lượng biến thể lỗi cần tạo (mặc định 1 để tương thích với dataset generation)
-    
-    Returns:
-        Một chuỗi có chứa lỗi
-    """
-    # Các cặp ký tự dễ nhầm lẫn trong tiếng Việt
-    VIETNAMESE_ERROR_PAIRS = [
-        ('ă', 'aw'), ('ă', 'a'), ('ă', 'â'),
-        ('â', 'aa'), ('â', 'a'), ('â', 'ă'),
-        ('đ', 'dd'), ('đ', 'd'),
-        ('ê', 'ee'), ('ê', 'e'),
-        ('ô', 'oo'), ('ô', 'o'),
-        ('ơ', 'ow'), ('ơ', 'o'), ('ơ', 'ô'),
-        ('ư', 'uw'), ('ư', 'u'),
-        ('s', 'x'), ('x', 's'),
-        ('ch', 'c'), ('ch', 'tr'), ('tr', 'ch'),
-        ('gi', 'd'), ('gi', 'r'), ('d', 'gi'), ('r', 'gi'),
-        ('n', 'l'), ('l', 'n'),
-        ('i', 'y'), ('y', 'i'),
-        ('c', 'k'), ('k', 'c'), ('q', 'k'),
-        ('ph', 'f'), ('f', 'ph'),
-        ('g', 'gh'), ('gh', 'g'),
-        ('ng', 'ngh'), ('ngh', 'ng'),
-    ]
-    
-    # Các ký tự dễ nhầm lẫn trong OCR
-    OCR_ERROR_PAIRS = [
-        ('a', 'o'), ('o', 'a'), ('o', 'c'), ('c', 'o'),
-        ('e', 'c'), ('c', 'e'), ('b', 'h'), ('h', 'b'),
-        ('d', 'cl'), ('cl', 'd'), ('m', 'n'), ('n', 'm'),
-        ('u', 'v'), ('v', 'u'), ('w', 'vv'), ('i', 'l'),
-        ('t', 'f'), ('f', 't'), ('g', 'q'), ('q', 'g'),
-    ]
-    
-    variants = []
-    
-    for _ in range(num_variants):
-        # Chọn ngẫu nhiên số lỗi (1-3 lỗi mỗi chuỗi)
-        num_errors = random.randint(1, 3)
-        corrupted = list(text.lower())
-        
-        for __ in range(num_errors):
-            if len(corrupted) == 0:
-                break
-                
-            # Chọn ngẫu nhiên vị trí để thêm lỗi
-            pos = random.randint(0, len(corrupted)-1)
-            char = corrupted[pos]
-            
-            # 50% lỗi tiếng Việt, 50% lỗi OCR
-            if random.random() < 0.5:
-                # Lỗi tiếng Việt
-                for pair in VIETNAMESE_ERROR_PAIRS:
-                    if char in pair:
-                        # Thay thế bằng ký tự dễ nhầm
-                        replacement = pair[1] if pair[0] == char else pair[0]
-                        # Đôi khi thêm/ghép ký tự
-                        if random.random() < 0.3 and len(replacement) == 1:
-                            replacement = replacement * random.randint(1, 2)
-                        corrupted[pos] = replacement
-                        break
-            else:
-                # Lỗi OCR
-                for pair in OCR_ERROR_PAIRS:
-                    if char in pair:
-                        replacement = pair[1] if pair[0] == char else pair[0]
-                        corrupted[pos] = replacement
-                        break
-                
-            # Đôi khi xóa hoặc thêm ký tự (10% xác suất)
-            if random.random() < 0.1:
-                if random.random() < 0.5 and len(corrupted) > 1:
-                    # Xóa ký tự
-                    del corrupted[pos]
-                else:
-                    # Thêm ký tự ngẫu nhiên
-                    random_char = random.choice(['a', 'e', 'o', 'd', 'm', 'n', 'g', 'h'])
-                    corrupted.insert(pos, random_char)
-        
-        # Ghép lại thành chuỗi và thêm vào danh sách
-        variant = ''.join(corrupted)
-        
-        # Đôi khi thêm khoảng trắng ngẫu nhiên (10% xác suất)
-        if random.random() < 0.1:
-            space_pos = random.randint(1, len(variant)-1)
-            variant = variant[:space_pos] + ' ' + variant[space_pos:]
-        
-        variants.append(variant)
-    
-    # Trả về một biến thể ngẫu nhiên để tương thích với generate_dataset
-    return random.choice(variants) if variants else text
+class NumpyEncoder(json.JSONEncoder):
+    """Custom JSON encoder to handle NumPy types."""
+    def default(self, obj):
+        if isinstance(obj, np.floating):
+            return float(obj)
+        if isinstance(obj, np.integer):
+            return int(obj)
+        if isinstance(obj, np.ndarray):
+            return obj.tolist()
+        return super().default(obj)
 
 def init_db():
     """Initialize SQLite database with required tables."""
@@ -138,6 +52,14 @@ def init_db():
         category_id INTEGER NOT NULL,
         FOREIGN KEY (category_id) REFERENCES categories(id),
         UNIQUE(abbr, category_id)
+    )''')
+    c.execute('''CREATE TABLE IF NOT EXISTS training_sessions (
+        id INTEGER PRIMARY KEY AUTOINCREMENT,
+        start_time TEXT NOT NULL,
+        end_time TEXT NOT NULL,
+        labels TEXT NOT NULL,
+        validation_results TEXT NOT NULL,
+        model_path TEXT NOT NULL
     )''')
     conn.commit()
     conn.close()
@@ -257,7 +179,6 @@ def delete_abbreviation(abbr_id):
 def preprocess_input(text):
     """Preprocess input using abbreviation mappings and normalization."""
     text = text.lower()
-    # Normalization dictionary for common variations
     normalization_map = {
         'viet nam': 'Việt Nam',
         'vietnam': 'Việt Nam',
@@ -266,13 +187,57 @@ def preprocess_input(text):
         'can cuoc cong dan': 'Căn cước công dân',
         'chung minh nhan dan': 'Chứng minh nhân dân',
         'hop dong dan su': 'Hợp đồng dân sự',
+        'hop dong lao dong': 'Hợp đồng lao động',
     }
-    # Check normalization first
     normalized_text = normalization_map.get(text, text)
-    # Then check abbreviations from database
     conn = sqlite3.connect(DB_PATH)
     c = conn.cursor()
     c.execute("SELECT abbr, full_form FROM abbreviations")
     abbr_map = {row[0].lower(): row[1] for row in c.fetchall()}
     conn.close()
     return abbr_map.get(normalized_text, normalized_text)
+
+def save_training_session(start_time, end_time, labels, validation_results, model_path):
+    """Save a training session to the database."""
+    conn = sqlite3.connect(DB_PATH)
+    c = conn.cursor()
+    try:
+        c.execute("INSERT INTO training_sessions (start_time, end_time, labels, validation_results, model_path) VALUES (?, ?, ?, ?, ?)",
+                  (start_time, end_time, json.dumps(labels), json.dumps(validation_results, cls=NumpyEncoder), model_path))
+        conn.commit()
+        logger.info(f"Saved training session: {model_path}")
+    except Exception as e:
+        logger.error(f"Failed to save training session: {str(e)}")
+        raise
+    finally:
+        conn.close()
+
+def get_training_sessions():
+    """Retrieve all training sessions."""
+    conn = sqlite3.connect(DB_PATH)
+    c = conn.cursor()
+    c.execute("SELECT id, start_time, end_time, labels, validation_results, model_path FROM training_sessions")
+    sessions = [{"id": row[0], "start_time": row[1], "end_time": row[2], 
+                "labels": json.loads(row[3]), "validation_results": json.loads(row[4]), 
+                "model_path": row[5]} for row in c.fetchall()]
+    conn.close()
+    return sessions
+
+def delete_training_session(session_id):
+    """Delete a training session and its model directory."""
+    conn = sqlite3.connect(DB_PATH)
+    c = conn.cursor()
+    c.execute("SELECT model_path FROM training_sessions WHERE id = ?", (session_id,))
+    result = c.fetchone()
+    if result:
+        model_path = result[0]
+        try:
+            if os.path.exists(model_path):
+                shutil.rmtree(model_path, ignore_errors=True)
+                logger.info(f"Deleted model directory: {model_path}")
+            c.execute("DELETE FROM training_sessions WHERE id = ?", (session_id,))
+            conn.commit()
+            logger.info(f"Deleted training session ID {session_id}")
+        except Exception as e:
+            logger.error(f"Failed to delete training session ID {session_id}: {str(e)}")
+    conn.close()

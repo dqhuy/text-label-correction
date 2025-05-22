@@ -10,13 +10,14 @@ from db_ops import *
 from train_ops import load_or_train_model, update_faiss_index, test_model, generate_custom_dataset, fine_tune_model
 from sklearn.model_selection import train_test_split
 import logging
+from datetime import datetime
 
 # Set up logging
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 logger = logging.getLogger(__name__)
 
-MODEL_PATH = "trained_model"
-DEFAULT_N_PER_CLASS = 100
+MODEL_ROOT = "trained_model"
+DEFAULT_N_PER_CLASS = 50
 
 def detect_abbreviation(term, label):
     """Detect if term is an abbreviation of label."""
@@ -33,7 +34,7 @@ def initialize_session_state():
             try:
                 st.session_state.model = load_or_train_model(st_placeholder=st.empty())
             except Exception as e:
-                st.error(f"Failed to initialize model: {str(e)}. Please check logs and ensure write permissions for {MODEL_PATH}.")
+                st.error(f"Failed to initialize model: {str(e)}. Using in-memory model if available. Check logs and ensure write permissions for {MODEL_ROOT} and db/labels.db.")
                 logger.error(f"Model initialization failed: {str(e)}")
                 status.update(label="Initialization failed!", state="error")
                 return
@@ -47,7 +48,7 @@ def initialize_session_state():
             status.update(label="Initialization complete!", state="complete")
 
 def main():
-    st.title("OCR Correction System v1.1")
+    st.title("OCR Correction System v1.2")
     
     initialize_session_state()
     if 'model' not in st.session_state:
@@ -63,7 +64,7 @@ def main():
 
     if page == "Demo":
         st.header("Demo: Predict Corrected Value")
-        input_text = st.text_input("Enter incorected OCR text (e.g., 'Căn cuoc cong dam')")
+        input_text = st.text_input("Enter OCR text (e.g., 'Căn cuoc')")
         if st.button("Predict"):
             if input_text:
                 start_time = time.time()
@@ -97,7 +98,7 @@ def main():
                 st.error("Please enter text to predict.")
 
     elif page == "Admin":
-        st.header("Admin: Manage Categories, Labels, and Abbreviations")
+        st.header("Admin: Manage Categories, Labels, and Models")
         admin_task = st.selectbox("Select Task", [
             "View Categories", 
             "Add Category", 
@@ -105,7 +106,8 @@ def main():
             "Manage Abbreviations", 
             "Test Model", 
             "Clear Training Data",
-            "Retrain with Custom Label"
+            "Retrain with Custom Label",
+            "Manage Trained Models"
         ])
 
         if admin_task == "View Categories":
@@ -224,11 +226,17 @@ def main():
 
         elif admin_task == "Clear Training Data":
             st.subheader("Clear Training Data")
-            st.warning("This will delete the trained model and require retraining.")
+            st.warning("This will delete all trained models and require retraining.")
             if st.button("Clear Training Data"):
-                if os.path.exists(MODEL_PATH):
-                    shutil.rmtree(MODEL_PATH, ignore_errors=True)
-                    logger.info(f"Deleted trained model at {MODEL_PATH}")
+                if os.path.exists(MODEL_ROOT):
+                    shutil.rmtree(MODEL_ROOT, ignore_errors=True)
+                    logger.info(f"Deleted all models at {MODEL_ROOT}")
+                conn = sqlite3.connect(DB_PATH)
+                c = conn.cursor()
+                c.execute("DELETE FROM training_sessions")
+                conn.commit()
+                conn.close()
+                logger.info("Cleared training_sessions table")
                 for key in ['model', 'index', 'valid_values', 'labels']:
                     if key in st.session_state:
                         del st.session_state[key]
@@ -254,12 +262,12 @@ def main():
                         with st.status("Retraining Model...", expanded=True) as status:
                             try:
                                 st.write("Generating dataset for new label...")
-                                dataset = generate_custom_dataset(custom_label, n_per_class=n_per_class, only_new_label=True)
-                                train_data, _ = train_test_split(dataset, test_size=0.2, random_state=42)
+                                train_data, test_data = generate_custom_dataset(custom_label, n_per_class=n_per_class, only_new_label=True)
                                 st.write("Fine-tuning model with new label...")
-                                st.session_state.model = fine_tune_model(
+                                st.session_state.model, validation_results, start_time, end_time = fine_tune_model(
                                     st.session_state.model, 
                                     train_data, 
+                                    test_data,
                                     epochs=1,
                                     retrain=False,
                                     st_placeholder=st.empty()
@@ -273,10 +281,17 @@ def main():
                                     st.session_state.index, 
                                     valid_values
                                 )
+                                if end_time:
+                                    labels = dict(Counter(item["corrected"] for item in train_data))
+                                    try:
+                                        save_training_session(start_time, end_time, labels, validation_results, get_latest_model_path())
+                                    except Exception as e:
+                                        logger.error(f"Failed to save training session, continuing with in-memory model: {str(e)}")
                                 status.update(label="Retraining complete!", state="complete")
                                 st.success(f"Model fine-tuned with {n_per_class} samples for '{custom_label}'")
+                                st.write(f"Validation Accuracy: {validation_results['accuracy']:.2f}%")
                             except Exception as e:
-                                st.error(f"Failed to retrain model: {str(e)}. Please check logs and ensure write permissions for {MODEL_PATH}.")
+                                st.error(f"Failed to retrain model: {str(e)}. Please check logs and ensure write permissions for {MODEL_ROOT}.")
                                 logger.error(f"Retraining failed: {str(e)}")
                                 status.update(label="Retraining failed!", state="error")
                                 return
@@ -289,6 +304,33 @@ def main():
             else:
                 st.error("No categories available. Add a category first.")
 
+        elif admin_task == "Manage Trained Models":
+            st.subheader("Manage Trained Models")
+            sessions = get_training_sessions()
+            if sessions:
+                df = pd.DataFrame(sessions)
+                df["labels"] = df["labels"].apply(lambda x: ", ".join(f"{k}: {v}" for k, v in x.items()))
+                df["validation_accuracy"] = df["validation_results"].apply(lambda x: f"{x['accuracy']:.2f}%")
+                st.dataframe(df[["id", "start_time", "end_time", "labels", "validation_accuracy", "model_path"]])
+                
+                session_id = st.selectbox("Select Model to Delete", 
+                                        [s["id"] for s in sessions], 
+                                        format_func=lambda x: next(f"{s['start_time']} ({s['model_path']})" for s in sessions if s["id"] == x))
+                if st.button("Delete Model"):
+                    delete_training_session(session_id)
+                    st.success(f"Deleted model ID {session_id}")
+                    for key in ['model', 'index', 'valid_values', 'labels']:
+                        if key in st.session_state:
+                            del st.session_state[key]
+                    initialize_session_state()
+                    if 'model' in st.session_state:
+                        st.session_state.model = st.session_state.model
+                        st.session_state.index = st.session_state.index
+                        st.session_state.valid_values = st.session_state.valid_values
+                        st.session_state.labels = st.session_state.labels
+            else:
+                st.write("No trained models available.")
+
 if __name__ == "__main__":
     init_db()
     conn = sqlite3.connect(DB_PATH)
@@ -299,6 +341,7 @@ if __name__ == "__main__":
     initial_labels = [
         ("Căn cước công dân", "Tài liệu", 0),
         ("Chứng minh nhân dân", "Tài liệu", 0),
+        ("Hợp đồng lao động", "Tài liệu", 0),
     ]
     for value, cat, is_dynamic in initial_labels:
         c.execute("SELECT id FROM categories WHERE name = ?", (cat,))
@@ -308,6 +351,7 @@ if __name__ == "__main__":
     initial_abbrs = [
         ("CCCD", "Căn cước công dân", "Tài liệu"),
         ("CMND", "Chứng minh nhân dân", "Tài liệu"),
+        ("HDLD", "Hợp đồng lao động", "Tài liệu"),
     ]
     for abbr, full_form, cat in initial_abbrs:
         c.execute("SELECT id FROM categories WHERE name = ?", (cat,))
