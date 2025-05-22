@@ -3,7 +3,7 @@ sentence-transformers
 faiss-cpu
 numpy
 scikit-learn
-torch
+torch==2.6.0
 pandas
 datasets
 huggingface_hub[hf_xet]
