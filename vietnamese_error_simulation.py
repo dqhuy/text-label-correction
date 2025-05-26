@@ -58,7 +58,7 @@ def generate_vietnamese_errors(text: str, num_variants: int = 5) -> List[str]:
             char = corrupted[pos]
             
             # 50% lỗi tiếng Việt, 50% lỗi OCR
-            if random.random() < 0.5:
+            if random.random() <= 0.5:
                 # Lỗi tiếng Việt
                 for pair in VIETNAMESE_ERROR_PAIRS:
                     if char in pair:
@@ -77,8 +77,8 @@ def generate_vietnamese_errors(text: str, num_variants: int = 5) -> List[str]:
                         corrupted[pos] = replacement
                         break
                 
-            # Đôi khi xóa hoặc thêm ký tự (10% xác suất)
-            if random.random() < 0.1:
+            # Đôi khi xóa hoặc thêm ký tự (30% xác suất)
+            if random.random() <= 0.3:
                 if random.random() < 0.5 and len(corrupted) > 1:
                     # Xóa ký tự
                     del corrupted[pos]
@@ -91,7 +91,7 @@ def generate_vietnamese_errors(text: str, num_variants: int = 5) -> List[str]:
         variant = ''.join(corrupted)
         
         # Đôi khi thêm khoảng trắng ngẫu nhiên (10% xác suất)
-        if random.random() < 0.1:
+        if random.random() <= 0.2:
             space_pos = random.randint(1, len(variant)-1)
             variant = variant[:space_pos] + ' ' + variant[space_pos:]
         
