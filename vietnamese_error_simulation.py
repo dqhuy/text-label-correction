@@ -1,104 +1,244 @@
 import random
 import re
-from typing import List
+import unicodedata
+import logging
 
-def generate_vietnamese_errors(text: str, num_variants: int = 5) -> List[str]:
+logger = logging.getLogger(__name__)
+
+def generate_vietnamese_errors(text, n_samples=5):
     """
-    Tạo các biến thể có lỗi của chuỗi tiếng Việt đầu vào, mô phỏng lỗi gõ phím và OCR
+    Generate error variants for Vietnamese text covering multiple error types.
+    Ensures exactly 1 variant for 'remove_tones' and at least 5 variants for each other error type.
+    Preserves the original case of the input text.
     
     Args:
-        text: Chuỗi tiếng Việt đầu vào
-        num_variants: Số lượng biến thể lỗi cần tạo
+        text (str): The input text to generate errors for (e.g., 'Căn cước công dân').
+        n_samples (int): Number of error variants to generate (default: 5, minimum 31).
     
     Returns:
-        Danh sách các chuỗi có chứa lỗi
+        list: List of unique error variants.
     """
-    # Các cặp ký tự dễ nhầm lẫn trong tiếng Việt
-    VIETNAMESE_ERROR_PAIRS = [
-        ('ă', 'aw'), ('ă', 'a'), ('ă', 'â'),
-        ('â', 'aa'), ('â', 'a'), ('â', 'ă'),
-        ('đ', 'dd'), ('đ', 'd'),
-        ('ê', 'ee'), ('ê', 'e'),
-        ('ô', 'oo'), ('ô', 'o'),
-        ('ơ', 'ow'), ('ơ', 'o'), ('ơ', 'ô'),
-        ('ư', 'uw'), ('ư', 'u'),
-        ('s', 'x'), ('x', 's'),
-        ('ch', 'c'), ('ch', 'tr'), ('tr', 'ch'),
-        ('gi', 'd'), ('gi', 'r'), ('d', 'gi'), ('r', 'gi'),
-        ('n', 'l'), ('l', 'n'),
-        ('i', 'y'), ('y', 'i'),
-        ('c', 'k'), ('k', 'c'), ('q', 'k'),
-        ('ph', 'f'), ('f', 'ph'),
-        ('g', 'gh'), ('gh', 'g'),
-        ('ng', 'ngh'), ('ngh', 'ng'),
-    ]
+    if not text or n_samples < 1:
+        logger.warning(f"Invalid input: text='{text}', n_samples={n_samples}")
+        return []
     
-    # Các ký tự dễ nhầm lẫn trong OCR
-    OCR_ERROR_PAIRS = [
-        ('a', 'o'), ('o', 'a'), ('o', 'c'), ('c', 'o'),
-        ('e', 'c'), ('c', 'e'), ('b', 'h'), ('h', 'b'),
-        ('d', 'cl'), ('cl', 'd'), ('m', 'n'), ('n', 'm'),
-        ('u', 'v'), ('v', 'u'), ('w', 'vv'), ('i', 'l'),
-        ('t', 'f'), ('f', 't'), ('g', 'q'), ('q', 'g'),
-    ]
+    variants = set()
+    text = text.strip()
     
-    variants = []
+    # Vietnamese tone marks and their base characters (includes both cases)
+    tone_map = {
+        'À': 'A', 'Á': 'A', 'Ả': 'A', 'Ã': 'A', 'Ạ': 'A',
+        'à': 'a', 'á': 'a', 'ả': 'a', 'ã': 'a', 'ạ': 'a',
+        'È': 'E', 'É': 'E', 'Ẻ': 'E', 'Ẽ': 'E', 'Ẹ': 'E',
+        'è': 'e', 'é': 'e', 'ẻ': 'e', 'ẽ': 'e', 'ẹ': 'e',
+        'Ì': 'I', 'Í': 'I', 'Ỉ': 'I', 'Ĩ': 'I', 'Ị': 'I',
+        'ì': 'i', 'í': 'i', 'ỉ': 'i', 'ĩ': 'i', 'ị': 'i',
+        'Ò': 'O', 'Ó': 'O', 'Ỏ': 'O', 'Õ': 'O', 'Ọ': 'O',
+        'ò': 'o', 'ó': 'o', 'ỏ': 'o', 'õ': 'o', 'ọ': 'o',
+        'Ù': 'U', 'Ú': 'U', 'Ủ': 'U', 'Ũ': 'U', 'Ụ': 'U',
+        'ù': 'u', 'ú': 'u', 'ủ': 'u', 'ũ': 'u', 'ụ': 'u',
+        'Ỳ': 'Y', 'Ý': 'Y', 'Ỷ': 'Y', 'Ỹ': 'Y', 'Ỵ': 'Y',
+        'ỳ': 'y', 'ý': 'y', 'ỷ': 'y', 'ỹ': 'y', 'ỵ': 'y',
+        'Â': 'A', 'Ê': 'E', 'Ô': 'O',
+        'â': 'a', 'ê': 'e', 'ô': 'o',
+        'Ằ': 'A', 'Ắ': 'A', 'Ẳ': 'A', 'Ẵ': 'A', 'Ặ': 'A',
+        'ằ': 'a', 'ắ': 'a', 'ẳ': 'a', 'ẵ': 'a', 'ặ': 'a',
+        'Ờ': 'O', 'Ớ': 'O', 'Ở': 'O', 'Ỡ': 'O', 'Ợ': 'O',
+        'ờ': 'o', 'ớ': 'o', 'ở': 'o', 'ỡ': 'o', 'ợ': 'o',
+        'Ư': 'U', 'Ừ': 'U', 'Ứ': 'U', 'Ử': 'U', 'Ữ': 'U', 'Ự': 'U',
+        'ư': 'u', 'ừ': 'u', 'ứ': 'u', 'ử': 'u', 'ữ': 'u', 'ự': 'u',
+        'Đ': 'D', 'đ': 'd'
+    }
     
-    for _ in range(num_variants):
-        # Chọn ngẫu nhiên số lỗi (1-3 lỗi mỗi chuỗi)
-        num_errors = random.randint(1, 3)
-        corrupted = list(text.lower())
-        
-        for __ in range(num_errors):
-            if len(corrupted) == 0:
-                break
-                
-            # Chọn ngẫu nhiên vị trí để thêm lỗi
-            pos = random.randint(0, len(corrupted)-1)
-            char = corrupted[pos]
-            
-            # 50% lỗi tiếng Việt, 50% lỗi OCR
-            if random.random() <= 0.5:
-                # Lỗi tiếng Việt
-                for pair in VIETNAMESE_ERROR_PAIRS:
-                    if char in pair:
-                        # Thay thế bằng ký tự dễ nhầm
-                        replacement = pair[1] if pair[0] == char else pair[0]
-                        # Đôi khi thêm/ghép ký tự
-                        if random.random() < 0.3 and len(replacement) == 1:
-                            replacement = replacement * random.randint(1, 2)
-                        corrupted[pos] = replacement
-                        break
+    # Inverse tone map for changing tones
+    tone_groups = {}
+    for toned, base in tone_map.items():
+        if base not in tone_groups:
+            tone_groups[base] = []
+        tone_groups[base].append(toned)
+    
+    # Similar-looking character substitutions (both cases)
+    visual_similar = {
+        'A': ['Ă', 'Â', '4', '@'], 'a': ['ă', 'â', '4', '@'],
+        'D': ['Đ', 'B', 'P'], 'd': ['đ', 'b', 'p'],
+        'O': ['Ô', 'Ơ', '0', 'Q'], 'o': ['ô', 'ơ', '0', 'q'],
+        'U': ['Ư', 'V', 'W'], 'u': ['ư', 'v', 'w'],
+        'I': ['1', 'L', '!'], 'i': ['1', 'l', '!'],
+        'S': ['5', 'Z', '$'], 's': ['5', 'z', '$'],
+        'G': ['9', 'Q'], 'g': ['9', 'q'],
+        'T': ['7', '+'], 't': ['7', '+'],
+        'N': ['M', 'H'], 'n': ['m', 'h'],
+        'E': ['3', '€'], 'e': ['3', '€']
+    }
+    
+    # Common Vietnamese spelling mistakes (both cases)
+    spelling_mistakes = {
+        'C': ['K'], 'c': ['k'],
+        'CH': ['TR'], 'ch': ['tr'],
+        'TR': ['CH'], 'tr': ['ch'],
+        'GI': ['D', 'R'], 'gi': ['d', 'r'],
+        'D': ['GI', 'Z'], 'd': ['gi', 'z'],
+        'PH': ['F'], 'ph': ['f'],
+        'U': ['Ô', 'O'], 'u': ['ô', 'o'],
+        'Ô': ['U', 'O'], 'ô': ['u', 'o'],
+        'NG': ['N', 'M'], 'ng': ['n', 'm'],
+        'N': ['NG', 'M'], 'n': ['ng', 'm'],
+        'NH': ['N'], 'nh': ['n'],
+        'T': ['TH'], 't': ['th'],
+        'TH': ['T'], 'th': ['t']
+    }
+    
+    # Noise characters for handwriting/font errors
+    noise_chars = ['~', '`', '^', '*', '#', '(', ')']
+    
+    def remove_tones(s):
+        """Remove all tone marks (e.g., 'Căn cước' → 'Can cuoc')."""
+        result = ''
+        for char in unicodedata.normalize('NFD', s):
+            if char in tone_map:
+                result += tone_map[char]
             else:
-                # Lỗi OCR
-                for pair in OCR_ERROR_PAIRS:
-                    if char in pair:
-                        replacement = pair[1] if pair[0] == char else pair[0]
-                        corrupted[pos] = replacement
-                        break
-                
-            # Đôi khi xóa hoặc thêm ký tự (30% xác suất)
-            if random.random() <= 0.3:
-                if random.random() < 0.5 and len(corrupted) > 1:
-                    # Xóa ký tự
-                    del corrupted[pos]
-                else:
-                    # Thêm ký tự ngẫu nhiên
-                    random_char = random.choice(['a', 'e', 'o', 'd', 'm', 'n', 'g', 'h'])
-                    corrupted.insert(pos, random_char)
-        
-        # Ghép lại thành chuỗi và thêm vào danh sách
-        variant = ''.join(corrupted)
-        
-        # Đôi khi thêm khoảng trắng ngẫu nhiên (10% xác suất)
-        if random.random() <= 0.2:
-            space_pos = random.randint(1, len(variant)-1)
-            variant = variant[:space_pos] + ' ' + variant[space_pos:]
-        
-        variants.append(variant)
+                result += char
+        return unicodedata.normalize('NFC', result)
     
-    return variants
-
+    def random_tone_change(s):
+        """Randomly change or remove tone marks (e.g., 'Căn' → 'Cẫn', 'Can')."""
+        chars = list(s)
+        for i, char in enumerate(chars):
+            if char in tone_map and random.random() < 0.5:
+                base_char = tone_map[char]
+                if random.random() < 0.5:
+                    chars[i] = base_char  # Remove tone
+                else:
+                    possible_tones = [t for t in tone_groups.get(base_char, []) if t != char]
+                    if possible_tones:
+                        chars[i] = random.choice(possible_tones)  # Change tone
+        return ''.join(chars)
+    
+    def space_error(s):
+        """Add or remove spaces randomly (e.g., 'Căn cước' → 'Căncuoc', 'Căn  cước')."""
+        words = s.split()
+        if not words:
+            return s
+        if random.random() < 0.5:
+            # Remove spaces
+            return ''.join(words)
+        else:
+            # Add extra spaces
+            result = []
+            for word in words:
+                result.append(word)
+                if random.random() < 0.4:
+                    result.append(' ' * random.randint(1, 2))
+            return ''.join(result).strip()
+    
+    def spelling_error(s):
+        """Introduce common Vietnamese spelling mistakes, preserving case."""
+        for orig, repls in spelling_mistakes.items():
+            def replacement(match):
+                repl = random.choice(repls)
+                # Preserve case of the first character
+                if match.group(0)[0].isupper():
+                    return repl[0].upper() + repl[1:].lower()
+                return repl
+            if random.random() < 0.3:
+                s = re.sub(r'\b' + orig + r'\b', replacement, s)
+        return s
+    
+    def visual_similar_error(s):
+        """Substitute characters with visually similar ones (e.g., 'o' → '0')."""
+        chars = list(s)
+        for i, char in enumerate(chars):
+            if char in visual_similar and random.random() < 0.25:
+                chars[i] = random.choice(visual_similar[char])
+        return ''.join(chars)
+    
+    def handwriting_font_error(s):
+        """Simulate handwriting or complex font errors with noise (e.g., 'Căn' → 'Căn~')."""
+        chars = list(s)
+        for i in range(len(chars)):
+            if random.random() < 0.15:
+                chars[i] = random.choice(noise_chars + [chars[i]])
+            elif random.random() < 0.1:
+                chars.insert(i, random.choice(noise_chars))
+        return ''.join(chars)
+    
+    def missing_chars(s):
+        """Randomly remove characters (e.g., 'Căn cước công dân' → 'Căn cướ công dâ')."""
+        chars = list(s)
+        if len(chars) <= 3:  # Avoid excessive removal for short strings
+            return s
+        num_to_remove = random.randint(1, max(1, len(chars) // 4))
+        indices = random.sample(range(len(chars)), num_to_remove)
+        for idx in sorted(indices, reverse=True):
+            del chars[idx]
+        return ''.join(chars) if chars else s
+    
+    # List of error functions
+    error_types = [
+        remove_tones,
+        random_tone_change,
+        space_error,
+        spelling_error,
+        visual_similar_error,
+        handwriting_font_error,
+        missing_chars
+    ]
+    
+    # Track samples per error type
+    samples_by_type = {func.__name__: [] for func in error_types}
+    
+    # Step 1: Generate exactly 1 sample for remove_tones
+    variant = remove_tones(text)
+    if variant != text and variant not in variants:
+        variants.add(variant)
+        samples_by_type['remove_tones'].append(variant)
+    
+    # Step 2: Generate at least 5 samples for each other error type
+    other_error_types = [f for f in error_types if f != remove_tones]
+    for error_func in other_error_types:
+        attempts = 0
+        max_attempts = 50
+        while len(samples_by_type[error_func.__name__]) < 5 and attempts < max_attempts:
+            variant = error_func(text)
+            if random.random() < 0.35:
+                extra_error = random.choice([f for f in error_types if f != error_func])
+                variant = extra_error(variant)
+            if variant != text and variant not in variants:
+                variants.add(variant)
+                samples_by_type[error_func.__name__].append(variant)
+            attempts += 1
+    
+    # Step 3: Generate additional samples to reach n_samples
+    while len(variants) < min(n_samples, 31) and any(len(samples_by_type[func.__name__]) < 10 for func in other_error_types):
+        error_func = random.choice(other_error_types)
+        variant = error_func(text)
+        if random.random() < 0.35:
+            extra_error = random.choice([f for f in error_types if f != error_func])
+            variant = extra_error(variant)
+        if variant != text and variant not in variants:
+            variants.add(variant)
+            samples_by_type[error_func.__name__].append(variant)
+    
+    # Step 4: If n_samples > 31, fill with random combinations
+    while len(variants) < n_samples:
+        variant = text
+        num_errors = random.randint(1, 3)
+        applied_errors = random.sample(error_types, num_errors)
+        for error_func in applied_errors:
+            variant = error_func(variant)
+        if variant != text and variant not in variants:
+            variants.add(variant)
+            random_func = random.choice(error_types)
+            samples_by_type[random_func.__name__].append(variant)
+    
+    # Log sample distribution
+    for func_name, samples in samples_by_type.items():
+        logger.debug(f"Error type '{func_name}': {len(samples)} samples")
+    
+    result = list(variants)[:n_samples]
+    logger.debug(f"Generated {len(result)} error variants for '{text}': {result}")
+    return result
 # Ví dụ sử dụng
 if __name__ == "__main__":
     correct_text = "căn cước công dân"
