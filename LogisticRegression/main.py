@@ -163,9 +163,9 @@ def main():
                     st.session_state.existing_labels = set().union(
                         *[model.labels for model in st.session_state.field_models.values()]
                     )
-                    st.success("Các model KNN đã được huấn luyện!")
+                    st.success("Các model đã được huấn luyện!")
                 except Exception as e:
-                    st.error(f"Lỗi khi huấn luyện model KNN: {e}")
+                    st.error(f"Lỗi khi huấn luyện model: {e}")
 
             # Dự đoán
             if st.session_state.field_models and st.session_state.current_doc_index + 1 < total_docs:
@@ -188,9 +188,9 @@ def main():
                     st.session_state.existing_labels = set().union(
                         *[model.labels for model in st.session_state.field_models.values()]
                     )
-                    st.success("Các model KNN đã được huấn luyện bổ sung với nhãn mới!")
+                    st.success("Các model đã được huấn luyện bổ sung với nhãn mới!")
                 except Exception as e:
-                    st.error(f"Lỗi huấn luyện bổ sung KNN: {e}")
+                    st.error(f"Lỗi huấn luyện bổ sung: {e}")
 
             st.session_state.current_doc_index += 1
             st.rerun()
@@ -243,9 +243,9 @@ def main():
                 st.session_state.existing_labels = set().union(
                     *[model.labels for model in st.session_state.field_models.values()]
                 )
-                st.success(f"Đã huấn luyện model KNN cho batch {st.session_state.batch_count + 1}")
+                st.success(f"Đã huấn luyện model cho batch {st.session_state.batch_count + 1}")
             except Exception as e:
-                st.error(f"Lỗi khi huấn luyện model KNN: {e}")
+                st.error(f"Lỗi khi huấn luyện model: {e}")
 
         # Dự đoán cho batch tiếp theo
         if st.session_state.field_models and end_idx < total_docs:
@@ -268,9 +268,9 @@ def main():
                 st.session_state.existing_labels = set().union(
                     *[model.labels for model in st.session_state.field_models.values()]
                 )
-                st.success(f"Đã huấn luyện bổ sung model KNN cho batch {st.session_state.batch_count + 1}")
+                st.success(f"Đã huấn luyện bổ sung model cho batch {st.session_state.batch_count + 1}")
             except Exception as e:
-                st.error(f"Lỗi huấn luyện bổ sung KNN: {e}")
+                st.error(f"Lỗi huấn luyện bổ sung: {e}")
 
         st.session_state.batch_count += 1
         st.session_state.current_doc_index = end_idx

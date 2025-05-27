@@ -1,146 +1,119 @@
+from typing import List, Dict, Any
+from sklearn.neighbors import KNeighborsClassifier
 from sklearn.feature_extraction.text import TfidfVectorizer
-from sklearn.neighbors import NearestNeighbors
-from sklearn.pipeline import make_pipeline
 import numpy as np
-from typing import List, Dict, Tuple
+from sentence_transformers import SentenceTransformer
+import logging
 
-class OCRCorrectionModel:
-    def __init__(self):
-        self.vectorizer = TfidfVectorizer()
-        self.knn = NearestNeighbors(n_neighbors=1, metric='cosine')
-        self.X_train = None
-        self.y_train = None
-        self.labels = set()
-    
-    def train(self, data: List[Dict]):
-        """
-        Huấn luyện model KNN trên dữ liệu đã sửa.
-        :param data: Danh sách các trường với OCR và human value
-        """
-        print(f"Log: Bắt đầu huấn luyện KNN với {len(data)} mẫu")
-        X = []
-        y = []
-        for field in data:
-            X.append(field['ocr_value'])
-            y.append(field.get('corrected_human_value', field['human_value']))
-            self.labels.add(field['doctypefieldcode'])
-        
-        if len(X) < 1:
-            print(f"Log: Không đủ mẫu để huấn luyện KNN (chỉ có {len(X)} mẫu)")
-            return
-        
-        try:
-            # Chuyển đổi văn bản thành vector TF-IDF
-            X_tfidf = self.vectorizer.fit_transform(X)
-            self.knn.fit(X_tfidf)
-            self.X_train = X_tfidf
-            self.y_train = y
-            print(f"Log: Huấn luyện KNN thành công với {len(X)} mẫu, labels: {self.labels}")
-        except Exception as e:
-            print(f"Log: Lỗi huấn luyện KNN: {e}")
-            raise e
-    
-    def predict(self, ocr_values: List[str]) -> List[Tuple[str, float]]:
-        """
-        Dự đoán giá trị human_value và độ tin cậy bằng KNN.
-        :param ocr_values: Danh sách giá trị OCR
-        :return: Danh sách tuple (predicted_value, confidence)
-        """
-        print(f"Log: Bắt đầu dự đoán KNN với {len(ocr_values)} giá trị OCR")
-        if not ocr_values or self.X_train is None:
-            print("Log: Không có giá trị OCR hoặc chưa huấn luyện")
-            return [("", 0.0) for _ in ocr_values]
-        
-        try:
-            X_test = self.vectorizer.transform(ocr_values)
-            distances, indices = self.knn.kneighbors(X_test)
-            predictions = [self.y_train[idx[0]] for idx in indices]
-            # Confidence dựa trên khoảng cách cosine (1 - distance)
-            confidences = [1 - dist[0] if dist[0] < 1 else 0.0 for dist in distances]
-            print(f"Log: Dự đoán KNN thành công, số kết quả: {len(predictions)}")
-            return list(zip(predictions, confidences))
-        except Exception as e:
-            print(f"Log: Lỗi dự đoán KNN: {e}")
-            return [("", 0.0) for _ in ocr_values]
+# Cấu hình logging
+logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
-def train_field_models(data: List[Dict]) -> Dict[str, OCRCorrectionModel]:
-    """
-    Huấn luyện model KNN riêng cho từng doctypefieldcode.
-    :param data: Danh sách các tài liệu
-    :return: Dictionary chứa model cho từng field code
-    """
-    print("Log: Bắt đầu train_field_models")
-    field_data = {}
-    for doc in data:
+# Danh sách các trường sử dụng mô hình Thay thế (TF-IDF)
+REPLACEMENT_FIELDS = {'HoTenChucVuNguoiKy'}
+
+class FieldModel:
+    def __init__(self, field_code: str, model_type: str = 'embedding'):
+        self.field_code = field_code
+        self.model_type = model_type  # 'embedding' hoặc 'replacement'
+        if model_type == 'embedding':
+            self.sbert_model = SentenceTransformer('paraphrase-multilingual-MiniLM-L12-v2')
+            self.knn = KNeighborsClassifier(n_neighbors=1, metric='cosine')
+        else:
+            self.vectorizer = TfidfVectorizer()
+            self.knn = KNeighborsClassifier(n_neighbors=1)
+        self.labels = []
+
+    def train(self, ocr_values: List[str], human_values: List[str]):
+        if len(ocr_values) < 1 or len(set(human_values)) < 1:
+            logging.warning(f"Bỏ qua field {self.field_code}: Không đủ dữ liệu hoặc nhãn.")
+            return False
+        
+        self.labels = list(set(human_values))
+        if self.model_type == 'embedding':
+            # Tạo embedding cho ocr_values
+            X = self.sbert_model.encode(ocr_values, convert_to_tensor=False)
+            y = human_values
+            try:
+                self.knn.fit(X, y)
+                logging.info(f"Đã huấn luyện KNN (Embedding) cho field {self.field_code} với {len(ocr_values)} mẫu.")
+                return True
+            except Exception as e:
+                logging.error(f"Lỗi khi huấn luyện KNN (Embedding) cho field {self.field_code}: {e}")
+                return False
+        else:
+            # Sử dụng TF-IDF
+            X = self.vectorizer.fit_transform(ocr_values).toarray()
+            y = human_values
+            try:
+                self.knn.fit(X, y)
+                logging.info(f"Đã huấn luyện KNN (TF-IDF) cho field {self.field_code} với {len(ocr_values)} mẫu.")
+                return True
+            except Exception as e:
+                logging.error(f"Lỗi khi huấn luyện KNN (TF-IDF) cho field {self.field_code}: {e}")
+                return False
+
+    def predict(self, ocr_value: str) -> tuple[str, float]:
+        try:
+            if self.model_type == 'embedding':
+                X = self.sbert_model.encode([ocr_value], convert_to_tensor=False)
+                confidence = self.knn.predict_proba(X)[0].max()
+                prediction = self.knn.predict(X)[0]
+            else:
+                X = self.vectorizer.transform([ocr_value]).toarray()
+                confidence = self.knn.predict_proba(X)[0].max()
+                prediction = self.knn.predict(X)[0]
+            return prediction, confidence
+        except Exception as e:
+            logging.error(f"Lỗi khi dự đoán cho field {self.field_code}: {e}")
+            return ocr_value, 0.0
+
+def train_field_models(corrected_docs: List[Dict]) -> Dict[str, FieldModel]:
+    field_models = {}
+    for doc in corrected_docs:
         for field in doc['fields']:
             field_code = field['doctypefieldcode']
-            if field_code not in field_data:
-                field_data[field_code] = []
-            field_data[field_code].append(field)
+            ocr_value = field['ocr_value']
+            human_value = field['corrected_human_value']
+            
+            if field_code not in field_models:
+                model_type = 'replacement' if field_code in REPLACEMENT_FIELDS else 'embedding'
+                field_models[field_code] = FieldModel(field_code, model_type)
+            
+            # Thu thập dữ liệu huấn luyện
+            if not hasattr(field_models[field_code], 'train_data'):
+                field_models[field_code].train_data = {'ocr_values': [], 'human_values': []}
+            field_models[field_code].train_data['ocr_values'].append(ocr_value)
+            field_models[field_code].train_data['human_values'].append(human_value)
     
-    field_models = {}
-    for field_code, fields in field_data.items():
-        print(f"Log: Huấn luyện KNN cho field {field_code} với {len(fields)} mẫu")
-        model = OCRCorrectionModel()
-        model.train(fields)
-        if model.labels and model.X_train is not None:  # Chỉ thêm model nếu huấn luyện thành công
-            field_models[field_code] = model
-            print(f"Log: Đã thêm model KNN cho field {field_code}")
-        else:
-            print(f"Log: Bỏ qua field {field_code} do không huấn luyện được")
+    # Huấn luyện các mô hình
+    for field_code, model in field_models.items():
+        if hasattr(model, 'train_data'):
+            model.train(model.train_data['ocr_values'], model.train_data['human_values'])
+            del model.train_data  # Xóa dữ liệu tạm để tiết kiệm bộ nhớ
     
-    print(f"Log: Kết thúc train_field_models, số model: {len(field_models)}")
     return field_models
 
-def predict_with_field_models(fields: List[Dict], field_models: Dict[str, OCRCorrectionModel]) -> List[Tuple[str, float]]:
-    """
-    Dự đoán cho các trường sử dụng model KNN tương ứng.
-    :param fields: Danh sách các trường trong tài liệu
-    :param field_models: Dictionary chứa model cho từng field code
-    :return: Danh sách tuple (predicted_value, confidence)
-    """
-    print(f"Log: Bắt đầu predict_with_field_models cho {len(fields)} fields")
+def predict_with_field_models(fields: List[Dict], field_models: Dict[str, FieldModel]) -> List[tuple[str, float]]:
     predictions = []
     for field in fields:
         field_code = field['doctypefieldcode']
         ocr_value = field['ocr_value']
-        print(f"Log: Dự đoán cho field {field_code}, OCR: {ocr_value}")
+        
         if field_code in field_models:
-            try:
-                pred = field_models[field_code].predict([ocr_value])
-                predictions.append(pred[0] if pred else ("", 0.0))
-                print(f"Log: Dự đoán thành công cho field {field_code}")
-            except Exception as e:
-                print(f"Log: Lỗi dự đoán cho field {field_code}: {e}")
-                predictions.append(("", 0.0))
+            prediction, confidence = field_models[field_code].predict(ocr_value)
+            predictions.append((prediction, confidence))
         else:
-            print(f"Log: Không có model cho field {field_code}")
-            predictions.append(("", 0.0))
-    print(f"Log: Kết thúc predict_with_field_models, số dự đoán: {len(predictions)}")
+            predictions.append((ocr_value, 0.0))
+    
     return predictions
 
-def check_and_retrain_field_models(field_models: Dict[str, OCRCorrectionModel], data: List[Dict], existing_labels: set):
-    """
-    Kiểm tra nhãn mới và huấn luyện bổ sung.
-    :param field_models: Dictionary chứa model cho từng field code
-    :param data: Dữ liệu mới
-    :param existing_labels: Tập hợp nhãn đã huấn luyện
-    """
-    print("Log: Bắt đầu check_and_retrain_field_models")
-    field_data = {}
-    for doc in data:
+def check_and_retrain_field_models(field_models: Dict[str, FieldModel], corrected_docs: List[Dict], existing_labels: set):
+    new_labels = set()
+    for doc in corrected_docs:
         for field in doc['fields']:
-            field_code = field['doctypefieldcode']
-            if field_code not in field_data:
-                field_data[field_code] = []
-            field_data[field_code].append(field)
+            new_labels.add(field['corrected_human_value'])
     
-    for field_code, fields in field_data.items():
-        print(f"Log: Kiểm tra field {field_code} với {len(fields)} mẫu")
-        if field_code not in existing_labels:
-            print(f"Log: Field {field_code} là nhãn mới, bắt đầu huấn luyện")
-            if field_code not in field_models:
-                field_models[field_code] = OCRCorrectionModel()
-            field_models[field_code].train(fields)
-            print(f"Log: Huấn luyện bổ sung thành công cho field {field_code}")
-    print("Log: Kết thúc check_and_retrain_field_models")
+    if new_labels - existing_labels:
+        logging.info("Phát hiện nhãn mới, huấn luyện lại các mô hình...")
+        new_models = train_field_models(corrected_docs)
+        field_models.update(new_models)
