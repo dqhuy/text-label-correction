@@ -3,9 +3,8 @@ from collections import defaultdict
 from rapidfuzz import fuzz, process
 
 # === CONFIG ===
-CSV_PATH = "sample_ocr_human_value_kiengiang_khaisinh.csv"
+CSV_PATH = "sample_ocr_human_value_kiengiang_khaisinh_400K_Field.csv"
 FUZZY_SCORE_THRESHOLD = 20
-
 
 # === MEMORY-BASED FIX MODULE ===
 class MemoryBasedFixer:
@@ -26,8 +25,6 @@ class MemoryBasedFixer:
         match, score, _ = result
         return match if score >= FUZZY_SCORE_THRESHOLD else None
 
-
-
 # === FASSI-LIKE FIX MODULE ===
 class FassiLikeFixer:
     def __init__(self):
@@ -46,80 +43,104 @@ class FassiLikeFixer:
         candidates.sort(key=lambda x: x[1], reverse=True)
         return candidates[0][0]
 
-
-# === EVALUATION FUNCTION ===
-def evaluate_predictions(df, predictions):
-    total = len(df)
-    correct = sum(df['human_value'] == predictions)
-    accuracy = round((correct / total) * 100, 2) if total > 0 else 0
-    return accuracy
-
-
 # === MAIN REPLAY FUNCTION ===
 def run_replay(csv_path):
     df = pd.read_csv(csv_path)
     df = df.dropna(subset=['doctypefieldcode', 'ocr_value', 'human_value'])
-    fields = df['doctypefieldcode'].unique()
+    df['ocr_value'] = df['ocr_value'].astype(str).str.strip()
+    df['human_value'] = df['human_value'].astype(str).str.strip()
 
     memory_fixer = MemoryBasedFixer()
     fassi_fixer = FassiLikeFixer()
 
-    results = []
-    predict_results = []
-    for field in fields:
-        df_field = df[df['doctypefieldcode'] == field].copy()
+    df['mem_predict'] = ''
+    df['fassi_predict'] = ''
+    df['ocr_correct'] = df['ocr_value'] == df['human_value']
 
-        mem_preds = []
-        fassi_preds = []
+    for idx, row in df.iterrows():
+        field = row['doctypefieldcode']
+        ocr = row['ocr_value']
+        human = row['human_value']
 
-        for _, row in df_field.iterrows():
-            ocr = row['ocr_value']
-            human = row['human_value']
+        mem_pred = memory_fixer.suggest(field, ocr)
+        fassi_pred = fassi_fixer.suggest(field, ocr)
 
-            # Predict before learn
-            mem_pred = memory_fixer.suggest(field, ocr)
-            fassi_pred = fassi_fixer.suggest(field, ocr)
+        df.at[idx, 'mem_predict'] = mem_pred if mem_pred else ''
+        df.at[idx, 'fassi_predict'] = fassi_pred if fassi_pred else ''
 
-            mem_preds.append(mem_pred)
-            fassi_preds.append(fassi_pred)
+        memory_fixer.learn(field, ocr, human)
+        fassi_fixer.learn(field, ocr, human)
 
-            # Learn after predict
-            memory_fixer.learn(field, ocr, human)
-            fassi_fixer.learn(field, ocr, human)
+    # Đánh giá kết quả
+    df['mem_correct'] = df['mem_predict'] == df['human_value']
+    df['fassi_correct'] = df['fassi_predict'] == df['human_value']
+    df['mem_suggested'] = df['mem_predict'] != ''
+    df['fassi_suggested'] = df['fassi_predict'] != ''
 
-            # Store predictions in the DataFrame
-            predict_results.append({
-                'Field': field,
-                'OCR_Value': ocr,
-                'Human_Value': human,
-                'MemoryBased_Prediction': mem_pred,
-                'FASSI_Prediction': fassi_pred,
-                'MemoryBased_Prediction_correct':'True' if mem_pred == human else 'False',
-                'FASSI_Prediction_corect': 'True' if fassi_pred == human else 'False'
-            })
+    # Thống kê tổng hợp theo trường
+    summary = (
+        df.groupby('doctypefieldcode')
+        .agg(
+            total_records=('ocr_value', 'count'),
+            correct_ocr=('ocr_correct', 'sum'),
+            mem_correct=('mem_correct', 'sum'),
+            fassi_correct=('fassi_correct', 'sum'),
+            mem_suggested=('mem_suggested', 'sum'),
+            fassi_suggested=('fassi_suggested', 'sum')
+        )
+        .reset_index()
+    )
 
-        df_field['mem_predict'] = mem_preds
-        df_field['fassi_predict'] = fassi_preds
+    summary['incorrect_ocr'] = summary['total_records'] - summary['correct_ocr']
+    summary['accuracy (%)'] = (summary['correct_ocr'] / summary['total_records'] * 100).round(2)
+    summary['error_rate (%)'] = (summary['incorrect_ocr'] / summary['total_records'] * 100).round(2)
+    summary['MemoryBased_Accuracy (%)'] = (summary['mem_correct'] / summary['total_records'] * 100).round(2)
+    summary['FASSI_Accuracy (%)'] = (summary['fassi_correct'] / summary['total_records'] * 100).round(2)
+    summary['MemoryBased_Suggested (%)'] = (summary['mem_suggested'] / summary['total_records'] * 100).round(2)
+    summary['FASSI_Suggested (%)'] = (summary['fassi_suggested'] / summary['total_records'] * 100).round(2)
 
-        mem_acc = evaluate_predictions(df_field, df_field['mem_predict'])
-        fassi_acc = evaluate_predictions(df_field, df_field['fassi_predict'])
+    # Tính Accuracy tổng thể (dù có suggest hay không)
+    df['mem_final_correct'] = df.apply(
+        lambda row: row['mem_predict'] == row['human_value'] if row['mem_predict'] else row['ocr_value'] == row['human_value'],
+        axis=1
+    )
+    df['fassi_final_correct'] = df.apply(
+        lambda row: row['fassi_predict'] == row['human_value'] if row['fassi_predict'] else row['ocr_value'] == row['human_value'],
+        axis=1
+    )
 
-        results.append({
-            'Field': field,
-            'MemoryBased_Accuracy (%)': mem_acc,
-            'FASSI_Accuracy (%)': fassi_acc
-        })
+    overall_acc = (
+        df.groupby('doctypefieldcode')
+        .agg(
+            mem_overall=('mem_final_correct', lambda x: round(x.mean() * 100, 2)),
+            fassi_overall=('fassi_final_correct', lambda x: round(x.mean() * 100, 2))
+        )
+        .reset_index()
+    )
 
-    result_df = pd.DataFrame(results).sort_values(by='FASSI_Accuracy (%)', ascending=False)
-    print("===== KẾT QUẢ ĐÁNH GIÁ THEO TRƯỜNG THÔNG TIN =====")
-    print(result_df.to_string(index=False))
+    # Gộp vào bảng summary
+    summary = pd.merge(summary, overall_acc, on='doctypefieldcode', how='left')
+    summary.rename(columns={
+        'mem_overall': 'MemoryBased_Overall_Accuracy (%)',
+        'fassi_overall': 'FASSI_Overall_Accuracy (%)'
+    }, inplace=True)
 
-    # Export CSV
-    result_df.to_csv("field_accuracy_comparison.csv", index=False)
-    # export prediction_results to CSV
-    predict_df = pd.DataFrame(predict_results)
-    predict_df.to_csv("field_prediction_results.csv", index=False)  
 
+    # Sắp xếp và chọn cột
+    summary = summary[
+        ['doctypefieldcode', 'total_records', 'correct_ocr', 'incorrect_ocr',
+         'accuracy (%)', 'error_rate (%)',
+         'MemoryBased_Accuracy (%)', 'FASSI_Accuracy (%)',
+         'MemoryBased_Suggested (%)', 'FASSI_Suggested (%)','MemoryBased_Overall_Accuracy (%)', 'FASSI_Overall_Accuracy (%)']
+    ].sort_values(by='error_rate (%)', ascending=False)
+
+    # Hiển thị và lưu
+    print(f"\n🧾 Tổng số bản ghi đã chạy: {len(df)}\n")
+    print("📊 BẢNG THỐNG KÊ:")
+    print(summary.to_string(index=False))
+
+    summary.to_csv("model_comparison_summary.csv", index=False)
+    df.to_csv("model_prediction_full_output.csv", index=False)
 
 # === RUN ===
 if __name__ == "__main__":
