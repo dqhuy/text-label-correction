@@ -1,9 +1,11 @@
 import pandas as pd
 from collections import defaultdict
 from rapidfuzz import fuzz, process
+from tqdm import tqdm
+from faiss_embedding_fixer import FassisEmbeddingFixer
 
 # === CONFIG ===
-CSV_PATH = "sample_ocr_human_value_kiengiang_khaisinh_400K_Field.csv"
+CSV_PATH = "sample_ocr_human_value_kiengiang_khaisinh.csv"
 FUZZY_SCORE_THRESHOLD = 20
 
 # === MEMORY-BASED FIX MODULE ===
@@ -43,6 +45,7 @@ class FassiLikeFixer:
         candidates.sort(key=lambda x: x[1], reverse=True)
         return candidates[0][0]
 
+
 # === MAIN REPLAY FUNCTION ===
 def run_replay(csv_path):
     df = pd.read_csv(csv_path)
@@ -50,14 +53,20 @@ def run_replay(csv_path):
     df['ocr_value'] = df['ocr_value'].astype(str).str.strip()
     df['human_value'] = df['human_value'].astype(str).str.strip()
 
+    df = df[df['doctypefieldcode'] == 'NoiSinh'].reset_index(drop=True)
+
     memory_fixer = MemoryBasedFixer()
-    fassi_fixer = FassiLikeFixer()
+    #fassi_fixer = FassiLikeFixer()
+    print("\n🚀 Đang khởi tạo mô hình Faiss model...")
+    fassi_fixer = FassisEmbeddingFixer()
+
 
     df['mem_predict'] = ''
     df['fassi_predict'] = ''
     df['ocr_correct'] = df['ocr_value'] == df['human_value']
 
-    for idx, row in df.iterrows():
+    print("\n🚀 Đang chạy thử nghiệm mô hình sửa lỗi...")
+    for idx, row in tqdm(df.iterrows(), total=len(df), desc="🔁 Replay", unit="record"):
         field = row['doctypefieldcode']
         ocr = row['ocr_value']
         human = row['human_value']
@@ -69,8 +78,13 @@ def run_replay(csv_path):
         df.at[idx, 'fassi_predict'] = fassi_pred if fassi_pred else ''
 
         memory_fixer.learn(field, ocr, human)
-        fassi_fixer.learn(field, ocr, human)
-
+        #fassi_fixer.learn(field, ocr, human) # dùng cho class fassi_like_fixer
+        if fassi_pred!=human:
+            fassi_fixer.learn(field, human)
+    
+    print("💾 Đang lưu model FAISS...")
+    fassi_fixer.save_all()
+    
     # Đánh giá kết quả
     df['mem_correct'] = df['mem_predict'] == df['human_value']
     df['fassi_correct'] = df['fassi_predict'] == df['human_value']
