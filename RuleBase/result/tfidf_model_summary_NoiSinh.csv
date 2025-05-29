@@ -1,0 +1,2 @@
+doctypefieldcode,total_records,correct_ocr,incorrect_ocr,accuracy (%),error_rate (%),tfidf_predicted,TFIDF_Predicted (%),tfidf_predicted_correct,tfidf_predicted_wrong,TFIDF_Predict_Accuracy (%),TFIDF_Predict_Error (%),TFIDF_Overall_Accuracy (%),min_time_ms,max_time_ms,avg_time_ms
+NoiSinh,1113,0,1113,0.0,100.0,773,69.45,497,276,64.29,35.71,44.65,0.0,5.66,0.94

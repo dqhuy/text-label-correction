@@ -1,0 +1,1114 @@
+docid,doctypefieldinstanceid,doctypefieldcode,ocr_value,human_value,ocr_correct,tfidf_predict,tfidf_correct,tfidf_suggested,tfidf_final_correct,predict_time_ms
+628256,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Quỳ Nhân - Bình Định,"Quy Nhơn, Bình Định",False,,False,False,False,0.0045299530029296875
+628255,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,phường Vũ Thanh Vân - R Giá - K Giang,"phường Vĩnh Thanh Vân, Rạch Giá, Kiên Giang",False,,False,False,False,1.0788440704345703
+628440,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,An Biên - Kiên Giang,"An Biên, Kiên Giang",False,,False,False,False,0.8697509765625
+628433,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Rạch Giá - Kiên Giang,"Rạch Giá, Kiên Giang",False,,False,False,False,1.2707710266113281
+628435,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Đức Phổ - Quảng Ngãi,"Đức Phổ, Quảng Ngãi",False,,False,False,False,0.8111000061035156
+628434,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,,False,False,False,0.8156299591064453
+628439,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.8275508880615234
+628437,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Rạch Gián - Kiên Giang,"Rạch Giá, Kiên Giang",False,"Rạch Giá, Kiên Giang",True,True,True,0.8406639099121094
+628443,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Long Xuyên - An Giang,"Long Xuyên, An Giang",False,,False,False,False,0.8490085601806641
+628446,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bảo sanh Hồng Đức - Rạch Giá - Kiên Giang,"Bảo sanh Hồng Đức, Rạch Giá, Kiên Giang",False,,False,False,False,0.8614063262939453
+628445,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Đạch Giá - Kiên Giang,"Rạch Giá, Kiên Giang",False,,False,False,False,0.8525848388671875
+628441,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,"Long Xuyên - An Giang Bô, sinh ngày 27/01/10","Long Xuyên, An Giang",False,"Long Xuyên, An Giang",True,True,True,1.325368881225586
+628438,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bạch Giá - Kiên Giang,Rạch Giá - Kiên Giang,False,,False,False,False,0.9338855743408203
+628444,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.9341239929199219
+628451,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.8618831634521484
+628442,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.8027553558349609
+628456,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.8561611175537109
+628458,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.8034706115722656
+628450,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện Từ Dũ - TP. Hồ Chí Minh.,"Bệnh viện Từ Dũ, Thành phố Hồ Chí Minh",False,,False,False,False,0.7898807525634766
+628447,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện Đại học Y Dược Thành phố Hồ Chí Minh,Bệnh viện Đại học Y Dược Thành Phố Hồ Chí Minh,False,"Bệnh viện Từ Dũ, Thành phố Hồ Chí Minh",False,True,False,0.86212158203125
+628455,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bảo Sanh Âu Cơ - Rạch Giá - Kiên Giang,"Bảo Sanh Âu Cơ, Rạch Giá, Kiên Giang",False,,False,False,False,1.4553070068359375
+628457,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.8912086486816406
+628463,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Rạch Gián - Kiên Giang,"Rạch Giá, Kiên Giang",False,Rạch Giá - Kiên Giang,False,True,False,0.8096694946289062
+628459,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Rạch Giá - Kiên Giang,"Rạch Giá, Kiên Giang",False,Rạch Giá - Kiên Giang,False,True,False,0.8654594421386719
+628465,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bạch Giá - Kiên Giang,"Rạch Giá, Kiên Giang",False,Rạch Giá - Kiên Giang,False,True,False,0.8742809295654297
+628460,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Lạch Giái - Kiên Giang,"Rạch Giá, Kiên Giang",False,,False,False,False,0.7951259613037109
+628467,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bạch Gián - Kiên Giang,"Rạch Giá, Kiên Giang",False,,False,False,False,0.8323192596435547
+628468,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Rạch Giá - Kiên Giang,"Rạch Giá, Kiên Giang",False,Rạch Giá - Kiên Giang,False,True,False,0.789642333984375
+628464,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Rạch Gián - Kiên Giang,Rạch Giá - Kiên Giang,False,Rạch Giá - Kiên Giang,True,True,True,0.7600784301757812
+628466,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.8244514465332031
+628469,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.7653236389160156
+628452,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Phong Điền - TP. Cần Thơ,"Phong Điền, thành phố Cần Thơ",False,,False,False,False,0.7603168487548828
+628475,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Rạch Giá - Kiên Giang,"Rạch Giá, Kiên Giang",False,Rạch Giá - Kiên Giang,False,True,False,0.81634521484375
+628473,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Lạch Gián - Kiên Giang,"Rạch Giá, Kiên Giang",False,,False,False,False,0.8273124694824219
+628476,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.7636547088623047
+628474,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiền Giang,Bệnh viện đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,False,True,False,0.8294582366943359
+628477,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.8454322814941406
+628479,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.8254051208496094
+628478,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Giồng Riềng - Kiên Giang,"Giồng Riềng, Kiên Giang",False,,False,False,False,0.7817745208740234
+628453,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Hà Tiên - Kiên Giang,"Hà Tiên,Kiên Giang",False,,False,False,False,0.8018016815185547
+628471,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.823974609375
+628481,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.9064674377441406
+628484,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.8339881896972656
+628480,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện Hùng Vương - TP. Hồ Chí Minh,"Bệnh viện Hùng Vương, Thành Phố Hồ Chí Minh",False,,False,False,False,1.0886192321777344
+628492,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bạch Giá - Kiên Giang,"Rạch Giá, Kiên Giang",False,Rạch Giá - Kiên Giang,False,True,False,0.8535385131835938
+628462,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Rạch Giá - Kiên Giang,"Rạch Giá, Kiên Giang",False,Rạch Giá - Kiên Giang,False,True,False,0.8440017700195312
+628487,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiền Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.812530517578125
+628486,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.8161067962646484
+628489,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.8275508880615234
+628494,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Rạch Gián - Kiên Giang,"Rạch Giá, Kiên Giang",False,Rạch Giá - Kiên Giang,False,True,False,0.7691383361816406
+628497,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Rạch Giá - Kiên Giang,"Rạch Giá, Kiên Giang",False,Rạch Giá - Kiên Giang,False,True,False,0.7588863372802734
+628485,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiền Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.9291172027587891
+628493,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Rạch Giá - Kiên Giang,"Rạch Giá, Kiên Giang",False,Rạch Giá - Kiên Giang,False,True,False,0.8232593536376953
+628483,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.7998943328857422
+628495,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Rạch Gián - Kiên Giang,"Rạch Giá, Kiên Giang",False,Rạch Giá - Kiên Giang,False,True,False,0.8518695831298828
+628499,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.8301734924316406
+628502,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Rạch Giá - Kiên Giang,"Rạch Giá, Kiên Giang",False,Rạch Giá - Kiên Giang,False,True,False,0.7610321044921875
+628498,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,1.0161399841308594
+628501,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Rạch Giá - Kiên Giang,"Rạch Giá, Kiên Giang",False,Rạch Giá - Kiên Giang,False,True,False,0.8158683776855469
+628504,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.7927417755126953
+628500,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.8435249328613281
+628505,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.8261203765869141
+628508,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiền Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.7894039154052734
+628509,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.7719993591308594
+628506,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện Từ Dũ - TP. Hồ Chí Minh.,"Bệnh viện Từ Dũ, thành phố Hồ Chí Minh",False,,False,False,False,0.8273124694824219
+628511,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Giồng Riềng - Kiên Giang,"Giồng Riềng, Kiên Giang",False,"Giồng Riềng, Kiên Giang",True,True,True,0.7739067077636719
+628515,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.9593963623046875
+628503,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,1.0371208190917969
+628516,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Rạch Gián - Kiên Giang,"Rạch Giá, Kiên Giang",False,Rạch Giá - Kiên Giang,False,True,False,0.8265972137451172
+628518,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.8175373077392578
+628512,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.9124279022216797
+628520,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiền Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.9706020355224609
+628436,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.8153915405273438
+628523,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.8685588836669922
+628526,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.7977485656738281
+628524,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiền Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.8308887481689453
+628534,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiền Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.8103847503662109
+628529,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.7925033569335938
+628510,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.8184909820556641
+628531,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.7812976837158203
+628522,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Hòa Đất - Kiên Giang,"Hòa Đất, Kiên Giang",False,,False,False,False,0.7495880126953125
+628528,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Giồng Riềng - Kiên Giang,"Giồng Riềng, Kiên Giang",False,"Giồng Riềng, Kiên Giang",True,True,True,0.8208751678466797
+628517,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.8296966552734375
+628536,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.7894039154052734
+628525,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.7817745208740234
+628533,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.8614063262939453
+628540,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.83160400390625
+628532,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.7767677307128906
+628535,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện Đại Học Y Dực - TP. Hồ Chí Minh,Bệnh viện Đại Học Y Dược - TP. Hồ Chí Minh,False,,False,False,False,0.8080005645751953
+628539,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Rạch Giá - Kiên Giang,"Rạch Giá, Kiên Giang",False,Rạch Giá - Kiên Giang,False,True,False,0.8189678192138672
+628542,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Rạch Giá - Kiên Giang,"Rạch Giá, Kiên Giang",False,Rạch Giá - Kiên Giang,False,True,False,0.7967948913574219
+628541,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Rạch Giá - Kiên Giang,"Rạch Giá, Kiên Giang",False,Rạch Giá - Kiên Giang,False,True,False,0.7603168487548828
+628530,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện Từ Dũ - TP. Hồ Chí Minh,"Bệnh viện Từ Dũ, Thành phố Hồ Chí Minh",False,,False,False,False,0.751495361328125
+628544,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Rạch Giá - Kiên Giang,"Rạch Giá, Kiên Giang",False,Rạch Giá - Kiên Giang,False,True,False,0.7872581481933594
+628547,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,"Bảo sanh Lê Ngọc Cam, Đạch Giá - Kiên Giang","Bảo sanh Lê Ngọc Cam, Rạch Giá, Kiên Giang",False,,False,False,False,1.0254383087158203
+628545,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.8842945098876953
+628548,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.8656978607177734
+628546,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiền Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.9074211120605469
+628550,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.9713172912597656
+628551,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Rạch Giá - Kiên Giang,"Rạch Giá, Kiên Giang",False,Rạch Giá - Kiên Giang,False,True,False,1.0325908660888672
+628552,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Rạch Giá - Kiên Giang,"Rạch Giá, Kiên Giang",False,Rạch Giá - Kiên Giang,False,True,False,0.9605884552001953
+628553,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiền Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.9963512420654297
+628521,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiền Giang,Bệnh viện đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,False,True,False,0.9319782257080078
+628549,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Hạch Giá - Kiên Giang,"Rạch Giá, Kiên Giang",False,Rạch Giá - Kiên Giang,False,True,False,0.9210109710693359
+628560,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Rạch Gián - Kiên Giang,"Rạch Giá, Kiên Giang",False,Rạch Giá - Kiên Giang,False,True,False,0.904083251953125
+628556,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Nhà Bảo sanh Lê Ngọc Cam - Bạch Giá - Kiên Giang,"Nhà bảo sanh Lê Ngọc Cam, Rạch Giá, Kiên Giang",False,,False,False,False,1.0886192321777344
+628559,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.9074211120605469
+628554,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.89263916015625
+628561,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Trạm Hồ phương An Hòa - Rạch Gián - Kiên Giang,"Trạm y tế phường An Hòa, Rạch Giá, Kiên Giang",False,,False,False,False,0.9202957153320312
+628562,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bạch Giá - Kiên Giang,"Rạch Giá, Kiên Giang",False,Rạch Giá - Kiên Giang,False,True,False,0.8182525634765625
+628567,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Nhà Bảo Sanh Kim Hương - Rạch Giá - Kiên Giang,"Nhà bảo sanh Kim Hương, Rạch Giá, Kiên Giang",False,,False,False,False,0.8790493011474609
+628566,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện Từ Dũ - TP. Hồ Chí Minh.,Bệnh viện Từ Dũ Thành Phố Hồ Chí Minh,False,,False,False,False,0.8623600006103516
+628568,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Rạch Giá - Kiên Giang,"Rạch Giá, Kiên Giang",False,Rạch Giá - Kiên Giang,False,True,False,0.8199214935302734
+628564,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.8504390716552734
+628571,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Nhà Bảo Sanh Kim Chi - Rạch Giá - Kiên Giang,"Nhà bảo sanh Kim Chi, Rạch Giá, Kiên Giang",False,,False,False,False,0.8509159088134766
+628573,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,TP Hồ Chí Minh,Thành Phố Hồ Chí Minh,False,,False,False,False,0.8018016815185547
+628578,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện Từ Dũ - TP. Hồ Chí Minh,"Bệnh viện Từ Dũ, Thành phố Hồ Chí Minh",False,,False,False,False,1.6007423400878906
+628575,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,1.2781620025634766
+628576,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,1.3561248779296875
+628472,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Rạch Giá - Kiên Giang,"Rạch Giá, Kiên Giang",False,Rạch Giá - Kiên Giang,False,True,False,1.1229515075683594
+628514,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiền Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.9064674377441406
+628579,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện Đại học Y Dược - TP. Hồ Chí Minh,"Bệnh viện Đại học Y Dược, Thành Phố Hồ Chí Minh",False,Bệnh viện Đại Học Y Dược - TP. Hồ Chí Minh,False,True,False,0.904083251953125
+628449,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Giồng Riềng - Kiên Giang,"Giồng Riềng, Kiên Giang",False,"Giồng Riềng, Kiên Giang",True,True,True,0.9775161743164062
+628582,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,1.0273456573486328
+628586,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa kiền Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.9806156158447266
+628583,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Rạch Gián - Kiên Giang,"Rạch Giá, Kiên Giang",False,Rạch Giá - Kiên Giang,False,True,False,0.9033679962158203
+628590,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiền Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.946044921875
+628588,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.8862018585205078
+628592,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện Quỳnh Lưu - Nghệ An.,"Bệnh viện Quỳnh Lưu, Nghệ An.",False,,False,False,False,0.8721351623535156
+628589,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.8838176727294922
+628594,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Đạch Giáo - Kiên Giang,"Rạch Giá, Kiên Giang",False,,False,False,False,0.8046627044677734
+628555,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Rạch Giá - Kiên Giang,"Rạch Giá, Kiên Giang",False,Rạch Giá - Kiên Giang,False,True,False,1.2278556823730469
+628593,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Rạch Giá - Kiên Giang,"Rạch Giá, Kiên Giang",False,Rạch Giá - Kiên Giang,False,True,False,1.1224746704101562
+628598,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Rạch Giá - Kiên Giang,"Rạch Giá, Kiên Giang",False,Rạch Giá - Kiên Giang,False,True,False,0.9367465972900391
+628597,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Đạch Giá - Kiên Giang,"Rạch Giá, Kiên Giang",False,Rạch Giá - Kiên Giang,False,True,False,0.919342041015625
+628601,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Rạch Giá - Kiên Giang,"Rạch Giá, Kiên Giang",False,Rạch Giá - Kiên Giang,False,True,False,0.9129047393798828
+628602,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Rạch Giá - Kiên Giang,"Rạch Giá, Kiên Giang",False,Rạch Giá - Kiên Giang,False,True,False,0.9405612945556641
+628596,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.86212158203125
+628600,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Rạch Gia - Kiền Giang,"Rạch Giá, Kiên Giang",False,,False,False,False,0.8997917175292969
+628603,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện Từ Dũ - TP. Hồ Chí Minh,"Bệnh viện Từ Dũ, TP. Hồ Chí Minh",False,,False,False,False,0.8995532989501953
+628612,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.8804798126220703
+628606,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.8685588836669922
+628604,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,1.255035400390625
+628613,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Rạch Giáo - Kiên Giang,"Rạch Giá, Kiên Giang",False,Rạch Giá - Kiên Giang,False,True,False,0.8764266967773438
+628609,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Hạch Giá - Kiên Giang,"Rạch Giá, Kiên Giang",False,Rạch Giá - Kiên Giang,False,True,False,0.9107589721679688
+628615,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Châu Thành - Kiên Giang,"Châu Thành, Kiên Giang",False,,False,False,False,0.8575916290283203
+628620,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bạch Giá - Kiên Giang,"Rạch Giá, Kiên Giang",False,Rạch Giá - Kiên Giang,False,True,False,0.8208751678466797
+628618,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.8656978607177734
+628617,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiền Giang,Bệnh viện đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,False,True,False,0.865936279296875
+628611,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,34/20 Nguyễn Toái Học - Nĩnh Bắc - hạch Giá Kiên Lang,"34/20 Nguyễn Thái Học, phường Vĩnh Bảo, Rạch Giá, Kiên Giang",False,,False,False,False,0.9007453918457031
+628619,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Rạch Giá - Kiên Giang,"Rạch Giá, Kiên Giang",False,Rạch Giá - Kiên Giang,False,True,False,1.1954307556152344
+628608,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiền Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,1.168966293334961
+628616,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bảo Sanh Âu Cơ - Rạch Gián - Kiên Giang,"Bảo sanh Âu Cơ, Rạch Giá, Kiên Giang",False,,False,False,False,0.850677490234375
+628622,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Châu Thành - Cần Thơ,"Châu Thành, Cần Thơ",False,,False,False,False,0.8320808410644531
+628621,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang.,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.8585453033447266
+628627,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Vũ Thư - Thái Bình,"Vũ Thư, Thái Bình",False,,False,False,False,0.7905960083007812
+628625,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,1.0988712310791016
+628629,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Bình Phước,Bệnh viện Đa khoa Bình Phước,False,,False,False,False,0.8740425109863281
+628633,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Rạch Giá - Kiên Giang,"Rạch Giá, Kiên Giang",False,Rạch Giá - Kiên Giang,False,True,False,0.9067058563232422
+628614,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,TP. Hồ Chí Minh,Thành phố Hồ Chí Minh,False,,False,False,False,0.8442401885986328
+628634,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,lạch Giá - Kiên Giang,"Rạch Giá, Kiên Giang",False,Rạch Giá - Kiên Giang,False,True,False,0.8769035339355469
+628632,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Rạch Giá - Kiên Giang,"Rạch Giá, Kiên Giang",False,Rạch Giá - Kiên Giang,False,True,False,0.8304119110107422
+628630,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.8676052093505859
+628636,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bạch Gián - Kiền Giang,"Rạch Giá, Kiên Giang",False,,False,False,False,0.8151531219482422
+628637,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.7905960083007812
+628638,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.8409023284912109
+628628,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Đạch Giá - Kiên Giang,"Rạch Giá, Kiên Giang",False,Rạch Giá - Kiên Giang,False,True,False,0.8237361907958984
+628640,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Rạch Giá - Kim Giang,"Rạch Giá, Kiên Giang",False,,False,False,False,0.766754150390625
+628642,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,1.039743423461914
+628543,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bảo sanh Âu Cơ - Bạch Giá - Kiên Giang,"Bảo sanh Âu Cơ, Rạch Giá, Kiên Giang",False,,False,False,False,0.8556842803955078
+628643,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.7889270782470703
+628641,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bạch Giá - Kiên Giang,"Rạch Giá, Kiên Giang",False,Rạch Giá - Kiên Giang,False,True,False,0.820159912109375
+628635,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bạch Giá - Kiên Giang,"Rạch Giá, Kiên Giang",False,Rạch Giá - Kiên Giang,False,True,False,0.7719993591308594
+628649,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Rạch Giá - Kiên Giang,"Rạch Giá, Kiên Giang",False,Rạch Giá - Kiên Giang,False,True,False,0.7839202880859375
+628644,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bảo sanh Ân Cơ - Rạch Gián - Kiên Giang,"Bảo sanh Ân Cơ, Rạch Giá, Kiên Giang",False,,False,False,False,0.8523464202880859
+628631,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.8721351623535156
+628651,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,An Biên - Kiên Giang,"An Biên, Kiên Giang",False,,False,False,False,0.8225440979003906
+628648,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bạch Giá - Kiên Giang,"Rạch Giá, Kiên Giang",False,Rạch Giá - Kiên Giang,False,True,False,0.8029937744140625
+628624,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Rạch Giá - Kiên Giang,"Rạch Giá, Kiên Giang",False,Rạch Giá - Kiên Giang,False,True,False,0.8590221405029297
+628650,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.8554458618164062
+628527,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Châu Thành - Kiên Giang,"Châu Thành, Kiên Giang",False,,False,False,False,0.8563995361328125
+628653,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bạch Giá - Kiên Giang,"Rạch Giá, Kiên Giang",False,Rạch Giá - Kiên Giang,False,True,False,0.8594989776611328
+628658,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.8304119110107422
+628655,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Xã Khánh Tiến - Huyện U Minh - Cà Mau,"Xã Khánh Tiến, huyện U Minh,  Cà Mau",False,,False,False,False,0.8060932159423828
+628654,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.8502006530761719
+628652,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Rạch Giáo - Kiên Giang,"Rạch Giá, Kiên Giang",False,Rạch Giá - Kiên Giang,False,True,False,0.8113384246826172
+628660,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiền Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.8635520935058594
+628663,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiền Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.7975101470947266
+628665,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.8137226104736328
+628656,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiền Giang,Bệnh viện đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,False,True,False,0.8292198181152344
+628667,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.8115768432617188
+628669,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.75531005859375
+628664,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiền Giang,Bệnh viện đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,False,True,False,0.9725093841552734
+628668,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện Hùng Vương - TP. Hồ Chí Minh,"Bệnh viện Hùng Vương, thành phố Hồ Chí Minh",False,,False,False,False,0.8509159088134766
+628659,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.8547306060791016
+628672,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Rạch Giá - Kiến Giang,"Rạch Giá, Kiên Giang",False,Rạch Giá - Kiên Giang,False,True,False,0.8072853088378906
+628673,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Rạch Giá - Kiên Giang,"Rạch Giá, Kiên Giang",False,Rạch Giá - Kiên Giang,False,True,False,1.0797977447509766
+628675,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.8838176727294922
+628674,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,hà Bắc sanh Thiện Phước - TP Hồ Chí Minh,"Nhà Bảo sanh Thiện Phước, Thành phố Hồ Chí Minh",False,,False,False,False,0.9329319000244141
+628679,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Rạch Giá - Kiên Giang,"Rạch Giá, Kiên Giang",False,Rạch Giá - Kiên Giang,False,True,False,1.085519790649414
+628684,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Giồng Riềng - Kiên Giang,"Giồng Riềng, Kiên Giang",False,"Giồng Riềng, Kiên Giang",True,True,True,0.9171962738037109
+628681,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.9014606475830078
+628676,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Nhà Bảo Sanh Lê Ngọc Cam - Rạch Giá- Kiên Giang,"Nhà Bảo Sanh Lê Ngọc Cam, Rạch Giá, Kiên Giang",False,"Nhà bảo sanh Lê Ngọc Cam, Rạch Giá, Kiên Giang",False,True,False,0.8871555328369141
+628682,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.865936279296875
+628688,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Rạch Giá - Kiên Giang,"Rạch Giá, Kiên Giang",False,Rạch Giá - Kiên Giang,False,True,False,0.8065700531005859
+628689,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Rạch Giáo - Kiên Giang,"Rạch Giá, Kiên Giang",False,Rạch Giá - Kiên Giang,False,True,False,0.8480548858642578
+628685,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.8161067962646484
+628686,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Rạch Giáo - Kiên Giang,"Rạch Giá, Kiên Giang",False,Rạch Giá - Kiên Giang,False,True,False,0.7643699645996094
+628687,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Rạch Giá - Kiên Giang,"Rạch Giá, Kiên Giang",False,Rạch Giá - Kiên Giang,False,True,False,0.7939338684082031
+628694,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Rạch Giá - Kiên Giang,"Rạch Giá, Kiên Giang",False,Rạch Giá - Kiên Giang,False,True,False,1.6193389892578125
+628690,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Rạch Giá - Kiên Giang,"Rạch Giá, Kiên Giang",False,Rạch Giá - Kiên Giang,False,True,False,0.8494853973388672
+628695,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Rạch Gián - Kiền Giang,"Rạch Giá, Kiền Giang",False,,False,False,False,1.0843276977539062
+628704,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.9813308715820312
+628697,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.9047985076904297
+628693,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Rạch Giá - Kiên Giang,"Rạch Giá, Kiên Giang",False,Rạch Giá - Kiên Giang,False,True,False,0.9253025054931641
+628698,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiền Giang,Bệnh viện đa khoa Kiên Giang,False,,False,False,False,0.926971435546875
+628700,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.8726119995117188
+628701,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Nhà Bảo Vinh Kim Chi - Rạnh Giá - Kiên Giang,"Nhà Bảo sanh Kim Chi, Rạch Giá, Kiên Giang",False,,False,False,False,0.9183883666992188
+628683,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Hạch Giá - Kiên Giang,"Rạch Giá, Kiên Giang",False,Rạch Giá - Kiên Giang,False,True,False,0.8826255798339844
+628707,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Rạch Giá - Kiên Giang,"Rạch Giá, Kiên Giang",False,Rạch Giá - Kiên Giang,False,True,False,0.8027553558349609
+628706,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.8704662322998047
+628708,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Rạch Giá - Kiên Giang,"Rạch Giá, Kiên Giang",False,Rạch Giá - Kiên Giang,False,True,False,0.7910728454589844
+628699,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.8356571197509766
+628709,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.8132457733154297
+628712,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.8475780487060547
+628577,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.8416175842285156
+628702,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiền Giang,Bệnh viện Đa khoa Kiên Giang,False,,False,False,False,0.8575916290283203
+628710,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Hòa Đất - Kiên Giang,"Hòa Đất, Kiên Giang",False,,False,False,False,0.8237361907958984
+628705,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Rạch Giái - Kiên Giang,"Rạch Giá, Kiên Giang",False,,False,False,False,0.7839202880859375
+628713,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiền Giang,Bệnh viện Đa khoa Kiên Giang,False,,False,False,False,0.8378028869628906
+628717,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.8492469787597656
+628715,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Rạch Giá - Kiên Giang,"Rạch Giá, Kiên Giang",False,Rạch Giá - Kiên Giang,False,True,False,0.8919239044189453
+628720,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bạch Giá - Kiên Giang,"Rạch Giá, Kiên Giang",False,Rạch Giá - Kiên Giang,False,True,False,0.8208751678466797
+628714,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Rạch Giá - Kiên Giang,"Rạch Giá, Kiên Giang",False,Rạch Giá - Kiên Giang,False,True,False,1.0464191436767578
+628718,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Phường khám Khu vực Són - Hòn Đất - Kiêm Giang,"Phòng khám khu vực Sóc Sơn, Hòn Đất, Kiên Giang",False,,False,False,False,0.8661746978759766
+628723,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Rạch Giá - Kiên Giang,"Rạch Giá, Kiên Giang",False,Rạch Giá - Kiên Giang,False,True,False,0.8614063262939453
+628716,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bản Sanh Âu Cơ - Bạch Giá - Kiên Giang,"Bản sanh Âu Cơ, Rạch Giá, Kiên Giang",False,,False,False,False,0.8428096771240234
+628719,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.8380413055419922
+628727,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Rạch Gián - Kiên Giang,"Rạch Giá, Kiên Giang",False,,False,False,False,0.9105205535888672
+628725,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bảo sanh Lê Ngọc Cam.,Bảo sanh Lê Ngọc Cam,False,,False,False,False,0.8351802825927734
+628730,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.8718967437744141
+628726,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Rạch Giáo - Kiên Giang,"Rạch Giá, Kiên Giang",False,Rạch Giá - Kiên Giang,False,True,False,0.8451938629150391
+628737,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Rạch Giá - Kiên Giang,"Rạch Giá, Kiên Giang",False,Rạch Giá - Kiên Giang,False,True,False,0.789642333984375
+628732,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Rạch Giá - Kiên Giang Hoa,"Rạch Giá, Kiên Giang",False,Rạch Giá - Kiên Giang,False,True,False,0.8540153503417969
+628729,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.8635520935058594
+628731,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.7905960083007812
+628735,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.7796287536621094
+628740,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Rạch Giá - Kiên Giang,"Rạch Giá, Kiên Giang",False,Rạch Giá - Kiên Giang,False,True,False,0.7798671722412109
+628734,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.8108615875244141
+628743,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,An Minh - Kiên Giang,"An Minh, Kiên Giang",False,,False,False,False,0.7503032684326172
+628747,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,TP Hồ Chí Minh,TP. Hồ Chí Minh,False,,False,False,False,0.7967948913574219
+628746,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Rạch Gián - Kiền Giang,"Rạch Giá, Kiên Giang",False,"Rạch Giá, Kiền Giang",False,True,False,0.8161067962646484
+628711,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.7936954498291016
+628749,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.8003711700439453
+628742,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiền Giang,Bệnh viện Đa khoa Kiên Giang,False,,False,False,False,0.804901123046875
+628738,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiền Giang,Bệnh viện đa khoa Kiên Giang,False,,False,False,False,0.7700920104980469
+628750,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.7884502410888672
+628646,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.9891986846923828
+628748,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,1.0678768157958984
+628753,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,"Rạch Giá, Kiên Giang",False,Bệnh viện Đa khoa Kiên Giang,False,True,False,0.9555816650390625
+628752,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Rạch Giá - Kiên Giang,"Rạch Giá, Kiên Giang",False,Rạch Giá - Kiên Giang,False,True,False,0.8859634399414062
+628754,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,An Minh - Kiên Giang,"An Minh, Kiên Giang",False,,False,False,False,0.7956027984619141
+628756,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Rạch Giá - Kiên Giang,"Rạch Giá, Kiên Giang",False,Rạch Giá - Kiên Giang,False,True,False,0.8149147033691406
+628758,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.850677490234375
+628759,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.8285045623779297
+628757,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.8070468902587891
+628763,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,"Bảo Sanh, Lê Ngọc Cam - Rạch Giá - Kiên Giang","Bảo Sanh Lê Ngọc Cam, Rạch Giá, Kiên Giang",False,,False,False,False,0.9102821350097656
+628739,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.8642673492431641
+628760,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiền Giang,Bệnh viện Đa khoa Kiên Giang,False,,False,False,False,0.7770061492919922
+628766,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Cam Ranh - Khánh Hòa,"Cam Ranh, Khánh Hòa",False,,False,False,False,0.8039474487304688
+628764,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,"Bệnh viện đa, khoa Sn Đức - Đồng Tháp","Bệnh viện Đa khoa Sa Đéc, Đồng Tháp",False,,False,False,False,0.9582042694091797
+628765,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,An Minh - Kiên Giang,"An Minh, Kiên Giang",False,,False,False,False,0.8466243743896484
+628767,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Rạch Giá - Kiền Giang,"Rạch Giá, Kiên Giang",False,,False,False,False,0.827789306640625
+628768,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Hồng Dân - Bạc Liêu,"Hồng Dân, Bạc Liêu",False,,False,False,False,1.0221004486083984
+628770,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.9195804595947266
+628733,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Rạch Giá - Kiên Giang,"Rạch Giá, Kiên Giang",False,Rạch Giá - Kiên Giang,False,True,False,0.8499622344970703
+628762,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.8862018585205078
+628771,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.865936279296875
+628773,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.8101463317871094
+628775,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Rạch Giá - Kiên Giang,"Rạch Giá, Kiên Giang",False,Rạch Giá - Kiên Giang,False,True,False,0.8544921875
+628781,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.8356571197509766
+628779,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện Từ Dũ - TP. Hồ Chí Minh,"Bệnh viện Từ Dũ, Thành phố Hồ Chí Minh",False,,False,False,False,0.8344650268554688
+628777,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiền Giang,Bệnh viện Đa khoa Kiên Giang,False,,False,False,False,0.8051395416259766
+628786,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bạch Giá - Kiên Giang,"Rạch Giá, Kiên Giang",False,,False,False,False,0.8540153503417969
+628785,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Rạch Giá - Kiên Giang,"Rạch Giá, Kiên Giang",False,Rạch Giá - Kiên Giang,False,True,False,0.8652210235595703
+628784,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiền Giang,Bệnh viện Đa khoa Kiên Giang,False,,False,False,False,0.8444786071777344
+628755,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Rạch Giáo - Kiên Giang,Rạch Giá - Kiên Giang,False,Rạch Giá - Kiên Giang,True,True,True,0.835418701171875
+628776,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang người con,Bệnh viện đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,False,True,False,0.8740425109863281
+628782,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Phông khám ĐKKI Rạch Sởi - Rạch Giá - Kiên Giang,"Phòng khám Đa khoa khu vực Rạch Sỏi, Rạch Giá, Kiên Giang",False,,False,False,False,0.9436607360839844
+628789,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Trung tâm Y tế An Biển - Kiên Giang,"Trung tâm Y tế An Biên, Kiên Giang",False,,False,False,False,0.8862018585205078
+628790,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.865936279296875
+628787,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,nhà Bảo Sanh Âu Cơ - Rạch Gia - Kiên Giang,"Nhà Bảo Sanh Âu Cơ, Rạch Giá, Kiên Giang",False,,False,False,False,0.8516311645507812
+628792,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.8442401885986328
+628794,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Rạch Giá - Kiên Giang,"Rạch Giá, Kiên Giang",False,Rạch Giá - Kiên Giang,False,True,False,0.7717609405517578
+628791,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện Từ Dũ - TP. Hồ Chí Minh,"Bệnh viện Từ Dũ, TP. Hồ Chí Minh",False,"Bệnh viện Từ Dũ, TP. Hồ Chí Minh",True,True,True,1.0447502136230469
+628798,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.8015632629394531
+628797,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.8392333984375
+628795,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.8423328399658203
+628796,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.7891654968261719
+628799,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện ân khoa Kiền Giang,Bệnh viện Đa khoa Kiên Giang,False,,False,False,False,0.7963180541992188
+628803,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiền Giang,Bệnh viện Đa khoa Kiên Giang,False,,False,False,False,0.7851123809814453
+628804,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Nam Đàn - Nghệ An,"Nam Đàn, Nghệ An",False,,False,False,False,0.7491111755371094
+628806,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Rạch Giá - Kiên Giang,"Rạch Giá, Kiên Giang",False,Rạch Giá - Kiên Giang,False,True,False,0.8645057678222656
+628807,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.8304119110107422
+628809,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.7853507995605469
+628805,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.8087158203125
+628772,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Rạch Giác - Kiên Giang,"Rạch Giá, Kiên Giang",False,,False,False,False,0.8311271667480469
+628813,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Trạm Y tế xã Mỹ Lâm - Hoàn Đất - Kiên Giang,"Trạm Y tế xã Mỹ Lâm, Hòn Đất, Kiên Giang",False,,False,False,False,0.789642333984375
+628814,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.8208751678466797
+628815,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.83160400390625
+628818,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Vĩnh Thuận - Kiên Giang,"Vĩnh Thuận, Kiên Giang",False,,False,False,False,0.7891654968261719
+628812,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,1.190185546875
+628778,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiền Giang,Bệnh viện Đa khoa Kiên Giang,False,,False,False,False,0.8685588836669922
+628703,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.8463859558105469
+628820,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Rạch Giá - Kiên Giang,"Rạch Giá, Kiên Giang",False,Rạch Giá - Kiên Giang,False,True,False,0.8704662322998047
+628808,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.9565353393554688
+628724,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Rạch Gián - Kiên Giang,"Rạch Giá, Kiên Giang",False,,False,False,False,0.9300708770751953
+628825,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Rạch Giá - Kiên Giang,"Rạch Giá, Kiên Giang",False,Rạch Giá - Kiên Giang,False,True,False,0.9398460388183594
+628821,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,1.0366439819335938
+628828,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,1.5625953674316406
+628827,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,1.2328624725341797
+628816,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,1.1310577392578125
+628823,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiền Giang,Bệnh viện Đa khoa Kiên Giang,False,,False,False,False,1.573801040649414
+628833,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,1.1153221130371094
+628824,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiền Giang,Bệnh viện Đa khoa Kiên Giang,False,,False,False,False,1.0230541229248047
+628832,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,1.0595321655273438
+628831,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Rạch Giá - Kiên Giang,"Rạch Giá, Kiên Giang",False,Rạch Giá - Kiên Giang,False,True,False,1.0120868682861328
+628836,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiền Giang,Bệnh viện Đa khoa Kiên Giang,False,,False,False,False,0.9670257568359375
+628837,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.9868144989013672
+628838,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,đạch Giá - Kiên Giang,"Rạch Giá, Kiên Giang",False,Rạch Giá - Kiên Giang,False,True,False,0.9667873382568359
+628843,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Rạch Giá - Kiên Giang,Tỉa Kim Thủy,False,Rạch Giá - Kiên Giang,False,True,False,0.8699893951416016
+628830,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.9665489196777344
+628829,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.8666515350341797
+628840,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Rạch Giác - Kiên Giang,"Rạch Giá, Kiên Giang",False,,False,False,False,0.8254051208496094
+628848,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Gò Quao - Kiên Giang,"Gò Quao, Kiên Giang",False,,False,False,False,0.8022785186767578
+628841,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Rạch Giá - Kiên Giang,"Rạch Giá, Kiên Giang",False,Rạch Giá - Kiên Giang,False,True,False,0.8845329284667969
+628846,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Sa Đức - Đông Tháp,"Sa Đéc, Đồng Tháp",False,,False,False,False,0.80108642578125
+628839,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Rạch Gián - Kiên Giang,"Rạch Giá, Kiên Giang",False,,False,False,False,0.972747802734375
+628849,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.9036064147949219
+628847,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.8928775787353516
+628845,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Rạch Giá - Kiên Giang,"Rạch Giá, Kiên Giang",False,Rạch Giá - Kiên Giang,False,True,False,0.83160400390625
+628850,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.8311271667480469
+628835,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Trạm y tế Thạnh Yên - An Biên - Bên Giang,"Trạm y tế Thạnh Yên, An Biên, Kiên Giang",False,,False,False,False,0.8921623229980469
+628844,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.8819103240966797
+628853,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Châu Thành - Rạch Giá,"Châu Thành, Rạch Giá",False,,False,False,False,0.8425712585449219
+628854,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.8943080902099609
+628855,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.881195068359375
+628856,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.8244514465332031
+628852,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Đạch Giá - Kiên Giang,"Rạch Giá, Kiên Giang",False,Rạch Giá - Kiên Giang,False,True,False,0.8227825164794922
+628842,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bạch Giá - Kiên Giang,"Rạch Giá, Kiên Giang",False,,False,False,False,0.8261203765869141
+628858,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Rạch Giá - Kiên Giang,"Rạch Giá, Kiên Giang",False,Rạch Giá - Kiên Giang,False,True,False,0.8516311645507812
+628851,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.8311271667480469
+628859,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Gò Quao - Kiên Giang,"Gò Quao, Kiên Giang",False,,False,False,False,0.8151531219482422
+628866,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.7877349853515625
+628857,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bạch Giá - Kiên Giang,"Rạch Giá, Kiên Giang",False,,False,False,False,0.7939338684082031
+628862,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Rạch Giá - Kiên Giang,"Rạch Giá, Kiên Giang",False,Rạch Giá - Kiên Giang,False,True,False,0.8251667022705078
+628863,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bạch Gián - Kiên Giang,"Rạch Giá, Kiên Giang",False,,False,False,False,1.0101795196533203
+628869,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.9284019470214844
+628872,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiền Giang,Bệnh viện Đa khoa Kiên Giang,False,,False,False,False,0.8749961853027344
+628865,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bạch Gia Kiên Giang,"Rạch Giá, Kiên Giang",False,,False,False,False,0.8313655853271484
+628874,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bạch Giá - Kiên Giang,"Rạch Giá, Kiên Giang",False,,False,False,False,0.8184909820556641
+628867,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa Nhoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.8671283721923828
+628861,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.8661746978759766
+628873,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Rạch Giá - Kiên Giang,"Rạch Giá, Kiên Giang",False,Rạch Giá - Kiên Giang,False,True,False,0.7889270782470703
+628877,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện Từ Dũ - TP Hồ Chí Minh,"Bệnh viện Từ Dũ, Thành phố Hồ Chí Minh",False,,False,False,False,0.8437633514404297
+628875,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.8463859558105469
+628879,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.7970333099365234
+628881,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bảo sanh Âu Cơ - Rạch Giá - Kiên Giang,"Bảo sanh Âu Cơ, Rạch Giá, Kiên Giang",False,,False,False,False,0.8151531219482422
+628826,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.8418560028076172
+628834,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.7977485656738281
+628876,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,"Bến viện đa, khoa Kiền Giang",Bệnh viện Đa khoa Kiên Giang,False,,False,False,False,0.7853507995605469
+628883,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.8382797241210938
+628887,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.8101463317871094
+628891,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện Tân khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.8060932159423828
+628892,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.9884834289550781
+628882,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Rạch Giá - Kiền Giang,"Rạch Giá, Kiên Giang",False,,False,False,False,0.7960796356201172
+628888,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.8413791656494141
+628868,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.9491443634033203
+628895,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Rạch Giá - Kiên Giang,"Rạch Giá, Kiên Giang",False,Rạch Giá - Kiên Giang,False,True,False,0.8680820465087891
+628780,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiền Giang,Bệnh viện Đa khoa Kiên Giang,False,,False,False,False,0.823974609375
+628901,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Rạch Giá - Kiên Giang,"Rạch Giá, Kiên Giang",False,Rạch Giá - Kiên Giang,False,True,False,0.8347034454345703
+628897,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Rạch Giá - Kiên Giang,"Rạch Giá, Kiên Giang",False,Rạch Giá - Kiên Giang,False,True,False,0.8187294006347656
+628898,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiền Giang,Bệnh viện Đa khoa Kiên Giang,False,,False,False,False,0.8544921875
+628900,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.7846355438232422
+628902,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,lạch Giá - Kiên Giang,"Rạch Giá, Kiên Giang",False,Rạch Giá - Kiên Giang,False,True,False,0.8230209350585938
+628894,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Rạch Giá - Kiên Giang,"Rạch Giá, Kiên Giang",False,Rạch Giá - Kiên Giang,False,True,False,0.9744167327880859
+628896,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,1.3401508331298828
+628905,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Gò Quao - Kiên Giang,"Gò Quao, Kiên Giang",False,,False,False,False,1.0402202606201172
+628904,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Rạch Giá - Kiên Giang,"Rạch Giá, Kiên Giang",False,Rạch Giá - Kiên Giang,False,True,False,0.91552734375
+628886,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,1.085519790649414
+628800,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.9367465972900391
+628907,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang Việt Nam,Bệnh viện đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,False,True,False,0.9303092956542969
+628914,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Rạch Giá - Kiên Giang,"Rạch Giá, Kiên Giang",False,Rạch Giá - Kiên Giang,False,True,False,0.8516311645507812
+628910,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Rạch Giá - Kiên Giang,"Rạch Giá, Kiên Giang",False,Rạch Giá - Kiên Giang,False,True,False,0.8511543273925781
+628915,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiền Giang,Bệnh viện Đa khoa Kiên Giang,False,,False,False,False,0.8788108825683594
+628909,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.86212158203125
+628906,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện Đa khoa Huyện Hòn Đất - Kiên Giang,"Bệnh viện Đa khoa huyện Hòn Đất, Kiên Giang",False,,False,False,False,0.8893013000488281
+628911,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiền Giang,Bệnh viện Đa khoa Kiên Giang,False,,False,False,False,0.8752346038818359
+628912,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Rạch Gian - Kiên Giang,"Rạch Giá, Kiên Giang",False,,False,False,False,0.8676052093505859
+628917,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiền Giang,Bệnh viện Đa khoa Kiên Giang,False,,False,False,False,0.8878707885742188
+628913,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện Đa khoa Kiên Giang,Bệnh viện đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,False,True,False,0.8485317230224609
+628922,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.9431838989257812
+628920,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Rạch Giá - Kiên Giang,"Rạch Giá, Kiên Giang",False,Rạch Giá - Kiên Giang,False,True,False,0.9100437164306641
+628923,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.8671283721923828
+628916,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiềm Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.9119510650634766
+628935,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.8687973022460938
+628932,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Rạch Giá - Kiên Giang,"Rạch Giá, Kiên Giang",False,Rạch Giá - Kiên Giang,False,True,False,0.8709430694580078
+628925,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa tư nhân Bình An - Kiên Giang,"Bệnh viện Đa khoa tư nhân Bình An, Kiên Giang",False,,False,False,False,0.8790493011474609
+628819,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.8993148803710938
+628927,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Rạch Giá - Kiên Giang,"Rạch Giá, Kiên Giang",False,Rạch Giá - Kiên Giang,False,True,False,0.8413791656494141
+628929,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiền Giang,Bệnh viện Đa khoa Kiên Giang,False,,False,False,False,0.8041858673095703
+628926,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Xuân Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.8380413055419922
+628930,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Rạch Giá - Kiên Giang,"Rạch Giá, Kiên Giang",False,Rạch Giá - Kiên Giang,False,True,False,0.8523464202880859
+628919,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Nhà Bảo Sanh Lê Ngọc Cam - Bạch Gián - Kiên Giang,"Nhà Bảo sanh Lê Ngọc Cam, Rạch Giá, Kiên Giang",False,,False,False,False,0.9067058563232422
+628931,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiền Giang,Bệnh viện Đa khoa Kiền Giang,False,,False,False,False,1.0991096496582031
+628942,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Rạch Giá - Kiên Giang,"Rạch Giá, Kiên Giang",False,Rạch Giá - Kiên Giang,False,True,False,0.9753704071044922
+628943,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.9295940399169922
+628937,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.8873939514160156
+628940,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bạch Giá - Kiên Giang,"Rạch Giá, Kiên Giang",False,,False,False,False,0.8640289306640625
+628936,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.8263587951660156
+628928,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.8895397186279297
+628941,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.9100437164306641
+628944,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Rạch Giá - Kiên Giang,"Rạch Giá, Kiên Giang",False,Rạch Giá - Kiên Giang,False,True,False,0.8418560028076172
+628945,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Thạch Giá - Kiên Giang,"Rạch Giá, Kiên Giang",False,,False,False,False,0.8690357208251953
+628948,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bạch Giá - Kiên Giang,"Rạch Giá, Kiên Giang",False,,False,False,False,0.8807182312011719
+628950,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiền Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiền Giang,False,True,False,0.835418701171875
+628949,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa 1. Gióng Kiềng - Kiên Giang,"Bệnh viện Đa khoa, huyện Giồng Riềng, Kiên Giang",False,,False,False,False,0.8618831634521484
+628951,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.8718967437744141
+628947,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.7932186126708984
+628946,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Rạch Gia - Kiên Giang,"Rạch Giá, Kiên Giang",False,,False,False,False,0.8258819580078125
+628960,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.8075237274169922
+628957,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.7953643798828125
+628959,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Châu Thành - Kiên Giang,"Châu Thành, Kiên Giang",False,,False,False,False,0.8325576782226562
+628953,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiền Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiền Giang,False,True,False,0.7865428924560547
+628962,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Rạch Giá - Kiên Giang,"Rạch Giá, Kiên Giang",False,Rạch Giá - Kiên Giang,False,True,False,0.8101463317871094
+628963,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Rạch Giá - Kiên Giang,"Rạch Giá, Kiên Giang",False,Rạch Giá - Kiên Giang,False,True,False,0.8361339569091797
+628965,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.7846355438232422
+628966,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.8060932159423828
+628968,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Châu Thành - Kiên Giang,"Châu Thành, Kiên Giang",False,,False,False,False,0.7903575897216797
+628969,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện Từ Dũ - TP Hồ Chí Minh,"Bệnh viện Từ Dũ,TP Hồ Chí Minh",False,,False,False,False,0.7894039154052734
+628971,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.9937286376953125
+628964,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.8494853973388672
+628972,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiền Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiền Giang,False,True,False,0.812530517578125
+628961,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Châu Thành - Kiên Giang,"Châu Thành, Kiên Giang",False,,False,False,False,0.7905960083007812
+628973,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,1.0204315185546875
+628974,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiến Giang,Bệnh viện đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,False,True,False,0.8141994476318359
+628975,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.8308887481689453
+628977,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bạch Giá - Kiên Giang,"Rạch Giá, Kiên Giang",False,,False,False,False,0.8282661437988281
+628976,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Châu Thành - Kiên Giang,"Châu Thành, Kiên Giang",False,,False,False,False,1.051187515258789
+628979,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiền Gian,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiền Giang,False,True,False,0.9281635284423828
+628978,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Rạch Giá - Kiên Giang Hoa Việt Nam,"Rạch Giá, Kiên Giang",False,,False,False,False,0.9443759918212891
+628981,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,1.0542869567871094
+628986,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Rạch Giá - Kiên Giang,"Rạch Giá, Kiên Giang",False,Rạch Giá - Kiên Giang,False,True,False,0.9615421295166016
+628985,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.9324550628662109
+628982,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiền Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiền Giang,False,True,False,0.8931159973144531
+628970,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện Từ Dũ - TP. Hồ Chí Minh,"Bệnh viện Từ Dũ, TP. Hồ Chí Minh",False,,False,False,False,0.9355545043945312
+628878,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bạch Gián - Kiên Giang,"Rạch Giá, Kiên Giang",False,,False,False,False,0.8878707885742188
+628984,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiền Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiền Giang,False,True,False,0.8680820465087891
+628993,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,1.1587142944335938
+628992,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiền Giang,Bệnh viện đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiền Giang,False,True,False,0.9915828704833984
+628990,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Cường Riềng - Kiên Giang,"Giồng Riềng, Kiên Giang",False,,False,False,False,1.1286735534667969
+628995,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,1.0151863098144531
+628997,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Rạch Giá - Kiên Giang,"Rạch Giá, Kiên Giang",False,Rạch Giá - Kiên Giang,False,True,False,1.0933876037597656
+628952,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,1.340627670288086
+628996,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Mỹ Phước - An Giang,"Mỹ Phước, An Giang",False,,False,False,False,1.0416507720947266
+628998,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Giồng Hằng - Kiên Giang,"Giồng Riềng, Kiên Giang",False,,False,False,False,0.9553432464599609
+628994,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện Hùng Vương - TP. Hồ Chí Minh,"Bệnh viện Hùng Vương, Thành phố Hồ Chí Minh",False,,False,False,False,0.9551048278808594
+628999,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiền Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiền Giang,False,True,False,0.8728504180908203
+629000,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,34/33/1 Nguyễn Thái Học - Vĩnh Bắc - Hạch Góa - X6,"34/33/1 Nguyễn Thái Học, Vĩnh Bảo, Rạch Giá, Kiên Giang",False,,False,False,False,1.3930797576904297
+629004,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.9143352508544922
+629001,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,34/33/1 Nguyễn Thái Đạo - Vĩnh Bảo - Hạch Giá- BG,"34/33/1 Nguyễn Thái Học, Vĩnh Bảo, Rạch Giá, Kiên Giang",False,,False,False,False,0.9109973907470703
+629006,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Rạch Giá - Kiên Giang,"Rạch Giá, Kiên Giang",False,Rạch Giá - Kiên Giang,False,True,False,0.8180141448974609
+629009,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa tiệu Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.8542537689208984
+629008,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang.,Bệnh viện đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,False,True,False,0.8158683776855469
+629003,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.7979869842529297
+629012,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiền Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiền Giang,False,True,False,0.850677490234375
+629011,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.8206367492675781
+629010,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,tạch Giá - Kiền Giang,"Rạch Giá, Kiên Giang",False,,False,False,False,0.7925033569335938
+628988,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiền Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiền Giang,False,True,False,0.858306884765625
+629014,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Qang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.8647441864013672
+629018,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Vĩng Vĩnh Bình - Trà Vinh,"Vĩnh Bình, Trà Vinh",False,,False,False,False,0.8575916290283203
+629002,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.8666515350341797
+629019,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Rạch Giá - Kiên Giang,"Rạch Giá, Kiên Giang",False,Rạch Giá - Kiên Giang,False,True,False,0.8249282836914062
+629020,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Tân Hiệp - Kiên Giang,"Tân Hiệp, Kiên Giang",False,,False,False,False,0.8585453033447266
+629022,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bảo sanh Âu Cơ - Rạch Giá - Kiên Giang,"Bảo sanh Âu Cơ, Rạch Giá, Kiên Giang",False,,False,False,False,0.9028911590576172
+629016,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.8726119995117188
+629021,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bảo sanh Âu Cơ - Rạch Giá - Kiên Giang,"Bảo sanh Âu Cơ, Rạch Giá, Kiên Giang",False,,False,False,False,0.8778572082519531
+629023,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Liên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.83160400390625
+629027,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiền Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiền Giang,False,True,False,0.8111000061035156
+629030,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.8604526519775391
+629031,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.8533000946044922
+629028,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.8249282836914062
+628899,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.8063316345214844
+629032,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.8635520935058594
+629038,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Trạm 4 Tế phường Phước Hội - Bình Thuận,"Trạm Y tế phường Phước Hội, Bình Thuận",False,,False,False,False,0.8473396301269531
+629036,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Châu Thành - Kiên Giang,"Châu Thành, Kiên Giang",False,,False,False,False,0.8442401885986328
+629037,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Rạch Giá - Kiên Giang,"Rạch Giá, Kiên Giang",False,Rạch Giá - Kiên Giang,False,True,False,0.8070468902587891
+629034,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiền Giang,Bệnh viện đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiền Giang,False,True,False,0.9160041809082031
+629040,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.8795261383056641
+629024,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện Từ Dũ - TP. Hồ Chí Minh,"Bệnh viện Từ Dũ, Thành Phố Hồ Chí Minh",False,,False,False,False,0.8263587951660156
+629042,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,1.1703968048095703
+629039,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.865936279296875
+629046,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Rạch Giá - Kiên Giang,"Rạch Giá, Kiên Giang",False,Rạch Giá - Kiên Giang,False,True,False,0.7913112640380859
+629043,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Long Mỹ - Hậu Giang,"Long Mỹ, Hậu Giang",False,,False,False,False,0.8714199066162109
+629048,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Rạch Giá - Kiên Giang,"Rạch Giá, Kiên Giang",False,Rạch Giá - Kiên Giang,False,True,False,0.8509159088134766
+629029,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Giồng Riền - Kiên Giang,"Giồng Riềng, Kiên Giang",False,,False,False,False,0.8273124694824219
+629051,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.8034706115722656
+629041,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện Tân khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,,False,False,False,0.8537769317626953
+629052,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Rạch Giá - Kiên Giang,"Rạch Giá, Kiên Giang",False,Rạch Giá - Kiên Giang,False,True,False,0.8213520050048828
+629049,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.865936279296875
+629056,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,1.1205673217773438
+629058,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiến Giang,Bệnh viện đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,False,True,False,0.9887218475341797
+629055,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện sốn khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.9105205535888672
+629059,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang.,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,1.0502338409423828
+629045,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Rạch Giá - Kiên Giang,"Rạch Giá, Kiên Giang",False,Rạch Giá - Kiên Giang,False,True,False,0.9417533874511719
+629060,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.93841552734375
+629053,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.9613037109375
+629068,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiền Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiền Giang,False,True,False,0.9770393371582031
+629062,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.8935928344726562
+629065,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiền Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiền Giang,False,True,False,0.8783340454101562
+629067,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.8878707885742188
+629064,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.827789306640625
+629066,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Trạm tế Phường Vĩnh Thanh - Tạch Gia - Kiên Giang,"Trạm Y tế phường Vĩnh Thanh, Rạch Giá, Kiên Giang",False,,False,False,False,0.934600830078125
+629070,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.9672641754150391
+629063,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viển đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.9665489196777344
+629075,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Trạm Tế Phường Hạch Sơn - Rạch Giá - Kiên Giang,"Trạm Y tế phường Rạch Sỏi, Rạch Giá, Kiên Giang",False,,False,False,False,0.9474754333496094
+629079,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,1.081705093383789
+629076,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.8895397186279297
+629077,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiền Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiền Giang,False,True,False,0.8919239044189453
+629083,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Tỉnh Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.9589195251464844
+628938,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,1.28173828125
+629078,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,28/13 Nguyễn Trung Trực - Tĩnh Bắc - QG - KG,"28/13 Nguyễn Trung Trực, Vĩnh Bảo, Rạch Giá, Kiên Giang",False,,False,False,False,0.9691715240478516
+629082,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,An Biên - Kiên Giang,"An Biên, Kiên Giang",False,,False,False,False,0.8702278137207031
+629087,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang.,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.8766651153564453
+629084,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.8895397186279297
+629086,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.8294582366943359
+629089,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện Bình An - Rạch Gia - Kiên Giang,"Bệnh viện Bình An, Rạch Giá, Kiên Giang",False,,False,False,False,0.9284019470214844
+629095,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Rạch Giá - Kiên Giang,"Rạch Giá, Kiên Giang",False,Rạch Giá - Kiên Giang,False,True,False,0.8785724639892578
+629092,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Rạch Giá - Kiên Giang,"Rạch Giá, Kiên Giang",False,Rạch Giá - Kiên Giang,False,True,False,0.8399486541748047
+629090,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.8561611175537109
+629091,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.8485317230224609
+629094,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bạnh Giá - Kiên Giang,"Rạch Giá, Kiên Giang",False,,False,False,False,0.8287429809570312
+629100,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,lạch Giá - Kiên Giang,"Rạch Giá, Kiên Giang",False,Rạch Giá - Kiên Giang,False,True,False,0.8733272552490234
+629099,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiến Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,1.0421276092529297
+629101,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiền Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiền Giang,False,True,False,0.8924007415771484
+629102,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Gồng Riềng - Kiên Giang,"Giồng Riềng, Kiên Giang",False,,False,False,False,0.9093284606933594
+629096,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiến Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.8804798126220703
+629109,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiền Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiền Giang,False,True,False,0.8943080902099609
+629103,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Rạch Giá - Kiến Giang,"Rạch Giá, Kiên Giang",False,Rạch Giá - Kiên Giang,False,True,False,0.8656978607177734
+629108,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện Từ Dũ - TP. Hồ Chí Minh.,"Bệnh viện Từ Dũ, thành phố Hồ Chí Minh",False,,False,False,False,0.8645057678222656
+629105,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,29/9 Chi Lăng - Vĩnh Bảo - hạnh Giá - K6,"29/9 Chi Lăng, Vĩnh Bảo, Rạch Giá, Kiên Giang",False,,False,False,False,0.8985996246337891
+629110,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Rạch Giá - Kiên Giang,"Rạch Giá, Kiên Giang",False,Rạch Giá - Kiên Giang,False,True,False,0.8981227874755859
+629112,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Rạch Giá - Kiên Giang,"Rạch Giá, Kiên Giang",False,Rạch Giá - Kiên Giang,False,True,False,0.8690357208251953
+629114,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Rạch Giá - Kiên Giang,"Rạch Giá, Kiên Giang",False,Rạch Giá - Kiên Giang,False,True,False,0.8351802825927734
+629104,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Giồng Điềng - Kiên Giang,"Giồng Riềng, Kiên Giang",False,,False,False,False,0.8220672607421875
+629044,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Rạch Giá - Kiên Giang,"Rạch Giá, Kiên Giang",False,Rạch Giá - Kiên Giang,False,True,False,0.8530616760253906
+629116,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện Từ Dũ - TP. Hồ Chí Minh,"Bệnh viện Từ Dũ, TP. Hồ Chí Minh",False,,False,False,False,0.8206367492675781
+629113,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa từ nhân Bình An - P6 - K6,"Bệnh viện Đa khoa tư nhân Bình An, Rạch Giá, Kiên Giang",False,,False,False,False,0.8823871612548828
+629117,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiền Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiền Giang,False,True,False,0.8592605590820312
+629120,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Nhà Bảo Sanh Thiện Phước - Q. Tân Phú - TPHCM,"Nhà Bảo Sanh Thiện Phước, quận Tân Phú, Thành Phố Hồ Chí Minh",False,,False,False,False,1.0590553283691406
+629074,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện Quận 1 - TP. HCM.,"Bệnh viện Quận 1, thành phố Hồ Chí Minh",False,,False,False,False,0.8683204650878906
+629123,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiển Giang,Bệnh viện đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,False,True,False,0.8616447448730469
+629122,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Rạch Giá - Kiên Giang,"Rạch Giá, Kiên Giang",False,Rạch Giá - Kiên Giang,False,True,False,1.432657241821289
+629118,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.8819103240966797
+629121,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Trung tâm y tế TP. Rạch Giá - Kiên Giang,"Trung tâm y tế thành phố Rạch Giá, Kiên Giang",False,,False,False,False,0.9028911590576172
+629119,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.8747577667236328
+629125,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiền Giang,Bệnh viện đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiền Giang,False,True,False,0.8788108825683594
+629127,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bạch Giá - Kiên Giang,"Rạch Giá, Kiên Giang",False,,False,False,False,0.8335113525390625
+629130,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiền Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiền Giang,False,True,False,0.8206367492675781
+629126,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,1.1386871337890625
+629133,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,1.0464191436767578
+629136,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Mỹ Xuyên - Sóc Trăng,"Mỹ Xuyên, Sóc Trăng",False,,False,False,False,0.8854866027832031
+629132,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Rạch Giá - Kiên Giang,"Rạch Giá, Kiên Giang",False,Rạch Giá - Kiên Giang,False,True,False,0.9465217590332031
+629129,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Rạch Qu - Kiên Giang,"Rạch Giá, Kiên Giang",False,,False,False,False,0.8733272552490234
+629134,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiền Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiền Giang,False,True,False,0.8833408355712891
+629135,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Rạch Giá - Kiên Giang,"Rạch Giá, Kiên Giang",False,Rạch Giá - Kiên Giang,False,True,False,0.8885860443115234
+629138,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Phường Vĩnh Lạc - Rạch Giá - Kiên Giang,"Phường Vĩnh Lạc, Rạch Giá, Kiên Giang",False,,False,False,False,0.8940696716308594
+629139,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Châu Đốc - An Giang,"Châu Đốc, An Giang",False,,False,False,False,0.8955001831054688
+629124,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiền Giang,Bệnh viện đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiền Giang,False,True,False,0.9162425994873047
+629141,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.8838176727294922
+629144,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa kiên Giang.,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.850677490234375
+629150,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiền Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiền Giang,False,True,False,0.8559226989746094
+629142,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.8199214935302734
+629143,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Mộ Đức - Quảng Ngãi,"Mộ Đức, Quảng Ngãi",False,,False,False,False,0.8287429809570312
+629140,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiền Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiền Giang,False,True,False,0.8673667907714844
+629148,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.8597373962402344
+629149,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Nhà bảo sanh Phương Trình - Giồng kiềng K6,"Nhà Bảo sanh Phương Trình, Giồng Riềng, Kiên Giang",False,,False,False,False,0.8599758148193359
+629147,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Long Mỹ - Hậu Giang,"Long Mỹ, Hậu Giang",False,,False,False,False,0.8502006530761719
+629155,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Rạch Giá - Kiên Giang,"Rạch Giá, Kiên Giang",False,Rạch Giá - Kiên Giang,False,True,False,0.8745193481445312
+629153,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Rạch Giá - Kiên Giang,"Rạch Giá, Kiên Giang",False,Rạch Giá - Kiên Giang,False,True,False,0.8308887481689453
+629154,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Rạch Giá - Kiên Giang,"Rạch Giá, Kiên Giang",False,Rạch Giá - Kiên Giang,False,True,False,0.8068084716796875
+629157,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.8661746978759766
+629152,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.8325576782226562
+629159,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Đồng Dân - Bạc Liêu,"Hồng Dân, Bạc Liêu",False,,False,False,False,0.7755756378173828
+629156,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiền Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiền Giang,False,True,False,0.8378028869628906
+629137,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.8306503295898438
+629013,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Lương - Kiên Giang,"Bệnh viện đa khoa Kiên Lương, Kiên Giang",False,,False,False,False,0.8945465087890625
+629151,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.8661746978759766
+629158,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiền Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiền Giang,False,True,False,0.8654594421386719
+629163,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiền Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiền Giang,False,True,False,0.8063316345214844
+629160,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.7872581481933594
+629162,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.8342266082763672
+629171,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện Đa khoa Kiên Giang.,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.8227825164794922
+629167,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.7922649383544922
+629164,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.843048095703125
+629173,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,1.020669937133789
+629175,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Rạch Giá - Kiên Giang,"Rạch Giá, Kiên Giang",False,Rạch Giá - Kiên Giang,False,True,False,0.9019374847412109
+629170,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Hồng Dân - Bạc Liêu,"Hồng Dân, Bạc Liêu",False,"Hồng Dân, Bạc Liêu",True,True,True,0.8563995361328125
+629176,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.8554458618164062
+629166,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiền Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiền Giang,False,True,False,0.8263587951660156
+629177,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa tỉnh Bình Dương,Bệnh viện Đa khoa Kiên Giang,False,,False,False,False,0.8959770202636719
+629181,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Hồng Dân - Bạc Liêu,"Hồng Dân, Bạc Liêu",False,"Hồng Dân, Bạc Liêu",True,True,True,0.8456707000732422
+629178,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.8847713470458984
+629183,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.8471012115478516
+629172,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.8137226104736328
+629182,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,21/7 Chi Lăng - Vĩnh Bắc - hại Các Kiên Giang,"81/7 Chi Lăng, Vĩnh Bảo, Rạch Giá, Kiên Giang",False,,False,False,False,0.8907318115234375
+629185,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiền Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiền Giang,False,True,False,0.8907318115234375
+629186,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Rạch Giá - Kiên Giang,"Rạch Giá, Kiên Giang",False,Rạch Giá - Kiên Giang,False,True,False,0.9000301361083984
+629180,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiền Giang,Bệnh viện đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiền Giang,False,True,False,0.8523464202880859
+629190,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Rạch Giá - Kiên Giang,"Rạch Giá, Kiên Giang",False,Rạch Giá - Kiên Giang,False,True,False,0.8122920989990234
+629189,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.8630752563476562
+629187,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.8454322814941406
+629188,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.8251667022705078
+629193,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Giồng Riềng - Kiên Giang,"Giồng Riềng, Kiên Giang",False,"Giồng Riềng, Kiên Giang",True,True,True,0.8530616760253906
+629198,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Hà Tiên - Kiên Giang,"Hà Tiên, Kiên Giang",False,,False,False,False,0.8606910705566406
+629192,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Hồng Dân - Bạc Liêu,"Hồng Dân, Bạc Liêu",False,"Hồng Dân, Bạc Liêu",True,True,True,1.0209083557128906
+629195,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.946044921875
+629196,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.9052753448486328
+629201,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.8480548858642578
+629197,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Rạch Giá - Kiên Giang,"Rạch Giá, Kiên Giang",False,Rạch Giá - Kiên Giang,False,True,False,0.896453857421875
+629206,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.8816719055175781
+629204,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.8554458618164062
+629202,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.9186267852783203
+629203,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.8494853973388672
+629205,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Rạch Giá - Kiên Giang,"Rạch Giá, Kiên Giang",False,Rạch Giá - Kiên Giang,False,True,False,0.8511543273925781
+629210,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.8561611175537109
+629207,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Rạch Giá - Kiên Giang,"Rạch Giá, Kiên Giang",False,Rạch Giá - Kiên Giang,False,True,False,0.8089542388916016
+629209,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện Từ Dũ - TP Hồ Chí Minh.,"Bệnh viện Từ Dũ, Thành Phố Hồ Chí Minh",False,,False,False,False,1.8138885498046875
+629208,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,1.0340213775634766
+629165,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.9348392486572266
+629214,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Thái Thụy - Thái Bình,"Thái Thụy, Thái Bình",False,,False,False,False,0.9367465972900391
+629212,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.9438991546630859
+629131,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.8766651153564453
+629081,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Rạch Giá - Kiên Giang,"Rạch Giá, Kiên Giang",False,Rạch Giá - Kiên Giang,False,True,False,5.657672882080078
+629216,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Rạch Giá - Kiên Giang,"Rạch Giá, Kiên Giang",False,Rạch Giá - Kiên Giang,False,True,False,1.5177726745605469
+629211,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,1.1696815490722656
+629220,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,1.1529922485351562
+629217,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,1.6868114471435547
+629218,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiền Giang,Bệnh viện đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiền Giang,False,True,False,1.130819320678711
+629213,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Rạch Giá - Kiên Giang,"Rạch Giá, Kiên Giang",False,Rạch Giá - Kiên Giang,False,True,False,3.6163330078125
+629221,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Rạch Giá - Kiên Giang,"Rạch Giá, Kiên Giang",False,Rạch Giá - Kiên Giang,False,True,False,1.4958381652832031
+629224,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,TP. Buôn Mê Thuột - DakLak,"TP. Buôn Mê Thuột, DakLak",False,,False,False,False,0.9706020355224609
+629194,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Rạnh Giá - Kiên Giang,"Rạch Giá, Kiên Giang",False,,False,False,False,0.9126663208007812
+629071,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,An Biên - Kiến Giang,"An Biên, Kiên Giang",False,,False,False,False,0.9107589721679688
+629223,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bạch Giá - Kiên Giang,"Rạch Giá, Kiên Giang",False,,False,False,False,0.8409023284912109
+629225,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện - đa khoa Kiền Giang,Bệnh viện Đa khoa Kiền Giang,False,Bệnh viện Đa khoa Kiền Giang,True,True,True,0.9145736694335938
+629226,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bạch Giá - Kiên Giang,"Rạch Giá, Kiên Giang",False,,False,False,False,0.9171962738037109
+629227,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện Từ Dũ - TP. Hồ Chí Minh,"Bệnh viện Từ Dũ, Thành Phố Hồ Chí Minh",False,,False,False,False,0.9636878967285156
+629229,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Rạch Giá - Kiên Giang,"Rạch Giá, Kiên Giang",False,Rạch Giá - Kiên Giang,False,True,False,1.5909671783447266
+629115,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Rạch Giá - Kiên Giang,"Rạch Giá, Kiên Giang",False,Rạch Giá - Kiên Giang,False,True,False,1.089334487915039
+629230,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,1.0602474212646484
+629179,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,S4/16 Nguyễn Thái Học - Vĩnh Bắc - QG - BQ,"74/16 Nguyễn Thái Học, Vĩnh Bảo, Rạch Giá, Kiên Giang",False,,False,False,False,1.0406970977783203
+629234,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa tư nhân Bình An - Đạch Giá - KG,"Bệnh viện đa khoa tư nhân Bình An, Rạch Giá, Kiên Giang",False,,False,False,False,0.9517669677734375
+629236,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bạch Giá - Kiên Giang,"Bạch Giá, Kiên Giang",False,,False,False,False,0.8943080902099609
+629231,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiền Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiền Giang,False,True,False,0.9181499481201172
+629233,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Thới Bình - Cà Mau,"Thới Bình, Cà Mau",False,,False,False,False,0.8940696716308594
+629222,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Rạch Giá - Kiên Giang,"Rạch Giá, Kiên Giang",False,Rạch Giá - Kiên Giang,False,True,False,0.9257793426513672
+629219,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiền Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiền Giang,False,True,False,0.9553432464599609
+629241,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiền Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiền Giang,False,True,False,0.8714199066162109
+629239,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiền Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiền Giang,False,True,False,0.8873939514160156
+629242,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kim Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.9119510650634766
+629245,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.8831024169921875
+629250,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiền Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiền Giang,False,True,False,0.8542537689208984
+629249,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.919342041015625
+629251,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.8590221405029297
+629247,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Kiến Xương - Thái Bình,"Kiến Xương, Thái Bình",False,,False,False,False,0.8618831634521484
+629243,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,1.0094642639160156
+629248,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.9891986846923828
+629252,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.9446144104003906
+629240,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiền Giang,Bệnh viện đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiền Giang,False,True,False,1.2807846069335938
+629256,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,1.0571479797363281
+629254,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,1.1806488037109375
+629255,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.9584426879882812
+629253,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.9555816650390625
+629246,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,1.079559326171875
+629257,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện Hùng Vương - TP. Hồ Chí Minh,"Bệnh viện Hùng Vương, TP. Hồ Chí Minh",False,,False,False,False,0.9534358978271484
+629258,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.9088516235351562
+629263,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.8804798126220703
+629259,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Trạm 4 tế xã Mang Thọ A - Châu Thành - KQ,"Trạm Y tế xã Mong Thọ A, Châu Thành, KG",False,,False,False,False,1.0263919830322266
+629262,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.9074211120605469
+629265,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.926971435546875
+629261,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Đạch Giá - Kiên Giang,"Rạch Giá, Kiên Giang",False,Rạch Giá - Kiên Giang,False,True,False,0.8587837219238281
+629269,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Rạch Giá - Kiên Giang,"Rạch Giá, Kiên Giang",False,Rạch Giá - Kiên Giang,False,True,False,0.8513927459716797
+629260,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Rạch Giá - Kiên Giang,"Rạch Giá, Kiên Giang",False,Rạch Giá - Kiên Giang,False,True,False,0.8857250213623047
+629267,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.8420944213867188
+629266,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.8976459503173828
+629271,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.9167194366455078
+629264,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.8187294006347656
+629268,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Rạch Giá - Kiên Giang,"Rạch Giá, Kiên Giang",False,Rạch Giá - Kiên Giang,False,True,False,1.0085105895996094
+629274,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Rạch Giá - Kiên Giang,"Rạch Giá, Kiên Giang",False,Rạch Giá - Kiên Giang,False,True,False,0.8935928344726562
+629273,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Rạch Giá - Kiên Giang,"Rạch Giá, Kiên Giang",False,Rạch Giá - Kiên Giang,False,True,False,0.8542537689208984
+629270,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,1.359701156616211
+629280,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiền Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiền Giang,False,True,False,1.0411739349365234
+629278,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,1.0478496551513672
+629277,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.9706020355224609
+629275,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiền Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiền Giang,False,True,False,0.9837150573730469
+629276,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa kima Kiên Giang,Bệnh viện đa khoa Kiên Giang,False,,False,False,False,1.0154247283935547
+629283,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,1.2323856353759766
+629284,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bạch Giá - Kiên Giang,"Rạch Giá, Kiên Giang",False,,False,False,False,1.1661052703857422
+629285,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,1.8188953399658203
+629238,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,2.1352767944335938
+629286,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,1.7881393432617188
+629288,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Hương Trà - Thừa Thiên Huế,"Hương Trà, Thừa Thiên Huế",False,,False,False,False,1.0344982147216797
+629279,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa tứ nhân Bình Ân - 26 - K6,"Bệnh viện Đa khoa tư nhân Bình An, Rạch Giá, Kiên Giang",False,,False,False,False,1.0066032409667969
+629292,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,1.2083053588867188
+629297,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiền Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiền Giang,False,True,False,0.9407997131347656
+629290,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khí sả Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,,False,False,False,0.9064674377441406
+629293,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.9660720825195312
+629300,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.9167194366455078
+629291,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Nhà Bảo sanh Lê Ngọc Cam - Rạch Gia - KB,"Nhà Bảo Sanh Lê Ngọc Cam, Rạch Giá, Kiên Giang",False,,False,False,False,0.8866786956787109
+629289,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.9503364562988281
+629296,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.8723735809326172
+629294,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.885009765625
+629302,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Ninh Bình,Bệnh viện Đa khoa Ninh Bình,False,,False,False,False,0.8862018585205078
+629299,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.9586811065673828
+629305,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.9555816650390625
+629304,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.9119510650634766
+629312,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,1.096963882446289
+629309,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Rạch Giá - Kiến Giang,"Rạch Giá, Kiến Giang",False,,False,False,False,0.86212158203125
+629310,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,1.1477470397949219
+629308,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Rạch Giá - Kiên Giang,"Rạch Giá, Kiên Giang",False,Rạch Giá - Kiên Giang,False,True,False,0.99945068359375
+629295,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.9644031524658203
+629303,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.9946823120117188
+629311,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,1.2159347534179688
+629307,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Ngậm Y tế Vĩnh Đoà Hiệp - Châu Thành - KG,"Trạm y tế Vĩnh Hoà Hiệp, Châu Thành, Kiên Giang",False,,False,False,False,1.0154247283935547
+629313,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,1.0797977447509766
+629314,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,1.1191368103027344
+629306,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.9448528289794922
+629315,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.8828639984130859
+629318,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,1.1074542999267578
+629321,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiền Giang,Bệnh viện Đa khoa Kiền Giang,False,Bệnh viện Đa khoa Kiền Giang,True,True,True,0.9596347808837891
+629320,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Thuy Phước - Bình Định,"Tuy Phước, Bình Định",False,,False,False,False,0.9179115295410156
+629244,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,1.0135173797607422
+629322,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Hoàn Đất - Kiên Giang,"Hòn Đất, Kiên Giang",False,,False,False,False,0.9503364562988281
+629317,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,1.1508464813232422
+629323,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,1.2331008911132812
+629329,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Rạch Giá - Kiên Giang,"Rạch Giá, Kiên Giang",False,Rạch Giá - Kiên Giang,False,True,False,1.6214847564697266
+629327,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiền Giang,Bệnh viện đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiền Giang,False,True,False,1.0097026824951172
+629328,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Rạch Giá - Kiền Giang,"Rạch Giá, Kiên Giang",False,,False,False,False,0.9577274322509766
+629326,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Hạch Giá - Kiên Giang,"Rạch Giá, Kiên Giang",False,Rạch Giá - Kiên Giang,False,True,False,1.5654563903808594
+629331,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,1.2409687042236328
+629330,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,1.0907649993896484
+629325,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Rạch Giá - Kiên Giang,"Rạch Giá, Kiên Giang",False,Rạch Giá - Kiên Giang,False,True,False,0.9245872497558594
+629334,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,1.004934310913086
+629332,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Nhà Bảo Sanh Hồng Đức - Tạch Giá - Kiên Giang,"Nhà Bảo Sanh Hồng Đức, Gạch Giá, Kiên Giang",False,,False,False,False,1.1563301086425781
+629336,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,1.094818115234375
+629335,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bạch Giá - Kiên Giang,"Rạch Giá, Kiên Giang",False,,False,False,False,1.046895980834961
+629337,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa tư nhân Bình An - H6 - K6.,"Bệnh viện Đa khoa tư nhân Bình An, Rạch Giá, Kiên Giang",False,,False,False,False,1.0156631469726562
+629345,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Rạch Giá - Kiên Giang,"Rạch Giá, Kiên Giang",False,Rạch Giá - Kiên Giang,False,True,False,0.9596347808837891
+629342,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện nhân dân Gia Định TP Hồ Chí Minh,"Bệnh viện Nhân dân Gia Định, Thành Phố Hồ Chí Minh",False,,False,False,False,0.9615421295166016
+629341,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Vĩnh Lợi - Bạc Liêu,"Vĩnh Lợi, Bạc Liêu",False,,False,False,False,0.926971435546875
+629343,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Rạch Giá - Kiên Giang,"Rạch Giá, Kiên Giang",False,Rạch Giá - Kiên Giang,False,True,False,0.9286403656005859
+629339,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.9415149688720703
+629340,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,1.0437965393066406
+629344,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Thạch Giá - Kiên Giang,"Rạch Giá, Kiên Giang",False,,False,False,False,0.9922981262207031
+629346,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.9455680847167969
+629338,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Rạch Gia - Kiên Giang,"Rạch Giá, Kiên Giang",False,,False,False,False,0.9260177612304688
+629347,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,An Biên - Kiền Giang,"An Biên, Kiên Giang",False,,False,False,False,0.8728504180908203
+629281,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện từ nhân Bình An - Đạch Giá - KG,"Bệnh viện tư nhân Bình An, Rạch Giá, Kiên Giang",False,,False,False,False,0.9243488311767578
+629352,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiến Giang,Bệnh viện Đa khoa Kiên Giang,False,,False,False,False,0.9093284606933594
+629351,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.9145736694335938
+629348,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,1.0530948638916016
+629358,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiều Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.9207725524902344
+629356,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Huyện Châu Phủ An Giang,"Bệnh viện đa khoa huyện Châu Phú, An Giang",False,,False,False,False,0.9622573852539062
+629357,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiền Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiền Giang,False,True,False,0.896453857421875
+629362,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.9033679962158203
+629359,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.9047985076904297
+629349,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Rạch Giá - Kiên Giang,"Rạch Giá, Kiên Giang",False,Rạch Giá - Kiên Giang,False,True,False,0.9505748748779297
+629363,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.9009838104248047
+629365,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Rạch Giá - Kiên Giang,"Rạch Giá, Kiên Giang",False,Rạch Giá - Kiên Giang,False,True,False,1.0833740234375
+629353,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Rạch Giá - Kiên Giang,"Rạch Giá, Kiên Giang",False,Rạch Giá - Kiên Giang,False,True,False,0.8714199066162109
+629366,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.9417533874511719
+629367,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.9243488311767578
+629369,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Rạch Giá - Kiên Giang,"Rạch Giá, Kiên Giang",False,Rạch Giá - Kiên Giang,False,True,False,0.9984970092773438
+629364,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,An Biên - Kiên Giang,"An Biên, Kiên Giang",False,,False,False,False,0.9694099426269531
+629361,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.9157657623291016
+629360,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.8985996246337891
+629370,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Rạch Giá - Kiên Giang,"Rạch Giá, Kiên Giang",False,Rạch Giá - Kiên Giang,False,True,False,0.9288787841796875
+629235,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiền Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiền Giang,False,True,False,0.9162425994873047
+629378,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.9007453918457031
+629373,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiền Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiền Giang,False,True,False,0.8609294891357422
+629372,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.9355545043945312
+629371,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.8821487426757812
+629375,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiền Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiền Giang,False,True,False,1.0151863098144531
+629377,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.8521080017089844
+629374,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.9009838104248047
+629381,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.9000301361083984
+629380,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.8883476257324219
+629385,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.8742809295654297
+629350,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Rạch Gia - Kiên Giang,"Rạch Giá, Kiên Giang",False,,False,False,False,0.8490085601806641
+629379,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.8881092071533203
+629383,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện Từ Dũ - TP Hồ Chí Minh,"Bệnh viện Từ Dũ, Thành Phố Hồ Chí Minh",False,,False,False,False,0.8478164672851562
+629386,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiền Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiền Giang,False,True,False,0.8697509765625
+629384,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện Đa khoa An Biên - Kiên Giang,"Bệnh viện Đa khoa An Biên, Kiên Giang",False,,False,False,False,0.9157657623291016
+629387,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.888824462890625
+629382,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bảo Sanh Lê Ngọc Cam - Hạch Gián - Kiên Giang,"Bảo Sanh Lê Ngọc Cam, Rạch Giá, Kiên Giang",False,,False,False,False,0.9131431579589844
+629388,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.8637905120849609
+629368,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Long Xuyên - An Giang,"Long Xuyên, An Giang",False,"Long Xuyên, An Giang",True,True,True,0.8280277252197266
+629391,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.8969306945800781
+629355,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện Từ Dũ - TP. Hồ Chí Minh,"Bệnh viện Từ Dũ, thành phố Hồ Chí Minh",False,,False,False,False,0.8442401885986328
+629398,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Thành phố Hạch Giá - Tỉnh Kiên Giang,"Thành phố Rạch Giá, tỉnh Kiên Giang",False,,False,False,False,0.9019374847412109
+629389,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.8950233459472656
+629400,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Thành phố Rạch Giá - Tỉnh Kiên Giang,"Thành phố Rạch Giá, tỉnh Kiên Giang",False,"Thành phố Rạch Giá, tỉnh Kiên Giang",True,True,True,0.9415149688720703
+629393,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Thành phố Rạch Giá - Tỉnh Kiên Giang,"Thành phố Rạch Giá, tỉnh Kiên Giang",False,"Thành phố Rạch Giá, tỉnh Kiên Giang",True,True,True,0.9069442749023438
+629402,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.8475780487060547
+629397,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Thành phố Rạch Giá - Tỉnh Kiên Giang,"Thành phố Rạch Giá, tỉnh Kiên Giang",False,"Thành phố Rạch Giá, tỉnh Kiên Giang",True,True,True,0.9171962738037109
+629392,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Huyện Vĩnh Thuận - Tỉnh Kiên Giang,"Huyện Vĩnh Thuận, tỉnh Kiên Giang",False,,False,False,False,0.9064674377441406
+629403,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Vị Thanh - Hậu Giang,"Vị Thanh, Hậu Giang",False,,False,False,False,0.926971435546875
+629396,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Thành phố Rạch Tín - Tỉnh Kiên Giang,"Thành phố Rạch Giá, tỉnh Kiên Giang",False,"Thành phố Rạch Giá, tỉnh Kiên Giang",True,True,True,0.9367465972900391
+629405,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.9057521820068359
+629401,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.9005069732666016
+629404,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.888824462890625
+629408,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Thành phố Rạch Giá - Tỉnh Kiên Giang.,"Thành phố Rạch Giá, tỉnh Kiên Giang",False,,False,False,False,0.896453857421875
+629407,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.8325576782226562
+629409,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Thành phố Bạch Giá. Tỉnh Kiên Giang,"Thành phố Rạch Giá, tỉnh Kiên Giang",False,,False,False,False,0.8995532989501953
+629406,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,bệnh viện đa khoa Kiên Giang,bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,False,True,False,0.8711814880371094
+629399,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Huyện Giồng Kiềng - Tỉnh Kiên Giang,"Huyện Giồng Riềng, tỉnh Kiên Giang",False,,False,False,False,1.33514404296875
+629417,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Nam Vang - Campuchia,"Nam Vang, Campuchia",False,,False,False,False,1.0683536529541016
+629282,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.9303092956542969
+629412,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện Bình An - P Vĩnh Bắc - TP. Rạch Gá - Tỉnh KG,"Bệnh viện Bình An, phường Vĩnh Bảo, thành phố Rạch Giá, tỉnh Kiên Giang",False,,False,False,False,0.9706020355224609
+629413,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,nhà Bảo sanh Hồng Đức - P. Vĩnh Thanh Vân - TP RC - Tỉnh,"Nhà Bảo Sanh Hồng Đức, phường Vĩnh Thanh Vân, thành phố Rạch Giá, tỉnh Kiên Giang",False,,False,False,False,0.9996891021728516
+629410,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Trạm Tế Phường Vĩnh Bảo - Thành phố Bạch Gắc - Tỉnh,"Trạm Y tế phường Vĩnh Bảo, thành phố Rạch Giá, tỉnh Kiên Giang",False,,False,False,False,0.9875297546386719
+629390,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Thành phố Rạch Giá - Tỉnh Kiên Giang,"Thành phố Rạch Giá, tỉnh Kiên Giang",False,,False,False,False,0.9486675262451172
+629416,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Thành phố Rạch Giá - Tỉnh Kiên Giang,"Thành phố Rạch Giá, tỉnh Kiên Giang",False,,False,False,False,0.8983612060546875
+629423,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Thành phố Rạch Giá - Tỉnh Kiên Giang,"Thành phố Rạch Giá, tỉnh Kiên Giang",False,,False,False,False,0.9789466857910156
+629414,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiền Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiền Giang,False,True,False,0.8871555328369141
+629421,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.8952617645263672
+629422,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Tỉnh Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,,False,False,False,0.9613037109375
+629298,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Rạch Giá - Kiền Giang,"Rạch Giá, Kiên Giang",False,,False,False,False,0.9303092956542969
+629420,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Cầu Ngang - Trà Vĩnh,"Cầu Ngang, Trà Vinh",False,,False,False,False,0.8885860443115234
+629418,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiền Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiền Giang,False,True,False,0.9582042694091797
+629425,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Huyện Châu Thành - Tỉnh Kiên Giang,"Huyện Châu Thành, tỉnh Kiên Giang",False,,False,False,False,0.9431838989257812
+629428,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.9171962738037109
+629429,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,"Thành phố Rạch Giá, Tỉnh Kiên Giang","Thành phố Rạch Giá, tỉnh Kiên Giang",False,"Thành phố Rạch Giá, tỉnh Kiên Giang",True,True,True,0.9052753448486328
+629430,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Phường 9 - Thành phố Vĩnh Long - Tỉnh Vĩnh Long,"Phường 9, thành phố Vĩnh Long, tỉnh Vĩnh Long",False,,False,False,False,0.8826255798339844
+629432,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.9222030639648438
+629434,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.9186267852783203
+629426,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Thành phố Hạch Giá - Tỉnh Kiên Giang,"Thành phố Rạch Giá, tỉnh Kiên Giang",False,,False,False,False,0.9202957153320312
+629433,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.8492469787597656
+629431,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.8454322814941406
+629424,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Thành phố Rạch Gián - Tỉnh Kiên Giang,"Thành phố Rạch Gián, tỉnh Kiên Giang",False,"Thành phố Rạch Giá, tỉnh Kiên Giang",False,True,False,0.9593963623046875
+629316,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Rạch Giá - Kiên Giang,"Rạch Giá, Kiên Giang",False,Rạch Giá - Kiên Giang,False,True,False,0.9341239929199219
+629438,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kim Giang,Bệnh viện Đa khoa Kiên Giang,False,,False,False,False,0.9281635284423828
+629437,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Thành phố Rạch Giá - Tỉnh Kiên Giang,"Thành phố Rạch Giá, tỉnh Kiên Giang",False,,False,False,False,0.92315673828125
+629436,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.9024143218994141
+629435,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện Long Xuyên - Tỉnh An Giang,"Bệnh viện Long Xuyên, tỉnh An Giang",False,,False,False,False,0.8637905120849609
+629394,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiền Giang,Bệnh viện đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiền Giang,False,True,False,0.9875297546386719
+629440,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.9605884552001953
+629443,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Thành phố Rạch Giá - Tỉnh Kiên Giang,"Thành phố Rạch Giá, tỉnh Kiên Giang",False,,False,False,False,0.9853839874267578
+629439,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.9510517120361328
+629441,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Thành phố Hạch Giá - Tỉnh Kiên Giang,"Thành phố Rạch Giá, tỉnh Kiên Giang",False,,False,False,False,0.9260177612304688
+629447,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.9400844573974609
+629445,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiền Giang,Bệnh viện đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiền Giang,False,True,False,0.9474754333496094
+629419,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.888824462890625
+629452,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Thành phố Bạch Gia - Tỉnh Kiên Giang,"Thành phố Rạch Giá, tỉnh Kiên Giang",False,,False,False,False,0.9555816650390625
+629449,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.9403228759765625
+629444,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Thành phố Rạch Giá - Tỉnh Kiên Giang,"Thành phố Rạch Giá, tỉnh Kiên Giang",False,,False,False,False,0.9505748748779297
+629411,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện ân khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,,False,False,False,0.9028911590576172
+629319,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.9400844573974609
+629450,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.919342041015625
+629448,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,xã Hòa Chánh - Huyện Mĩnh Thượng - Tỉnh Kiên Trang,"Xã Hòa Chánh, huyện U Minh Thượng, tỉnh Kiên Giang",False,,False,False,False,0.9808540344238281
+629457,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.9400844573974609
+629462,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa tỉnh Kiên Giang,Bệnh viện Đa khoa tỉnh Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,False,True,False,1.0068416595458984
+629463,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,"Xã Đồ Ngọc, huyện Hà Trung, tỉnh Thanh Hóa","Xã Hà Ngọc, huyện Hà Trung, tỉnh Thanh Hóa",False,,False,False,False,1.2297630310058594
+629458,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,xã Đông Yên - Huyện An Biên - Tỉnh Kiên Giang,"Xã Đông Yên, huyện An Biên, tỉnh Kiên Giang",False,,False,False,False,1.0335445404052734
+629456,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Trạm Y tế phường Vĩnh Bảo - TP Bạch Giá - Tỉnh K6,"Trạm Y tế phường Vĩnh Bảo, thành phố Rạch Giá, tỉnh Kiên Giang",False,,False,False,False,1.0213851928710938
+629454,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Quốc Tế Anh vũ 2 6ò Vấp Thiên,"Bệnh viện Đa khoa Quốc tế Anh Vũ, quận Gò Vấp, Thành phố Hồ Chí Minh",False,,False,False,False,0.9658336639404297
+629461,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Vĩnh Kiên Giang,Bệnh viện Đa khoa tỉnh Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,False,True,False,0.9188652038574219
+629467,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa tỉnh Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa tỉnh Kiên Giang,False,True,False,0.8928775787353516
+629459,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Thành phố Rạch Giá - Tỉnh Kiên Giang,"Thành phố Rạch Giá, tỉnh Kiên Giang",False,,False,False,False,0.8842945098876953
+629469,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa tỉnh Kiên Giang,Bệnh viện Đa khoa tỉnh Kiên Giang,False,Bệnh viện Đa khoa tỉnh Kiên Giang,True,True,True,0.9305477142333984
+629465,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Tỉnh Kiên Giang,Bệnh viện Đa khoa tỉnh Kiên Giang,False,Bệnh viện Đa khoa tỉnh Kiên Giang,True,True,True,0.9293556213378906
+629395,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiên Giang,Bệnh viện Đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,True,True,True,0.86212158203125
+629468,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện Hùng Vương - TP. Hồ Chí Minh,"Bệnh viện Hùng Vương, thành phố Hồ Chí Minh",False,"Bệnh viện Hùng Vương, TP. Hồ Chí Minh",False,True,False,0.8797645568847656
+629473,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa tỉnh Kiên Giang,Bệnh viện Đa khoa tỉnh Kiên Giang,False,Bệnh viện Đa khoa tỉnh Kiên Giang,True,True,True,0.9069442749023438
+629471,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Tỉnh Kiên Giang,Bệnh viện Đa khoa tỉnh Kiên Giang,False,Bệnh viện Đa khoa tỉnh Kiên Giang,True,True,True,0.8680820465087891
+629455,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Thành phố Rạch Giá - Tỉnh Kiên Giang,"Thành phố Rạch Giá, tỉnh Kiên Giang",False,,False,False,False,0.8819103240966797
+629460,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Thành phố Rạch Giá - Tỉnh Kiên Giang,"Thành phố Rạch Giá, tỉnh Kiên Giang",False,,False,False,False,0.885009765625
+629474,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa tỉnh Kiên Giang,Bệnh viện Đa khoa tỉnh Kiên Giang,False,Bệnh viện Đa khoa tỉnh Kiên Giang,True,True,True,0.9160041809082031
+629480,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bạch Giá - Kiên Giang,"Rạch Giá, Kiên Giang",False,,False,False,False,0.8907318115234375
+629485,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa tỉnh Kiên Giang,Bệnh viện Đa khoa tỉnh Kiên Giang,False,Bệnh viện Đa khoa tỉnh Kiên Giang,True,True,True,0.8985996246337891
+629478,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Rạch Giá - Kiên Giang,"Rạch Giá, Kiên Giang",False,Rạch Giá - Kiên Giang,False,True,False,0.8816719055175781
+629484,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa tỉnh Kiên Giang,Bệnh viện Đa khoa tỉnh Kiên Giang,False,Bệnh viện Đa khoa tỉnh Kiên Giang,True,True,True,0.8511543273925781
+629479,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa tỉnh Kiên Giang,Bệnh viện Đa khoa tỉnh Kiên Giang,False,Bệnh viện Đa khoa tỉnh Kiên Giang,True,True,True,1.2090206146240234
+629446,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Kiền Giang,Bệnh viện đa khoa Kiên Giang,False,Bệnh viện Đa khoa Kiền Giang,False,True,False,0.9210109710693359
+629477,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện Từ Dũ - TP. Hồ Chí Minh,"Bệnh viện Từ Dũ, thành phố Hồ Chí Minh",False,,False,False,False,1.0037422180175781
+629481,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa tỉnh Kiểm Giang,Bệnh viện đa khoa tỉnh Kiên Giang,False,Bệnh viện Đa khoa tỉnh Kiên Giang,False,True,False,0.9665489196777344
+629486,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,"TP. Bạch Giá, tỉnh Kiên Giang","TP. Rạch Giá, tỉnh Kiên Giang",False,,False,False,False,0.9622573852539062
+629451,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Thị xã Châu Đốc - Tỉnh An Giang,"Thị xã Châu Đốc, tỉnh An Giang",False,,False,False,False,1.0347366333007812
+629487,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa tỉnh Kiên Giang,Bệnh viện Đa khoa tỉnh Kiên Giang,False,Bệnh viện Đa khoa tỉnh Kiên Giang,True,True,True,1.1348724365234375
+629488,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,"188/1 Nguyễn Trung Trực, phường Vĩnh Bảo, TP. Đạch Gián, Tỉnh Ka","188/1 Nguyễn Trung Trực, phường Vĩnh Bảo, thành phố Rạch Giá, tỉnh Kiên Giang",False,,False,False,False,1.041412353515625
+629490,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa tỉnh Kiên Giang,Bệnh viện Đa khoa tỉnh Kiên Giang,False,Bệnh viện Đa khoa tỉnh Kiên Giang,True,True,True,0.9150505065917969
+629492,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,"Phường Vĩnh Béo, TP. Hạch Gián, tỉnh Kiên Giang","Phường Vĩnh Bảo, thành phố Rạch Giá, tỉnh Kiên Giang",False,,False,False,False,0.9810924530029297
+629496,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa tỉnh Kiên Giang.,Bệnh viện Đa khoa tỉnh Kiên Giang,False,Bệnh viện Đa khoa tỉnh Kiên Giang,True,True,True,1.0683536529541016
+629491,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,An Biên - Kiên Giang,"An Biên, Kiên Giang",False,,False,False,False,0.9691715240478516
+629497,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa tỉnh Kiên Giang.,Bệnh viện Đa khoa tỉnh Kiên Giang.,False,Bệnh viện Đa khoa tỉnh Kiên Giang,False,True,False,0.9896755218505859
+629498,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa tỉnh Kiên Giang,Bệnh viện Đa khoa tỉnh Kiên Giang,False,Bệnh viện Đa khoa tỉnh Kiên Giang,True,True,True,0.9584426879882812
+629503,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa tỉnh Kiên Giang.,Bệnh viện Đa khoa tỉnh Kiên Giang,False,Bệnh viện Đa khoa tỉnh Kiên Giang.,False,True,False,0.96893310546875
+629495,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Tỉnh Kiền Giang,Bệnh viện đa khoa tỉnh Kiên Giang,False,Bệnh viện Đa khoa Kiền Giang,False,True,False,0.9160041809082031
+629502,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Vĩnh Kiên Giang,Bệnh viện Đa khoa tỉnh Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,False,True,False,0.8945465087890625
+629466,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa tỉnh Kiên Giang.,Bệnh viện Đa khoa tỉnh Kiên Giang,False,Bệnh viện Đa khoa tỉnh Kiên Giang.,False,True,False,0.9582042694091797
+629493,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,"Bệnh viện Bình An, TP. Hạch Cửn, tỉnh Kiên Giang","Bệnh viện Bình An, thành phố Rạch Giá, tỉnh Kiên Giang",False,,False,False,False,0.9238719940185547
+629501,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa tỉnh Kiên Giang,Bệnh viện Đa khoa tỉnh Kiên Giang,False,Bệnh viện Đa khoa tỉnh Kiên Giang,True,True,True,1.0704994201660156
+629504,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Vĩnh Thanh Vân - Hạch Giá - Kiên Giang,"Vĩnh Thanh Vân, Rạch Giá, Kiên Giang",False,,False,False,False,0.9696483612060547
+629506,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa tỉnh Kiên Giang,Bệnh viện Đa khoa tỉnh Kiên Giang,False,Bệnh viện Đa khoa tỉnh Kiên Giang,True,True,True,1.1043548583984375
+629505,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Vĩnh Thanh Vân - Rạch Giá - Kiên Giang,"Vĩnh Thanh Vân, Rạch Giá, Kiên Giang",False,,False,False,False,0.9512901306152344
+629511,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa tỉnh Kiên Giang,Bệnh viện Đa khoa tỉnh Kiên Giang,False,Bệnh viện Đa khoa tỉnh Kiên Giang,True,True,True,0.9593963623046875
+629507,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Vĩnh tạo - Bạch Gián - Kiên Giang,"Vĩnh Lạc, Rạch Giá, Kiên Giang",False,,False,False,False,0.90789794921875
+629512,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa tỉnh Kiên Giang,Bệnh viện Đa khoa tỉnh Kiên Giang,False,Bệnh viện Đa khoa tỉnh Kiên Giang,True,True,True,1.4281272888183594
+629516,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Đạnh Giá - Kiên Giang,"Rạch Giá, Kiên Giang",False,,False,False,False,1.0387897491455078
+629520,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Vĩnh Thanh Vân - Rạch Giá - Kiên Giang,"Vĩnh Thanh Vân, Rạch Giá, Kiên Giang",False,,False,False,False,1.0590553283691406
+629500,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Lạch Giá - Kiên Giang,"Rạch Giá, Kiên Giang",False,,False,False,False,0.9772777557373047
+629514,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Rạch Giá - Kiên Giang,"Rạch Giá, Kiên Giang",False,Rạch Giá - Kiên Giang,False,True,False,0.9531974792480469
+629513,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Tỉnh Kiên Giang,Bệnh viện Đa khoa Tỉnh Kiên Giang,False,Bệnh viện Đa khoa tỉnh Kiên Giang,False,True,False,1.009225845336914
+629519,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đã khoa tỉnh Kiên Giang,Bệnh viện Đa khoa tỉnh Kiên Giang,False,Bệnh viện Đa khoa tỉnh Kiên Giang,True,True,True,1.0142326354980469
+629522,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Vĩnh Kiên Giang,Bệnh viện Đa khoa tỉnh Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,False,True,False,0.9777545928955078
+629518,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện Từ Dũ - TP. Hồ Chí Minh,"Bệnh viện Từ Dũ, thành phố Hồ Chí Minh",False,,False,False,False,0.9336471557617188
+629489,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,"Bệnh viện II, tỉnh Tâm Đồng","Bệnh viện II, tỉnh Lâm Đồng",False,,False,False,False,0.8938312530517578
+629523,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện An khoa Tỉnh Kiên Giang,Bệnh viện Đa khoa tỉnh Kiên Giang,False,Bệnh viện Đa khoa tỉnh Kiên Giang,True,True,True,0.9949207305908203
+629526,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Rạch Giá - Kiên Giang,"Rạch Giá, Kiên Giang",False,Rạch Giá - Kiên Giang,False,True,False,0.9281635284423828
+629517,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa tỉnh Kiên Giang,Bệnh viện Đa khoa tỉnh Kiên Giang,False,Bệnh viện Đa khoa tỉnh Kiên Giang,True,True,True,0.9543895721435547
+629521,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa tỉnh Kiên Giang,Bệnh viện Đa khoa tỉnh Kiên Giang,False,Bệnh viện Đa khoa tỉnh Kiên Giang,True,True,True,0.9541511535644531
+629527,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Mỹ Thọ - Phù Mỹ - Bình Định,"Mỹ Thọ, Phù Mỹ, Bình Định",False,,False,False,False,0.8778572082519531
+629528,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,"Bệnh viện đa khoa tư thân Bình An, TP. Hạch Sán, Hải NG","Bệnh viện Đa khoa tư nhân Bình An, TP. Rạch Giá, tỉnh Kiên Giang",False,,False,False,False,0.9551048278808594
+629530,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa tỉnh Kiên Giang,Bệnh viện Đa khoa tỉnh Kiên Giang,False,Bệnh viện Đa khoa tỉnh Kiên Giang,True,True,True,0.9949207305908203
+629531,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa tỉnh Kiên Giang,Bệnh viện Đa khoa tỉnh Kiên Giang,False,Bệnh viện Đa khoa tỉnh Kiên Giang,True,True,True,1.2142658233642578
+629534,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bạn Giá - Kiên Giang,"Rạch Giá, Kiên Giang",False,,False,False,False,0.9303092956542969
+629536,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,"Bệnh viện An Sinh, Quận Phú Nhuận, TP. Hồ Chí Minh","Bệnh viện An Sinh, quận Phú Nhuận, thành phố Hồ Chí Minh",False,,False,False,False,0.9677410125732422
+629533,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa tỉnh Kiên Giang,Bệnh viện Đa khoa tỉnh Kiên Giang,False,Bệnh viện Đa khoa tỉnh Kiên Giang,True,True,True,0.9560585021972656
+629537,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Đạch Giá - Kiên Giang,"Rạch Giá, Kiên Giang",False,Rạch Giá - Kiên Giang,False,True,False,0.8795261383056641
+629525,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bếnh viện đa khoa tỉnh Kiên Giang,Bếnh viện Đa khoa tỉnh Kiên Giang,False,Bệnh viện Đa khoa tỉnh Kiên Giang,False,True,False,0.9222030639648438
+629535,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,"Bệnh viện đa khoa tứ nhân Bình An, TP Hạch Giá, tỉnh Kiên Liang","Bệnh viện Đa khoa tư nhân Bình An, TP Rạch Giá, tỉnh Kiên Giang",False,,False,False,False,1.035928726196289
+629544,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Rạch Giáo - Kiên Giang,"Rạch Giá, Kiên Giang",False,,False,False,False,0.9279251098632812
+629532,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Vĩnh Thanh Vân - Bạch Giá - Kiên Giang,"Vĩnh Thanh Vân, Rạch Giá, Kiên Giang",False,,False,False,False,0.965118408203125
+629546,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,TP. Cần Thơ,thành phố Cần Thơ,False,,False,False,False,0.8893013000488281
+629540,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Rạch Giá - Kiên Giang,"Rạch Giá, Kiên Giang",False,Rạch Giá - Kiên Giang,False,True,False,0.9148120880126953
+629538,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Vị Thanh - Hậu Giang,"Vị Thanh, Hậu Giang",False,,False,False,False,0.9119510650634766
+629542,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Long Xuyên - An Giang,"Long Xuyên, An Giang",False,"Long Xuyên, An Giang",True,True,True,0.8630752563476562
+629543,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bảo sanh Đồng Đức - Đạch Giá - Kiên Giang,"Bảo sanh Đồng Đức, Rạch Giá, Kiên Giang",False,,False,False,False,0.9081363677978516
+629499,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa tỉnh Kiên Giang,Bệnh viện Đa khoa tỉnh Kiên Giang,False,Bệnh viện Đa khoa tỉnh Kiên Giang,True,True,True,0.9722709655761719
+629550,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa tỉnh Kiên Giang,Bệnh viện Đa khoa tỉnh Kiên Giang,False,Bệnh viện Đa khoa tỉnh Kiên Giang,True,True,True,0.9548664093017578
+629541,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa tỉnh Kiên Giang,Bệnh viện Đa khoa tỉnh Kiên Giang,False,Bệnh viện Đa khoa tỉnh Kiên Giang,True,True,True,1.0788440704345703
+629555,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa tỉnh Kiên Giang,Bệnh viện Đa khoa tỉnh Kiên Giang,False,Bệnh viện Đa khoa tỉnh Kiên Giang,True,True,True,1.0154247283935547
+629553,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Rạch Giá - Kiên Giang,"Rạch Giá, Kiên Giang",False,Rạch Giá - Kiên Giang,False,True,False,0.9093284606933594
+629557,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa tỉnh Kiên Giang,Bệnh viện Đa khoa tỉnh Kiên Giang,False,Bệnh viện Đa khoa tỉnh Kiên Giang,True,True,True,0.9288787841796875
+629559,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa tỉnh Kiên Giang,Bệnh viện Đa khoa tỉnh Kiên Giang,False,Bệnh viện Đa khoa tỉnh Kiên Giang,True,True,True,0.9913444519042969
+629551,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa tỉnh Kiên Giang,Bệnh viện Đa khoa tỉnh Kiên Giang,False,Bệnh viện Đa khoa tỉnh Kiên Giang,True,True,True,0.9517669677734375
+629552,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Đạnh Giá - Kiên Giang,"Rạch Giá, Kiên Giang",False,,False,False,False,1.2042522430419922
+629548,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện Thụ sản Quốc Tế Sài Gòn - TP Hồ Chí Minh.,"Bệnh viện Phụ sản Quốc Tế Sài Gòn, Thành Phố Hồ Chí Minh",False,,False,False,False,1.032114028930664
+629554,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa tỉnh Kiên Giang,Bệnh viện Đa khoa tỉnh Kiên Giang,False,Bệnh viện Đa khoa tỉnh Kiên Giang,True,True,True,0.9801387786865234
+629564,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bạch Gián - Kiên Giang,"Rạch Giá, Kiên Giang",False,,False,False,False,0.9229183197021484
+629561,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa tỉnh Kiên Giang,Bệnh viện Đa khoa tỉnh Kiên Giang,False,Bệnh viện Đa khoa tỉnh Kiên Giang,True,True,True,1.4338493347167969
+629563,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa tỉnh Kiên Giang,Bệnh viện Đa khoa tỉnh Kiên Giang,False,Bệnh viện Đa khoa tỉnh Kiên Giang,True,True,True,1.0077953338623047
+629562,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Tỉnh Kiên Giang,Bệnh viện Đa khoa Tỉnh Kiên Giang,False,Bệnh viện Đa khoa tỉnh Kiên Giang,False,True,False,1.0001659393310547
+629565,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Vĩnh Thanh Vân - Tạch Giá - Kiên Giang,"Vĩnh Thanh Vân, Rạch Giá, Kiên Giang",False,,False,False,False,1.009225845336914
+629464,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa tỉnh Kiên Giang,Bệnh viện Đa khoa tỉnh Kiên Giang,False,Bệnh viện Đa khoa tỉnh Kiên Giang,True,True,True,0.9353160858154297
+629556,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Đạch Giá - Kiên Giang,"Rạch Giá, Kiên Giang",False,Rạch Giá - Kiên Giang,False,True,False,0.9658336639404297
+629569,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa tỉnh Kiên Giang,Bệnh viện Đa khoa tỉnh Kiên Giang,False,Bệnh viện Đa khoa tỉnh Kiên Giang,True,True,True,0.9734630584716797
+629570,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa tỉnh Kiên Giang,Bệnh viện Đa khoa tỉnh Kiên Giang,False,Bệnh viện Đa khoa tỉnh Kiên Giang,True,True,True,0.9424686431884766
+629566,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Rạch Giá - Kiên Giang,"Rạch Giá, Kiên Giang",False,Rạch Giá - Kiên Giang,False,True,False,0.9627342224121094
+629571,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa tỉnh Kiên Giang,Bệnh viện Đa khoa tỉnh Kiên Giang,False,Bệnh viện Đa khoa tỉnh Kiên Giang,True,True,True,1.005411148071289
+629573,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa tỉnh Kiên Giang,Bệnh viện Đa khoa tỉnh Kiên Giang,False,Bệnh viện Đa khoa tỉnh Kiên Giang,True,True,True,0.9548664093017578
+629572,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa tỉnh Kiên Giang,Bệnh viện Đa khoa tỉnh Kiên Giang,False,Bệnh viện Đa khoa tỉnh Kiên Giang,True,True,True,0.9381771087646484
+629539,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa tỉnh Kiên Giang,Bệnh viện Đa khoa tỉnh Kiên Giang,False,Bệnh viện Đa khoa tỉnh Kiên Giang,True,True,True,0.9338855743408203
+629574,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa tỉnh Kiên Giang,Bệnh viện Đa khoa tỉnh Kiên Giang,False,Bệnh viện Đa khoa tỉnh Kiên Giang,True,True,True,1.0077953338623047
+629578,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Tỉnh Kiên Giang,Bệnh viện Đa khoa tỉnh Kiên Giang,False,Bệnh viện Đa khoa tỉnh Kiên Giang,True,True,True,1.005411148071289
+629577,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bạch Giá - Kiên Giang,"Bạch Giá, Kiên Giang",False,,False,False,False,0.8983612060546875
+629580,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa tỉnh Kiên Giang,Bệnh viện Đa khoa tỉnh Kiên Giang,False,Bệnh viện Đa khoa tỉnh Kiên Giang,True,True,True,0.8985996246337891
+629529,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Hòn Đất - Kiên Giang,"Hòn Đất, Kiên Giang",False,,False,False,False,0.9174346923828125
+629567,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa tỉnh Kiên Giang,Bệnh viện Đa khoa tỉnh Kiên Giang,False,Bệnh viện Đa khoa tỉnh Kiên Giang,True,True,True,0.9088516235351562
+629581,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa tỉnh Kiên Giang,Bệnh viện Đa khoa tỉnh Kiên Giang,False,Bệnh viện Đa khoa tỉnh Kiên Giang,True,True,True,0.9009838104248047
+629583,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa tỉnh Kiên Giang,Bệnh viện Đa khoa tỉnh Kiên Giang,False,Bệnh viện Đa khoa tỉnh Kiên Giang,True,True,True,0.9405612945556641
+629579,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Rạch Giá - Kiên Giang,"Rạch Giá, Kiên Giang",False,Rạch Giá - Kiên Giang,False,True,False,0.9315013885498047
+629589,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa tỉnh Kiên Giang,Bệnh viện Đa khoa tỉnh Kiên Giang,False,Bệnh viện Đa khoa tỉnh Kiên Giang,True,True,True,0.9496212005615234
+629585,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,"Xã Phố Khánh, huyện Đức Phố, tỉnh Quảng Ngãi","Xã Phổ Khánh, huyện Đức Phổ, tỉnh Quảng Ngãi",False,,False,False,False,0.9565353393554688
+629483,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,bệnh viện đa khoa tỉnh Kiên Giang,bệnh viện Đa khoa tỉnh Kiên Giang,False,Bệnh viện Đa khoa tỉnh Kiên Giang,False,True,False,0.9906291961669922
+629575,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa tỉnh Kiền Giang,Bệnh viện Đa khoa tỉnh Kiên Giang,False,Bệnh viện Đa khoa Kiền Giang,False,True,False,0.9801387786865234
+629584,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa tỉnh Kiện Giang,Bệnh viện Đa khoa tỉnh Kiện Giang,False,Bệnh viện Đa khoa tỉnh Kiên Giang,False,True,False,0.9303092956542969
+629586,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa tỉnh Kiên Giang,Bệnh viện Đa khoa tỉnh Kiên Giang,False,Bệnh viện Đa khoa tỉnh Kiên Giang,True,True,True,0.9655952453613281
+629587,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa tỉnh Kiên Giang,Bệnh viện Đa khoa tỉnh Kiên Giang,False,Bệnh viện Đa khoa tỉnh Kiên Giang,True,True,True,0.9517669677734375
+629588,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa tỉnh Kiên Giang,Bệnh viện Đa khoa tỉnh Kiên Giang,False,Bệnh viện Đa khoa tỉnh Kiên Giang,True,True,True,0.9047985076904297
+629597,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa tỉnh Kiên Giang,Bệnh viện Đa khoa tỉnh Kiên Giang,False,Bệnh viện Đa khoa tỉnh Kiên Giang,True,True,True,0.9298324584960938
+629593,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Tỉnh Kiên Giang,Bệnh viện Đa khoa Tỉnh Kiên Giang,False,Bệnh viện Đa khoa tỉnh Kiên Giang,False,True,False,0.9183883666992188
+629590,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa tỉnh Kiên Giang,Bệnh viện Đa khoa tỉnh Kiên Giang,False,Bệnh viện Đa khoa tỉnh Kiên Giang,True,True,True,0.9140968322753906
+629595,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa tỉnh Kiên Giang,Bệnh viện Đa khoa tỉnh Kiên Giang,False,Bệnh viện Đa khoa tỉnh Kiên Giang,True,True,True,0.9095668792724609
+629592,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa tỉnh Kiên Giang,Bệnh viện Đa khoa tỉnh Kiên Giang,False,Bệnh viện Đa khoa tỉnh Kiên Giang,True,True,True,0.9195804595947266
+629601,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bạch Giá - Kiên Giang,"Rạch Giá, Kiên Giang",False,,False,False,False,0.873565673828125
+629594,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa tỉnh Kiên Giang,Bệnh viện Đa khoa tỉnh Kiên Giang,False,Bệnh viện Đa khoa tỉnh Kiên Giang,True,True,True,0.8692741394042969
+629596,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa tỉnh Kiên Giang.,Bệnh viện Đa khoa tỉnh Kiên Giang,False,Bệnh viện Đa khoa tỉnh Kiên Giang.,False,True,False,0.9245872497558594
+629603,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa tỉnh Kiên Giang,Bệnh viện Đa khoa tỉnh Kiên Giang,False,Bệnh viện Đa khoa tỉnh Kiên Giang,True,True,True,0.9095668792724609
+629599,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa tỉnh Kiên Giang,Bệnh viện Đa khoa tỉnh Kiên Giang,False,Bệnh viện Đa khoa tỉnh Kiên Giang,True,True,True,0.9257793426513672
+629605,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Tỉnh Kiên Giang,Bệnh viện Đa khoa tỉnh Kiên Giang,False,Bệnh viện Đa khoa tỉnh Kiên Giang,True,True,True,2.507925033569336
+629606,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa tỉnh Kiên Giang,Bệnh viện Đa khoa tỉnh Kiên Giang,False,Bệnh viện Đa khoa tỉnh Kiên Giang,True,True,True,1.0738372802734375
+629604,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa tỉnh Kiên Giang,Bệnh viện Đa khoa tỉnh Kiên Giang,False,Bệnh viện Đa khoa tỉnh Kiên Giang,True,True,True,1.1606216430664062
+629582,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa tỉnh Kiên Giang.,Bệnh viện đa khoa tỉnh Kiên Giang,False,Bệnh viện Đa khoa tỉnh Kiên Giang.,False,True,False,1.0676383972167969
+629591,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa tỉnh Kiên Giang,Bệnh viện Đa khoa tỉnh Kiên Giang,False,Bệnh viện Đa khoa tỉnh Kiên Giang,True,True,True,1.2035369873046875
+629608,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,TP. Rạch Gián - Tỉnh Kiên Giang,"Thành phố Rạch Giá, tỉnh Kiên Giang",False,,False,False,False,1.024007797241211
+629549,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Rách Giá - Kiên Giang,"Rạch Giá, Kiên Giang",False,Rạch Giá - Kiên Giang,False,True,False,0.9839534759521484
+629613,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa tỉnh Kiên Giang,Bệnh viện Đa khoa tỉnh Kiên Giang,False,Bệnh viện Đa khoa tỉnh Kiên Giang,True,True,True,1.0004043579101562
+629607,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa tỉnh Kiên Giang,Bệnh viện Đa khoa tỉnh Kiên Giang,False,Bệnh viện Đa khoa tỉnh Kiên Giang,True,True,True,1.0075569152832031
+629609,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,TP Hạch Giá - Tỉnh Kiên Giang,"thành phố Rạch Giá, tỉnh Kiên Giang",False,,False,False,False,0.9560585021972656
+629623,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện Hồng Đức - Hạch Giá - Kiên Giang,"Bệnh viện Hồng Đức, Rạch Giá, Kiên Giang",False,,False,False,False,1.0662078857421875
+629616,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa tỉnh Kiên Giang,Bệnh viện Đa khoa tỉnh Kiên Giang,False,Bệnh viện Đa khoa tỉnh Kiên Giang,True,True,True,1.0004043579101562
+629598,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,"Trạm Mtế xã Vỹ Thước, huyện Đào Đất, tỉnh Kiến Giang","Trạm Y tế xã Mỹ Phước, huyện Hòn Đất, tỉnh Kiên Giang",False,,False,False,False,0.9973049163818359
+629625,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa tỉnh Kiên Giang,Bệnh viện Đa khoa tỉnh Kiên Giang,False,Bệnh viện Đa khoa tỉnh Kiên Giang,True,True,True,1.12152099609375
+629622,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa tỉnh Kiên Giang,Bệnh viện Đa khoa tỉnh Kiên Giang,False,Bệnh viện Đa khoa tỉnh Kiên Giang,True,True,True,0.9968280792236328
+629611,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa tỉnh Kiên Giang,Bệnh viện Đa khoa tỉnh Kiên Giang,False,Bệnh viện Đa khoa tỉnh Kiên Giang,True,True,True,0.9443759918212891
+629612,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Vĩnh Kiên Giang,Bệnh viện Đa khoa tỉnh Kiên Giang,False,Bệnh viện Đa khoa Kiên Giang,False,True,False,1.0297298431396484
+629618,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa tỉnh Kiên Giang.,Bệnh viện Đa khoa tỉnh Kiên Giang,False,Bệnh viện Đa khoa tỉnh Kiên Giang.,False,True,False,0.9958744049072266
+629617,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa tỉnh Kiên Giang.,Bệnh viện đa khoa tỉnh Kiên Giang,False,Bệnh viện Đa khoa tỉnh Kiên Giang.,False,True,False,0.9496212005615234
+629545,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Tỉnh Kiên Giang,Bệnh viện Đa khoa tỉnh Kiên Giang,False,Bệnh viện Đa khoa tỉnh Kiên Giang,True,True,True,0.9884834289550781
+629621,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa tỉnh Kiến Giang,Bệnh viện Đa khoa tỉnh Kiên Giang,False,,False,False,False,0.9911060333251953
+629615,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,TP. Rạch Giá - Tỉnh Kiên Giang,"thành phố Rạch Giá, tỉnh Kiên Giang",False,,False,False,False,0.9107589721679688
+629600,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,"Bệnh viện Tự nhân Bình An, Tổ Rạch Quá, tỉnh Kiên Giang","Bệnh viện tư nhân Bình An, thành phố Rạch Giá, tỉnh Kiên Giang",False,,False,False,False,1.0242462158203125
+629626,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa tỉnh Kiên Giang,Bệnh viện Đa khoa tỉnh Kiên Giang,False,Bệnh viện Đa khoa tỉnh Kiên Giang,True,True,True,0.9720325469970703
+629629,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa tỉnh Kiên Giang,Bệnh viện Đa khoa tỉnh Kiên Giang,False,Bệnh viện Đa khoa tỉnh Kiên Giang,True,True,True,0.9343624114990234
+629620,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện Từ Dũ - TP. Hồ Chí Minh,"Bệnh viện Từ Dũ, TP. Hồ Chí Minh",False,,False,False,False,0.949859619140625
+629619,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Kạch Giá - Kiên Giang,"Rạch Giá, Kiên Giang",False,Rạch Giá - Kiên Giang,False,True,False,0.9057521820068359
+629627,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa tỉnh Kiên Giang,Bệnh viện Đa khoa tỉnh Kiên Giang,False,Bệnh viện Đa khoa tỉnh Kiên Giang,True,True,True,0.9207725524902344
+629634,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa tỉnh Kiên Giang,Bệnh viện Đa khoa tỉnh Kiên Giang,False,Bệnh viện Đa khoa tỉnh Kiên Giang,True,True,True,0.9608268737792969
+629638,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,TP. Rạch Giá - Tỉnh Kiên Giang,"Thành phố Rạch Giá, tỉnh Kiên Giang",False,,False,False,False,1.2826919555664062
+629632,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Tỉnh Kiên Giang,Bệnh viện Đa khoa tỉnh Kiên Giang,False,Bệnh viện Đa khoa tỉnh Kiên Giang,True,True,True,1.0614395141601562
+629639,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa tỉnh Kiên Giang,Bệnh viện Đa khoa tỉnh Kiên Giang,False,Bệnh viện Đa khoa tỉnh Kiên Giang,True,True,True,1.039743423461914
+629646,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bện viện đa khoa tỉnh Kiên Giang,Bện viện Đa khoa tỉnh Kiên Giang,False,Bệnh viện Đa khoa tỉnh Kiên Giang,False,True,False,1.0724067687988281
+629635,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa tỉnh Kiến Giang,Bệnh viện Đa khoa tỉnh Kiên Giang,False,,False,False,False,1.0573863983154297
+629641,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa tỉnh Kiên Giang,Bệnh viện Đa khoa tỉnh Kiên Giang,False,Bệnh viện Đa khoa tỉnh Kiên Giang,True,True,True,0.9992122650146484
+629568,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện An khan tỉnh Kiên Giang,Bệnh viện Đa khoa tỉnh Kiên Giang,False,,False,False,False,0.9822845458984375
+629644,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Giồng Hưng - Kiên Giang,"Giồng Riềng, Kiên Giang",False,,False,False,False,0.9551048278808594
+629648,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa tỉnh Kiên Giang,Bệnh viện Đa khoa tỉnh Kiên Giang,False,Bệnh viện Đa khoa tỉnh Kiên Giang,True,True,True,0.9698867797851562
+629631,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa tỉnh Kiên Giang,Bệnh viện Đa khoa tỉnh Kiên Giang,False,Bệnh viện Đa khoa tỉnh Kiên Giang,True,True,True,1.4598369598388672
+629636,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa tỉnh Kiên Giang.,Bệnh viện Đa khoa tỉnh Kiên Giang,False,Bệnh viện Đa khoa tỉnh Kiên Giang.,False,True,False,1.1334419250488281
+629649,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Cơ số 4 Bệnh Vạn Đại học Y Dược TP Hồ Chí Minh,Cơ số 4 Bệnh viện Đại học Y Dược Thành Phố Hồ Chí Minh,False,,False,False,False,1.096963882446289
+629647,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,"Bệnh viện đa khoa tư nhân Bình An, TP Hạc thấn, tỉnh Kiên","Bệnh viện Đa khoa tư nhân Bình An, thành phố Rạch Giá, tỉnh Kiên Giang",False,"Bệnh viện Đa khoa tư nhân Bình An, TP Rạch Giá, tỉnh Kiên Giang",False,True,False,1.1398792266845703
+629630,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoan tỉnh Kiên Giang,Bệnh viện đa khoa tỉnh Kiên Giang,False,Bệnh viện Đa khoa tỉnh Kiên Giang,False,True,False,1.4188289642333984
+629654,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,"Phường Vĩnh Bảo, TP. Bạch Giá, tỉnh Kiên Giang","Phường Vĩnh Bảo, Thành phố Rạch Giá, tỉnh Kiên Giang",False,,False,False,False,1.1258125305175781
+629657,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bải viện đa khoa tỉnh Kiên Giang,Bệnh viện Đa khoa tỉnh Kiên Giang,False,Bệnh viện Đa khoa tỉnh Kiên Giang,True,True,True,1.0514259338378906
+629652,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,"Bạm Hế phường Vĩnh Thám, TP. Rạch Giát, tỉnh Kiên Gian","Trạm y tế phường Vĩnh Thanh, TP. Rạch Giá, tỉnh Kiên Giang",False,,False,False,False,1.0335445404052734
+629658,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa tỉnh Kiên Giang,Bệnh viện Đa khoa tỉnh Kiên Giang,False,Bệnh viện Đa khoa tỉnh Kiên Giang,True,True,True,1.074075698852539
+629653,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện Từ Dũ - TP. Hồ Chí Minh,"Bệnh viện Từ Dũ, thành phố Hồ Chí Minh",False,,False,False,False,0.9896755218505859
+629650,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,"Trạm Htế xã Mỹ Lãm, huyện tròn Đất, tỉnh Kiên Giang","Trạm Y tế xã Mỹ Lâm, huyện Hòn Đất, tỉnh Kiên Giang",False,,False,False,False,1.0347366333007812
+629643,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa tỉnh Kiên Giang,Bệnh viện Đa khoa tỉnh Kiên Giang,False,Bệnh viện Đa khoa tỉnh Kiên Giang,True,True,True,1.140594482421875
+629547,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa tỉnh Kiên Giang,Bệnh viện Đa khoa tỉnh Kiên Giang,False,Bệnh viện Đa khoa tỉnh Kiên Giang,True,True,True,1.0571479797363281
+629642,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Rạch Giá - Kiên Giang,"Rạch Giá, Kiên Giang",False,Rạch Giá - Kiên Giang,False,True,False,0.9963512420654297
+629637,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Tỉnh Kiên Giang,Bệnh viện đa khoa tỉnh Kiên Giang,False,Bệnh viện Đa khoa tỉnh Kiên Giang,False,True,False,1.0592937469482422
+629735,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,trì tấm trg,"Phường Vĩnh Thanh, thành phố Rạch Giá, tỉnh Kiên Giang",False,,False,False,False,0.9882450103759766
+629734,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,tộc lãnh thành Lân tộc Khuản,"Trạm Y tế xã Mỹ Lâm, huyện Hòn Đất, tỉnh Kiên Giang",False,,False,False,False,0.9963512420654297
+629860,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa tỉnh Kiên Giang,Bệnh viện Đa khoa tỉnh Kiên Giang,False,Bệnh viện Đa khoa tỉnh Kiên Giang,True,True,True,0.9765625
+629864,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa tỉnh Kiên Giang,Bệnh viện Đa khoa tỉnh Kiên Giang,False,Bệnh viện Đa khoa tỉnh Kiên Giang,True,True,True,0.9684562683105469
+629859,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Tỉnh Kiên Giang,Bệnh viện Đa khoa tỉnh Kiên Giang,False,Bệnh viện Đa khoa tỉnh Kiên Giang,True,True,True,0.9267330169677734
+629861,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Đạch Giá - Kiên Giang,"Đạch Giá, Kiên Giang",False,Rạch Giá - Kiên Giang,False,True,False,0.9000301361083984
+629862,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa tỉnh Kiên Giang,Bệnh viện Đa khoa tỉnh Kiên Giang,False,Bệnh viện Đa khoa tỉnh Kiên Giang,True,True,True,1.0280609130859375
+629867,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa tỉnh Kiên Giang,Bệnh viện Đa khoa tỉnh Kiên Giang,False,Bệnh viện Đa khoa tỉnh Kiên Giang,True,True,True,0.9391307830810547
+629866,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Tỉnh Kiên Giang,Bệnh viện Đa khoa tỉnh Kiên Giang,False,Bệnh viện Đa khoa tỉnh Kiên Giang,True,True,True,0.9298324584960938
+629863,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện Quốc tế ẩy - TP Hồ Chí Minh,"Bệnh viện Quốc tế City, Thành phố Hồ Chí Minh",False,,False,False,False,0.9770393371582031
+629869,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Hồng Đảo - TP. Hồ Chí Minh,"Bệnh viện đa khoa Hồng Đức, Thành phố Hồ Chí Minh",False,,False,False,False,0.98419189453125
+629871,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Tỉnh Kiên Giang,Bệnh viện Đa khoa tỉnh Kiên Giang,False,Bệnh viện Đa khoa tỉnh Kiên Giang,True,True,True,0.9939670562744141
+629870,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Trung Ngương Quảng Nam,Bệnh viện đa khoa Trung ương Quảng Nam,False,,False,False,False,0.9808540344238281
+629873,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,"Phường Vĩnh Bảo, TP. Đạch Giá, tỉnh Kiên Giang","Phường Vĩnh Bảo, thành phố Rạch Giá, tỉnh Kiên Giang",False,,False,False,False,0.9751319885253906
+629875,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Phù Ng Châng Thắng - Bình Định,"Phù Mỹ, Mỹ Thắng, Bình Định",False,,False,False,False,0.9315013885498047
+629868,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Quốc tế Vũ Anh - TP. Hồ Chí Ninh,Bệnh viện Đa khoa Quốc tế Vũ Anh - TP. Hồ Chí Ninh,False,,False,False,False,1.188516616821289
+629879,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa tỉnh Kiên Giang,Bệnh viện Đa khoa tỉnh Kiên Giang,False,Bệnh viện Đa khoa tỉnh Kiên Giang,True,True,True,1.1224746704101562
+629865,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,"Bệnh viện đa khoa tỉnh Kiên Giang Họ và têncha: hê Tuyết Nữ , Dân tộc: Kinh Quốc",Bệnh viện Đa khoa tỉnh Kiên Giang,False,,False,False,False,1.1143684387207031
+629874,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Phù Mỹ Vũ Thắng - Bình Định,"Phù Mỹ, Mỹ Thắng, Bình Định",False,,False,False,False,1.4247894287109375
+629876,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa tỉnh Kiên Giang,Bệnh viện Đa khoa tỉnh Kiên Giang,False,Bệnh viện Đa khoa tỉnh Kiên Giang,True,True,True,1.0685920715332031
+629884,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa tỉnh Kiên Giang,Bệnh viện Đa khoa tỉnh Kiên Giang,False,Bệnh viện Đa khoa tỉnh Kiên Giang,True,True,True,0.9918212890625
+629882,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa tỉnh Kiên Giang,Bệnh viện Đa khoa tỉnh Kiên Giang,False,Bệnh viện Đa khoa tỉnh Kiên Giang,True,True,True,1.0118484497070312
+629880,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Vĩnh Thanh Vân - Hạch Giá - Kiên Giang,"Vĩnh Thanh Vân, Rạch Giá, Kiên Giang",False,,False,False,False,1.1441707611083984
+629887,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa tỉnh Kiên Giang.,Bệnh viện Đa khoa tỉnh Kiên Giang,False,Bệnh viện Đa khoa tỉnh Kiên Giang.,False,True,False,1.0089874267578125
+629888,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đá khoa Tỉnh Kiên Giang,Bệnh viện đa Khoa tỉnh Kiên Giang,False,Bệnh viện Đa khoa tỉnh Kiên Giang,False,True,False,0.9851455688476562
+629889,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,"Thị trấn Văn Đất, huyện Hòn Đất, tỉnh Kiên Giang","Thị trấn Hòn Đất, huyện Hòn Đất, tỉnh Kiên Giang",False,,False,False,False,1.0955333709716797
+629881,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Đạch Giá - Kiên Giang,"Rạch Giá, Kiên Giang",False,,False,False,False,1.008749008178711
+629891,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Thạch Giá - Kiên Giang,"Rạch Giá, Kiên Giang",False,,False,False,False,1.0006427764892578
+629893,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Hồng Tâm - Bạc Liêu,"Hồng Dân, Bạc Liêu",False,,False,False,False,0.9877681732177734
+629896,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Tỉnh Kiên Giang,Bệnh viện Đa khoa tỉnh Kiên Giang,False,Bệnh viện Đa khoa tỉnh Kiên Giang,True,True,True,1.0223388671875
+629886,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,"Bệnh viện đa khoa th nhân Bình An, TP. Lạch Giá, tỉnh Kiến Giang.","Bệnh viện Đa khoa Tư nhân Bình An, thành phố Rạch Giá, tỉnh Kiên Giang",False,,False,False,False,2.043485641479492
+629885,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện Từ Dũ - TP. Hồ Chí Minh,"Bệnh viện Từ Dũ, Thành phố Hồ Chí Minh",False,,False,False,False,1.0268688201904297
+629894,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện Quốc Tế Phương Châu - TX Cần Thơ,"Bệnh viện Quốc Tế Phương Châu, thành phố Cần Thơ",False,,False,False,False,1.035451889038086
+629899,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,"Xã Vĩnh Thạnh, huyện Thồng Kiền, Tỉnh Kiên Gương","Xã Vĩnh Thạnh, huyện Giồng Riềng, tỉnh Kiên Giang",False,,False,False,False,1.2691020965576172
+629895,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa tỉnh Kiên Giang,Bệnh viện Đa khoa tỉnh Kiên Giang,False,Bệnh viện Đa khoa tỉnh Kiên Giang,True,True,True,1.028299331665039
+629898,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa tỉnh Kiên Giang Trần Minh Đức,Bệnh viện Đa khoa tỉnh Kiên Giang,False,,False,False,False,1.0037422180175781
+629904,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Tỉnh Kiên Giang,Bệnh viện đa khoa tỉnh Kiên Giang,False,Bệnh viện Đa khoa tỉnh Kiên Giang,False,True,False,1.0111331939697266
+629902,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa tỉnh Kiên Giang,Bệnh viện Đa khoa tỉnh Kiên Giang,False,Bệnh viện Đa khoa tỉnh Kiên Giang,True,True,True,0.9584426879882812
+629900,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa tỉnh Kiên Giang,Bệnh viện đa Khoa tỉnh Kiên Giang,False,Bệnh viện Đa khoa tỉnh Kiên Giang,False,True,False,0.9443759918212891
+629909,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,"TP. Rạch Giá, tỉnh Kiến Giang","Thành phố Rạch Giá, tỉnh Kiên Giang",False,,False,False,False,0.9722709655761719
+629906,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,"xã Vĩnh Thạnh, huyện Cầng Bằng, Tỉnh Kiên Giang","Xã Vĩnh Thạnh, huyện Giồng Riềng, tỉnh Kiên Giang",False,,False,False,False,1.0063648223876953
+629890,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Tỉnh Kiên Giang,Bệnh viện Đa khoa Tỉnh Kiên Giang,False,Bệnh viện Đa khoa tỉnh Kiên Giang,False,True,False,0.9896755218505859
+629907,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Hạch Giá - Kiên Giang,"Rạch Giá, Kiên Giang",False,Rạch Giá - Kiên Giang,False,True,False,0.9310245513916016
+629908,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,"Bệnh viện đa khoa kim Giang, TP. Hạch Giá, tỉnh Kiền Giang.","Bệnh viện Đa khoa Kiên Giang, thành phố Rạch Giá, tỉnh Kiên Giang",False,,False,False,False,0.9815692901611328
+629903,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa tỉnh Kiên Giang,Bệnh viện Đa khoa tỉnh Kiên Giang,False,Bệnh viện Đa khoa tỉnh Kiên Giang,True,True,True,1.0755062103271484
+629912,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,"thị Điện đa khoa tỉnh Kiến Lông, TP. Lạch Giá, tỉnh Kim Giang","Bệnh viện đa Khoa tỉnh Kiên Giang, thành phố Rạch Giá",False,,False,False,False,1.0616779327392578
+629911,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,"Xã Cây Lên, huyện An Biên, Tỉnh Kiên Giang","Xã Tây Yên, huyện An Biên, tỉnh Kiên Giang",False,,False,False,False,0.9922981262207031
+629914,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Tỉnh Kiền Giang,Bệnh viện đa khoa tỉnh Kiên Giang,False,Bệnh viện Đa khoa Kiền Giang,False,True,False,0.9775161743164062
+629915,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,"Bệnh viện đa khoa Biên Giãng, TP. Bạch Giá, tỉnh Kiên Giang","Bệnh viện Đa khoa Kiên Giang, Thành phố Rạch Giá, tỉnh Kiên Giang",False,,False,False,False,1.0294914245605469
+629919,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Rạch Gia - Kiên Giang,"Rạch Giá, Kiên Giang",False,,False,False,False,1.0187625885009766
+629916,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Tỉnh Kiên Giang,Bệnh viện Đa khoa tỉnh Kiên Giang,False,Bệnh viện Đa khoa tỉnh Kiên Giang,True,True,True,0.9739398956298828
+629918,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,"Phường Vĩnh Bắc, TP Hạch Giá, Tỉnh Kiên Giang","Phường Vĩnh Bảo, TP Rạch Giá, tỉnh Kiên Giang",False,,False,False,False,0.9596347808837891
+629920,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa tỉnh Kiên Giang,Bệnh viện Đa khoa tỉnh Kiên Giang,False,Bệnh viện Đa khoa tỉnh Kiên Giang,True,True,True,1.0175704956054688
+629921,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Đạch Giá - Kiên Giang,"Rạch Giá, Kiên Giang",False,,False,False,False,0.904083251953125
+629910,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,"Bệnh viện đa khoa tì nhân Ân Sinh, quận Phú Nhuận, TP. Hồ Chí Minh","Bệnh viện Đa khoa tư nhân An Sinh, Quận Phú Nhuận, Thành phố Hồ Chí Minh",False,,False,False,False,1.2745857238769531
+629913,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,"Bệnh viện đa khoa Kiên Giang, TP. Rạch Giá, tỉnh Kiên Giang","Bệnh viện Đa khoa Kiên Giang, thành phố Rạch Giá, tỉnh Kiên Giang",False,"Bệnh viện Đa khoa Kiên Giang, thành phố Rạch Giá, tỉnh Kiên Giang",True,True,True,1.1365413665771484
+629905,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa tỉnh Kiên Giang,Bệnh viện Đa khoa tỉnh Kiên Giang,False,Bệnh viện Đa khoa tỉnh Kiên Giang,True,True,True,1.047372817993164
+629917,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,"Bệnh viện đa khoa Kiên Giang TP. hạch Giá, tỉnh Kiên Giang.","Bệnh viện Đa khoa Kiên Giang, Thành phố Rạch Giá, tỉnh Kiên Giang.",False,Bệnh viện Đa khoa tỉnh Kiên Giang.,False,True,False,1.0678768157958984
+629897,f28d8f2c-a7bf-48db-8fc5-a8922c3f798b,NoiSinh,Bệnh viện đa khoa Tỉnh Kiên Giang,Bệnh viện đa khoa tỉnh Kiên Giang,False,Bệnh viện Đa khoa tỉnh Kiên Giang,False,True,False,1.0962486267089844
