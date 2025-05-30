@@ -5,63 +5,73 @@ import os
 import unicodedata
 import re
 from tqdm import tqdm
-from collections import defaultdict
+from collections import defaultdict, Counter
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 
-# === CONFIG ===
 CSV_PATH = "input/sample_ocr_human_value_kiengiang_khaisinh.csv"
 THRESHOLD = 0.85
-FIELD_FILTER = "NoiSinh"  # Ví dụ: 'NoiSinh'
+FIELD_FILTER = None  # None to process all fields, or specify a field code like "NoiSinh"
+MIN_OCCURRENCE = 2
 
-# === TEXT NORMALIZATION (chỉ dùng cho ocr_value)
 def normalize_text(text):
     text = str(text).lower()
     text = unicodedata.normalize('NFKC', text)
     text = re.sub(r'\s+', ' ', text).strip()
     return text
 
-# === TF-IDF FIXER ===
 class TfidfFixer:
     def __init__(self):
-        self.human_memory = defaultdict(list)         # Danh sách giá trị đã học
-        self.human_memory_set = defaultdict(set)      # Tập để kiểm tra trùng lặp nhanh
+        self.human_memory = defaultdict(list)
+        self.human_memory_set = defaultdict(set)
+        self.human_counter = defaultdict(lambda: defaultdict(int))  # human_value counter
         self.vectorizers = {}
         self.vector_matrices = {}
 
-    def learn(self, field, human_value):
-        if human_value and human_value not in self.human_memory_set[field]:
+    def learn(self, field, human_value, suggestion):
+        if not human_value:
+            return
+        self.human_counter[field][human_value] += 1
+
+        # Chỉ học khi human_value lặp lại >= MIN_OCCURRENCE và suggestion != human
+        if (
+            self.human_counter[field][human_value] >= MIN_OCCURRENCE
+            and human_value not in self.human_memory_set[field]
+            and suggestion != human_value
+        ):
             self.human_memory[field].append(human_value)
             self.human_memory_set[field].add(human_value)
             self._update_vectorizer(field)
 
     def _update_vectorizer(self, field):
-        vectorizer = TfidfVectorizer(analyzer='char_wb', ngram_range=(2, 5))
+        #vectorizer = TfidfVectorizer()
+        vectorizer = TfidfVectorizer(ngram_range=(1, 3))
         mat = vectorizer.fit_transform(self.human_memory[field])
         self.vectorizers[field] = vectorizer
         self.vector_matrices[field] = mat
 
     def suggest(self, field, ocr_value):
         if not self.human_memory[field]:
-            return None
+            return None, 0.0
         vec = self.vectorizers[field].transform([ocr_value])
         sim = cosine_similarity(vec, self.vector_matrices[field])[0]
         best_idx = np.argmax(sim)
         best_score = sim[best_idx]
-        return self.human_memory[field][best_idx] if best_score >= THRESHOLD else None
+        return self.human_memory[field][best_idx] if best_score >= THRESHOLD else None, round(float(best_score), 4)
 
-# === MAIN FUNCTION ===
 def run_replay(csv_path):
     df = pd.read_csv(csv_path)
     df = df.dropna(subset=["doctypefieldcode", "ocr_value", "human_value"])
-    df['ocr_value'] = df['ocr_value'].astype(str).str.strip()
-    df['human_value'] = df['human_value'].astype(str).str.strip()
+    df["ocr_value"] = df["ocr_value"].astype(str).str.strip()
+    df["human_value"] = df["human_value"].astype(str).str.strip()
+
     if FIELD_FILTER:
         df = df[df["doctypefieldcode"] == FIELD_FILTER].reset_index(drop=True)
 
     tfidf_fixer = TfidfFixer()
     df["ocr_correct"] = df["ocr_value"].str.strip() == df["human_value"].str.strip()
     df["tfidf_predict"] = ""
+    df["tfidf_confidence"] = 0.0
     df["tfidf_correct"] = False
     df["tfidf_suggested"] = False
     df["tfidf_final_correct"] = False
@@ -75,22 +85,24 @@ def run_replay(csv_path):
             human = row["human_value"]
 
             start = time.time()
-            suggestion = tfidf_fixer.suggest(field, ocr)
-            elapsed = (time.time() - start) * 1000  # ms
+            suggestion, confidence = tfidf_fixer.suggest(field, ocr)
+            elapsed = (time.time() - start) * 1000
 
             df.at[idx, "tfidf_predict"] = suggestion if suggestion else ""
-            df.at[idx, "tfidf_suggested"] = bool(suggestion) # has prediction value  from model
-            df.at[idx, "tfidf_correct"] = (suggestion == human and bool(suggestion)==True) # has prediction value and correct
-            df.at[idx, "tfidf_final_correct"] = (suggestion == human) if suggestion else (row["ocr_value"] == human) # overall correct including OCR and suggestion
+            df.at[idx, "tfidf_confidence"] = confidence
+            df.at[idx, "tfidf_suggested"] = bool(suggestion)
+            df.at[idx, "tfidf_correct"] = (suggestion == human or suggestion == "")
+            df.at[idx, "tfidf_final_correct"] = (suggestion == human) if suggestion else (row["ocr_value"] == human)
             df.at[idx, "predict_time_ms"] = elapsed
 
-            tfidf_fixer.learn(field, human)
-        except Exception as e:
-            print(f"\nError processing record {idx} - Human value: {human} \n Error: {e}")
-            
+            # === Chỉ học nếu OCR sai và human lặp lại đủ số lần nhưng không trùng suggestion ===
+            if not row["ocr_correct"]:
+                tfidf_fixer.learn(field, human, suggestion)
 
-    # === Tổng hợp kết quả ===
-    print("📊 Đang tổng hợp kết quả...\n")
+        except Exception as e:
+            print(f"⚠️  Error at row {idx}: {e}")
+
+    print("\n📊 Đang tổng hợp kết quả...\n")
     summary = (
         df.groupby("doctypefieldcode")
         .agg(
@@ -108,8 +120,6 @@ def run_replay(csv_path):
 
     summary["incorrect_ocr"] = summary["total_records"] - summary["correct_ocr"]
     summary["tfidf_predicted_wrong"] = summary["tfidf_predicted"] - summary["tfidf_predicted_correct"]
-
-    # Các tỷ lệ
     summary["accuracy (%)"] = (summary["correct_ocr"] / summary["total_records"] * 100).round(2)
     summary["error_rate (%)"] = (summary["incorrect_ocr"] / summary["total_records"] * 100).round(2)
     summary["TFIDF_Predicted (%)"] = (summary["tfidf_predicted"] / summary["total_records"] * 100).round(2)
@@ -124,7 +134,6 @@ def run_replay(csv_path):
     summary["max_time_ms"] = summary["max_time_ms"].round(2)
     summary["avg_time_ms"] = summary["avg_time_ms"].round(2)
 
-
     summary = summary[
         [
             "doctypefieldcode", "total_records", "correct_ocr", "incorrect_ocr",
@@ -137,15 +146,10 @@ def run_replay(csv_path):
         ]
     ].sort_values(by="error_rate (%)", ascending=False)
 
-    # === Lưu kết quả ===
     os.makedirs("result", exist_ok=True)
-    print(f"\n🧾 Tổng số bản ghi đã xử lý: {len(df)}")
-    print("📊 BẢNG THỐNG KÊ:")
+    df.to_csv("result/tfidf_prediction_full_output.csv", index=False)
+    summary.to_csv("result/tfidf_model_summary.csv", index=False)
     print(summary.to_string(index=False))
 
-    summary.to_csv(f"result/tfidf_model_summary_{FIELD_FILTER}.csv", index=False)
-    df.to_csv(f"result/tfidf_prediction_full_output_{FIELD_FILTER}.csv", index=False)
-
-# === RUN ===
 if __name__ == "__main__":
     run_replay(CSV_PATH)
