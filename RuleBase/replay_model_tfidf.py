@@ -11,7 +11,8 @@ from sklearn.metrics.pairwise import cosine_similarity
 
 CSV_PATH = "input/sample_ocr_human_value_kiengiang_khaisinh.csv"
 THRESHOLD = 0.85
-FIELD_FILTER = None  # None to process all fields, or specify a field code like "NoiSinh"
+CONFIDENCE_FALLBACK = 0.8
+FIELD_FILTER = None
 MIN_OCCURRENCE = 2
 
 def normalize_text(text):
@@ -27,13 +28,19 @@ class TfidfFixer:
         self.human_counter = defaultdict(lambda: defaultdict(int))  # human_value counter
         self.vectorizers = {}
         self.vector_matrices = {}
+        self.lookup_dict = defaultdict(dict)  # field -> ocr_value -> last human_value
 
-    def learn(self, field, human_value, suggestion):
+    def learn_if_valid(self, field, ocr_value, human_value, suggestion):
         if not human_value:
             return
+
+        # Cập nhật lookup_dict
+        self.lookup_dict[field][ocr_value] = human_value
+
+        # Cập nhật bộ đếm
         self.human_counter[field][human_value] += 1
 
-        # Chỉ học khi human_value lặp lại >= MIN_OCCURRENCE và suggestion != human
+        # Chỉ học nếu human_value lặp lại >= MIN_OCCURRENCE và chưa học, và suggest != human
         if (
             self.human_counter[field][human_value] >= MIN_OCCURRENCE
             and human_value not in self.human_memory_set[field]
@@ -44,8 +51,7 @@ class TfidfFixer:
             self._update_vectorizer(field)
 
     def _update_vectorizer(self, field):
-        #vectorizer = TfidfVectorizer()
-        vectorizer = TfidfVectorizer(ngram_range=(1, 3))
+        vectorizer = TfidfVectorizer(ngram_range=(1, 2))
         mat = vectorizer.fit_transform(self.human_memory[field])
         self.vectorizers[field] = vectorizer
         self.vector_matrices[field] = mat
@@ -59,11 +65,15 @@ class TfidfFixer:
         best_score = sim[best_idx]
         return self.human_memory[field][best_idx] if best_score >= THRESHOLD else None, round(float(best_score), 4)
 
+    def fallback_lookup(self, field, ocr_value):
+        return self.lookup_dict[field].get(ocr_value, None)
+
 def run_replay(csv_path):
     df = pd.read_csv(csv_path)
     df = df.dropna(subset=["doctypefieldcode", "ocr_value", "human_value"])
-    df["ocr_value"] = df["ocr_value"].astype(str).str.strip()
-    df["human_value"] = df["human_value"].astype(str).str.strip()
+    df["ocr_value"] = df["ocr_value"].astype(str)
+    df["human_value"] = df["human_value"].astype(str)
+    df["ocr_norm"] = df["ocr_value"].apply(normalize_text)
 
     if FIELD_FILTER:
         df = df[df["doctypefieldcode"] == FIELD_FILTER].reset_index(drop=True)
@@ -81,23 +91,29 @@ def run_replay(csv_path):
     for idx, row in tqdm(df.iterrows(), total=len(df), desc="🔁 Replay", unit="record"):
         try:
             field = row["doctypefieldcode"]
-            ocr = row["ocr_value"]
+            ocr_raw = row["ocr_value"]
+            ocr = row["ocr_norm"]
             human = row["human_value"]
 
             start = time.time()
             suggestion, confidence = tfidf_fixer.suggest(field, ocr)
+
+            # Fallback nếu confidence < CONFIDENCE_FALLBACK
+            if confidence < CONFIDENCE_FALLBACK or suggestion is None:
+                fallback = tfidf_fixer.fallback_lookup(field, ocr_raw)
+                if fallback:
+                    suggestion = fallback
             elapsed = (time.time() - start) * 1000
 
             df.at[idx, "tfidf_predict"] = suggestion if suggestion else ""
             df.at[idx, "tfidf_confidence"] = confidence
             df.at[idx, "tfidf_suggested"] = bool(suggestion)
             df.at[idx, "tfidf_correct"] = (suggestion == human or suggestion == "")
-            df.at[idx, "tfidf_final_correct"] = (suggestion == human) if suggestion else (row["ocr_value"] == human)
+            df.at[idx, "tfidf_final_correct"] = (suggestion == human) if suggestion else (ocr_raw == human)
             df.at[idx, "predict_time_ms"] = elapsed
 
-            # === Chỉ học nếu OCR sai và human lặp lại đủ số lần nhưng không trùng suggestion ===
             if not row["ocr_correct"]:
-                tfidf_fixer.learn(field, human, suggestion)
+                tfidf_fixer.learn_if_valid(field, ocr_raw, human, suggestion)
 
         except Exception as e:
             print(f"⚠️  Error at row {idx}: {e}")
