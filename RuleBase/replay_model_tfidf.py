@@ -8,15 +8,13 @@ from tqdm import tqdm
 from collections import defaultdict, Counter
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
-
-CSV_PATH = "input/sample_ocr_human_value_kiengiang_khaisinh.csv"
+Version = "0.1.0"
+CSV_PATH = "input/sample_ocr_human_value_kiengiang_khaisinh_400K.csv"
 THRESHOLD = 0.85
-CONFIDENCE_FALLBACK = 0.8
 FIELD_FILTER = None
 MIN_OCCURRENCE = 2
 
 def normalize_text(text):
-    text = str(text).lower()
     text = unicodedata.normalize('NFKC', text)
     text = re.sub(r'\s+', ' ', text).strip()
     return text
@@ -71,9 +69,8 @@ class TfidfFixer:
 def run_replay(csv_path):
     df = pd.read_csv(csv_path)
     df = df.dropna(subset=["doctypefieldcode", "ocr_value", "human_value"])
-    df["ocr_value"] = df["ocr_value"].astype(str)
-    df["human_value"] = df["human_value"].astype(str)
-    df["ocr_norm"] = df["ocr_value"].apply(normalize_text)
+    df["ocr_value"] = df["ocr_value"].astype(str).str.strip()
+    df["human_value"] = df["human_value"].astype(str).str.strip()
 
     if FIELD_FILTER:
         df = df[df["doctypefieldcode"] == FIELD_FILTER].reset_index(drop=True)
@@ -86,34 +83,40 @@ def run_replay(csv_path):
     df["tfidf_suggested"] = False
     df["tfidf_final_correct"] = False
     df["predict_time_ms"] = 0.0
-
+    df["predict_confidence"] =0.0
+    df["predict_nagative"] = False
     print("\n🚀 Đang chạy TF-IDF Replay...\n")
     for idx, row in tqdm(df.iterrows(), total=len(df), desc="🔁 Replay", unit="record"):
         try:
             field = row["doctypefieldcode"]
-            ocr_raw = row["ocr_value"]
-            ocr = row["ocr_norm"]
-            human = row["human_value"]
+            ocr =normalize_text(row["ocr_value"])
+            human = normalize_text(row["human_value"])
 
             start = time.time()
             suggestion, confidence = tfidf_fixer.suggest(field, ocr)
 
-            # Fallback nếu confidence < CONFIDENCE_FALLBACK
-            if confidence < CONFIDENCE_FALLBACK or suggestion is None:
-                fallback = tfidf_fixer.fallback_lookup(field, ocr_raw)
+            # Fallback nếu confidence < THRESHOLD
+            if confidence < THRESHOLD or suggestion is None:
+                fallback = tfidf_fixer.fallback_lookup(field, ocr)
                 if fallback:
                     suggestion = fallback
+                    confidence = 1.0  # Fallback luôn có confidence cao
+                else:
+                    suggestion = None
+                    confidence = 1.0
+
             elapsed = (time.time() - start) * 1000
 
             df.at[idx, "tfidf_predict"] = suggestion if suggestion else ""
             df.at[idx, "tfidf_confidence"] = confidence
             df.at[idx, "tfidf_suggested"] = bool(suggestion)
             df.at[idx, "tfidf_correct"] = (suggestion == human or suggestion == "")
-            df.at[idx, "tfidf_final_correct"] = (suggestion == human) if suggestion else (ocr_raw == human)
+            df.at[idx, "tfidf_final_correct"] = (suggestion == human) if suggestion else (ocr == human)
             df.at[idx, "predict_time_ms"] = elapsed
-
-            if not row["ocr_correct"]:
-                tfidf_fixer.learn_if_valid(field, ocr_raw, human, suggestion)
+            df.at[idx, "predict_confidence"] = confidence
+            df.at[idx, "predict_nagative"] = (bool(suggestion) and human==ocr and suggestion != human)
+            
+            tfidf_fixer.learn_if_valid(field, ocr, human, suggestion)
 
         except Exception as e:
             print(f"⚠️  Error at row {idx}: {e}")
@@ -127,9 +130,13 @@ def run_replay(csv_path):
             tfidf_predicted=("tfidf_suggested", "sum"),
             tfidf_predicted_correct=("tfidf_correct", "sum"),
             tfidf_final_correct=("tfidf_final_correct", "sum"),
+            predict_nagative=("predict_nagative", "sum"),
             min_time_ms=("predict_time_ms", "min"),
             max_time_ms=("predict_time_ms", "max"),
-            avg_time_ms=("predict_time_ms", "mean")
+            avg_time_ms=("predict_time_ms", "mean"),
+            min_confidence=("predict_confidence", "min"),
+            max_confidence=("predict_confidence", "max"),
+            avg_confidence=("predict_confidence", "mean")
         )
         .reset_index()
     )
@@ -145,11 +152,14 @@ def run_replay(csv_path):
     summary["TFIDF_Predict_Error (%)"] = (
         summary["tfidf_predicted_wrong"] / summary["tfidf_predicted"].replace(0, np.nan) * 100
     ).fillna(0).round(2)
+    summary["predict_navative_rate (%)"] = (summary["predict_nagative"] / summary["total_records"] * 100).round(2)
     summary["TFIDF_Overall_Accuracy (%)"] = (summary["tfidf_final_correct"] / summary["total_records"] * 100).round(2)
     summary["min_time_ms"] = summary["min_time_ms"].round(2)
     summary["max_time_ms"] = summary["max_time_ms"].round(2)
     summary["avg_time_ms"] = summary["avg_time_ms"].round(2)
-
+    summary["min_confidence"] = summary["min_confidence"].round(2)
+    summary["max_confidence"] = summary["max_confidence"].round(2)  
+    summary["avg_confidence"] = summary["avg_confidence"].round(2)
     summary = summary[
         [
             "doctypefieldcode", "total_records", "correct_ocr", "incorrect_ocr",
@@ -158,7 +168,9 @@ def run_replay(csv_path):
             "tfidf_predicted_correct", "tfidf_predicted_wrong",
             "TFIDF_Predict_Accuracy (%)", "TFIDF_Predict_Error (%)",
             "TFIDF_Overall_Accuracy (%)",
-            "min_time_ms", "max_time_ms", "avg_time_ms"
+            "predict_nagative", "predict_navative_rate (%)",
+            "min_time_ms", "max_time_ms", "avg_time_ms",
+            "min_confidence", "max_confidence", "avg_confidence"
         ]
     ].sort_values(by="error_rate (%)", ascending=False)
 

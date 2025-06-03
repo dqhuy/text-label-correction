@@ -1,2 +1,0 @@
-doctypefieldcode,total_records,correct_ocr,incorrect_ocr,accuracy (%),error_rate (%),MemoryBased_Accuracy (%),FASSI_Accuracy (%),MemoryBased_Suggested (%),FASSI_Suggested (%),MemoryBased_Overall_Accuracy (%),FASSI_Overall_Accuracy (%)
-NoiSinh,1113,0,1113,0.0,100.0,11.59,10.06,99.91,99.91,11.59,10.06
