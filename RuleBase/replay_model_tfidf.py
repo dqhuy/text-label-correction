@@ -8,19 +8,25 @@ from tqdm import tqdm
 from collections import defaultdict, Counter
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
+import logging
+
+# Cấu hình logging
+logging.basicConfig(level=logging.DEBUG,format='%(asctime)s - %(levelname)s - %(message)s')
+logger = logging.getLogger(__name__)
+
 Version = "0.1.0"
-CSV_PATH = "input/sample_ocr_human_value_kiengiang_khaisinh_400K.csv"
-THRESHOLD = 0.85
+CSV_PATH = "input/sample_ocr_human_value_kiengiang_khaisinh.csv"
 FIELD_FILTER = None
-MIN_OCCURRENCE = 2
 
 def normalize_text(text):
     text = unicodedata.normalize('NFKC', text)
     text = re.sub(r'\s+', ' ', text).strip()
     return text
 
-class TfidfFixer:
+class TfidfModel:
     def __init__(self):
+        self.THRESHOLD = 0.85
+        self.MIN_OCCURRENCE =2
         self.human_memory = defaultdict(list)
         self.human_memory_set = defaultdict(set)
         self.human_counter = defaultdict(lambda: defaultdict(int))  # human_value counter
@@ -32,15 +38,15 @@ class TfidfFixer:
         if not human_value:
             return
 
-        # Cập nhật lookup_dict
+        # update lookup_dict
         self.lookup_dict[field][ocr_value] = human_value
 
-        # Cập nhật bộ đếm
+        # update human_counter
         self.human_counter[field][human_value] += 1
 
         # Chỉ học nếu human_value lặp lại >= MIN_OCCURRENCE và chưa học, và suggest != human
         if (
-            self.human_counter[field][human_value] >= MIN_OCCURRENCE
+            self.human_counter[field][human_value] >= self.MIN_OCCURRENCE
             and human_value not in self.human_memory_set[field]
             and suggestion != human_value
         ):
@@ -55,13 +61,40 @@ class TfidfFixer:
         self.vector_matrices[field] = mat
 
     def suggest(self, field, ocr_value):
+        suggestion = None
+        confidence = 0.0
+
         if not self.human_memory[field]:
-            return None, 0.0
+            return suggestion, confidence
+        
         vec = self.vectorizers[field].transform([ocr_value])
         sim = cosine_similarity(vec, self.vector_matrices[field])[0]
         best_idx = np.argmax(sim)
         best_score = sim[best_idx]
-        return self.human_memory[field][best_idx] if best_score >= THRESHOLD else None, round(float(best_score), 4)
+        best_score = round(float(best_score), 4)
+        suggestion = self.human_memory[field][best_idx]
+
+        if best_score >=self.THRESHOLD:
+            logger.debug(f"✅  High confidence for field '{field}' with OCR value '{ocr_value}': {best_score} - suggestion value: {suggestion}")
+            suggestion = self.human_memory[field][best_idx]
+            confidence = best_score
+        else:          # Fallback if confidence < THRESHOLD
+            logger.debug(f"⚠️  Low confidence for field '{field}' with OCR value '{ocr_value}': {best_score} - suggestion value: {suggestion}. Using fallback.")
+            
+            # reset suggestion and confidence
+            suggestion = None
+            confidence = 0.0
+            
+            fallback = self.fallback_lookup(field, ocr_value)
+            if fallback:
+                suggestion = fallback
+                confidence = 1.0  # Fallback alway has  confidence = 1.0
+                logger.debug(f"🔄 Fallback suggestion for field '{field}' with OCR value '{ocr_value}': {suggestion}")
+            else:
+                suggestion = None
+                confidence = 0.0
+
+        return suggestion, confidence
 
     def fallback_lookup(self, field, ocr_value):
         return self.lookup_dict[field].get(ocr_value, None)
@@ -75,7 +108,7 @@ def run_replay(csv_path):
     if FIELD_FILTER:
         df = df[df["doctypefieldcode"] == FIELD_FILTER].reset_index(drop=True)
 
-    tfidf_fixer = TfidfFixer()
+    tfidf_fixer = TfidfModel()
     df["ocr_correct"] = df["ocr_value"].str.strip() == df["human_value"].str.strip()
     df["tfidf_predict"] = ""
     df["tfidf_confidence"] = 0.0
@@ -85,7 +118,7 @@ def run_replay(csv_path):
     df["predict_time_ms"] = 0.0
     df["predict_confidence"] =0.0
     df["predict_nagative"] = False
-    print("\n🚀 Đang chạy TF-IDF Replay...\n")
+    logger.info("Đang chạy TF-IDF Replay...")
     for idx, row in tqdm(df.iterrows(), total=len(df), desc="🔁 Replay", unit="record"):
         try:
             field = row["doctypefieldcode"]
@@ -94,16 +127,6 @@ def run_replay(csv_path):
 
             start = time.time()
             suggestion, confidence = tfidf_fixer.suggest(field, ocr)
-
-            # Fallback nếu confidence < THRESHOLD
-            if confidence < THRESHOLD or suggestion is None:
-                fallback = tfidf_fixer.fallback_lookup(field, ocr)
-                if fallback:
-                    suggestion = fallback
-                    confidence = 1.0  # Fallback luôn có confidence cao
-                else:
-                    suggestion = None
-                    confidence = 1.0
 
             elapsed = (time.time() - start) * 1000
 
@@ -119,9 +142,9 @@ def run_replay(csv_path):
             tfidf_fixer.learn_if_valid(field, ocr, human, suggestion)
 
         except Exception as e:
-            print(f"⚠️  Error at row {idx}: {e}")
+            logging.error(f"⚠️  Error at row {idx}: {e}")
 
-    print("\n📊 Đang tổng hợp kết quả...\n")
+    logger.info("Đang tổng hợp kết quả...")
     summary = (
         df.groupby("doctypefieldcode")
         .agg(
