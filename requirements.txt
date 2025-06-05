@@ -1,0 +1,13 @@
+# requirements for running the FastAPI application
+fastapi
+uvicorn
+pydantic
+
+# common requirements for all models
+scikit-learn  # Cần cho TfidfModel (giả định)
+numpy         # Cần cho TfidfModel (giả định)
+pandas
+tqdm
+
+# requirements cho model/tfidf_model
+unicodedata2
