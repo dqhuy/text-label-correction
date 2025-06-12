@@ -1,6 +1,7 @@
 import logging
 from fastapi import FastAPI, HTTPException
 from common import LearnRequest, SuggestRequest, SuggestResponse, initialize_model
+import uvicorn
 
 logging.basicConfig(level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s')
 logger = logging.getLogger(__name__)
@@ -17,9 +18,16 @@ app = FastAPI(
        
     ]
 )
+DEFAULT_MODEL = "tfidf"  # Mặc định sử dụng model TF-IDF
 
 # Cache các model để tránh khởi tạo lại
-models = {}
+models = {
+    DEFAULT_MODEL: initialize_model(DEFAULT_MODEL),    
+}
+
+@app.get("/")
+def read_root():
+    return {"Service status": "Running"}
 
 @app.post(
     "/api/{model_name}/learn",
@@ -85,5 +93,6 @@ async def suggest(model_name: str, request: SuggestRequest):
         raise HTTPException(status_code=500, detail=f"Error during suggestion: {str(e)}")
 
 if __name__ == "__main__":
-    import uvicorn
-    uvicorn.run(app, host="0.0.0.0", port=8000)
+    logger.info("Starting API server...")
+    # Uncomment the line below to run the server directly or debug it
+    #uvicorn.run(app, host="0.0.0.0", port=8000)
