@@ -1,0 +1,19 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Publish to folder D:\\cw_publish\\${workspaceFolderBasename}",
+            "type": "shell",
+            "command": "powershell",
+            "args": [
+                "-NoProfile",
+                "-ExecutionPolicy", "Bypass",
+                "-Command",
+                "Remove-Item -Recurse -Force 'D:\\cw_publish\\${workspaceFolderBasename}'; " +
+                "New-Item -ItemType Directory -Path 'D:\\cw_publish\\${workspaceFolderBasename}'; " +
+                "Copy-Item model,requirements.txt,api.py,common.py,web.config -Destination 'D:\\cw_publish\\${workspaceFolderBasename}' -Recurse"
+            ],
+            "group": "build"
+        }
+    ]
+}
