@@ -6,7 +6,12 @@ from model.tfidf.tfidf import TfidfModel
 
 # Định nghĩa class cho một item trong request của /api/learn
 class LearnItem(BaseModel):
+    project_id: str = None  # Dùng None nếu không cần thiết
+    project_name: str = None  # Dùng None nếu không cần thiết
+    template_id: str = None  # Dùng None nếu không cần thiết
+    template_name: str = None  # Dùng None nếu không cần thiết
     field_id: str
+    field_name: str = None  # Dùng None nếu không cần thiết
     ocr_value: str
     human_value: str
     suggestion_value: str
@@ -14,10 +19,15 @@ class LearnItem(BaseModel):
     class Config:
         json_schema_extra = {
             "example": {
+                "project_id": "123",
+                "project_name": "Test Project",
+                "template_id": "456",
+                "template_name": "Giấy khai sinh",
                 "field_id": "1",
-                "ocr_value": "aple",
-                "human_value": "apple",
-                "suggestion_value": "apple"
+                "field_name": "Nơi sinh",
+                "ocr_value": "Ha Nội",
+                "human_value": "Hà Nội",
+                "suggestion_value": "Hà Nội"
             }
         }
 
@@ -29,22 +39,53 @@ class LearnRequest(BaseModel):
         json_schema_extra = {
             "example": {
                 "data": [
-                    {"field_id": "1", "ocr_value": "aple", "human_value": "apple", "suggestion_value": ""},
-                    {"field_id": "2", "ocr_value": "bannana", "human_value": "banana", "suggestion_value": ""}
+                    {   
+                        "project_id": "123",
+                        "project_name": "Test Project",
+                        "template_id": "456",
+                        "template_name": "Giấy khai sinh",
+                        "field_id": "1",
+                        "field_name": "Nơi sinh",
+                        "ocr_value": "Ha Nội",
+                        "human_value": "Hà Nội",    
+                        "suggestion_value": "Hà Nội"
+                    },
+                    {
+                        "project_id": "123",
+                        "project_name": "Test Project",
+                        "template_id": "456",
+                        "template_name": "Giấy khai sinh",
+                        "field_id": "2",
+                        "field_name": "Quốc tịch",
+                        "ocr_value": "Viet Nam",
+                        "human_value": "Việt Nam",
+                        "suggestion_value": "Việt Nam"
+                    }
+                    
                 ]
             }
         }
 
 # Định nghĩa class cho một item trong request của /api/suggest
 class SuggestItem(BaseModel):
+    project_id: str = None  # Dùng None nếu không cần thiết
+    project_name: str = None  # Dùng None nếu không cần thiết
+    template_id: str = None  # Dùng None nếu không cần thiết
+    template_name: str = None  # Dùng None nếu không cần thiết
     field_id: str
+    field_name: str = None  # Dùng None nếu không cần thiết
     ocr_value: str
 
     class Config:
         json_schema_extra = {
-            "example": {
+            "example":{
+                "project_id": "123",
+                "project_name": "Test Project", 
+                "template_id": "456",
+                "template_name": "Giấy khai sinh",
                 "field_id": "1",
-                "ocr_value": "aple"
+                "field_name": "Nơi sinh",
+                "ocr_value": "Ha Noi"
             }
         }
 
@@ -55,16 +96,28 @@ class SuggestRequest(BaseModel):
     class Config:
         json_schema_extra = {
             "example": {
-                "data": [
-                    {"field_id": "1", "ocr_value": "aple"},
-                    {"field_id": "2", "ocr_value": "bannana"}
+                "data": 
+                    [{
+                        "project_id": "123",
+                        "project_name": "Test Project", 
+                        "template_id": "456",
+                        "template_name": "Giấy khai sinh",  
+                        "field_id": "1",
+                        "field_name": "Nơi sinh",
+                        "ocr_value": "Ha Noi"
+                    }
                 ]
             }
         }
 
 # Định nghĩa class cho một item trong response của /api/suggest
 class SuggestResponseItem(BaseModel):
+    project_id: str = None  # Dùng None nếu không cần thiết
+    project_name: str = None  # Dùng None nếu không cần thiết
+    template_id: str = None  # Dùng None nếu không cần thiết
+    template_name: str = None  # Dùng None nếu không cần thiết
     field_id: str
+    field_name: str = None  # Dùng None nếu không cần thiết
     ocr_value: str
     suggestion_value: str
     confidence: float
@@ -72,9 +125,14 @@ class SuggestResponseItem(BaseModel):
     class Config:
         json_schema_extra = {
             "example": {
+                "project_id": "123",
+                "project_name": "Test Project",
+                "template_id": "456",
+                "template_name": "Giấy khai sinh",
                 "field_id": "1",
-                "ocr_value": "aple",
-                "suggestion_value": "apple",
+                "field_name": "Nơi sinh",
+                "ocr_value": "Ha Noi",
+                "suggestion_value": "Hà Nội",    
                 "confidence": 0.95
             }
         }
@@ -87,8 +145,17 @@ class SuggestResponse(BaseModel):
         json_schema_extra = {
             "example": {
                 "data": [
-                    {"field_id": "1", "ocr_value": "aple", "suggestion_value": "apple", "confidence": 0.95},
-                    {"field_id": "2", "ocr_value": "bannana", "suggestion_value": "banana", "confidence": 0.92}
+                   {
+                       "project_id": "123",
+                       "project_name": "Test Project",
+                       "template_id": "456",
+                       "template_name": "Giấy khai sinh",
+                       "field_id": "1",
+                       "field_name": "Nơi sinh",
+                       "ocr_value": "Ha Noi",
+                       "suggestion_value": "Hà Nội",
+                       "confidence": 0.95
+                   }
                 ]
             }
         }

@@ -9,7 +9,7 @@ logger = logging.getLogger(__name__)
 app = FastAPI(
     title="OCR Text Correction API",
     description="API for suggesting and learning OCR text corrections using multiple models (e.g., TF-IDF, KNN).",
-    version="1.0.0",
+    version="1.0.1",
     openapi_tags=[
         {
             "name": "tfidf",
